@@ -1,0 +1,21 @@
+# Build outputs
+*.exe
+*.dll
+*.res
+*.o
+*.obj
+*.zip
+build/
+
+# Never commit the game's own files (copyrighted)
+swat*.exe
+*.gsa
+*.gsm
+*.res
+*.dat
+*.cfg
+
+# Logs and traces from test runs
+*.log
+*_trace.txt
+*.bmp
