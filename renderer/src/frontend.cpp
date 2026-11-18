@@ -242,7 +242,7 @@ struct Surface : IDirectDrawSurface4Stub {
     IDirectDrawClipper* clipper = nullptr;
     DWORD uniq = 1;
     // screen lock / DC
-    uint8_t* screenSnap = nullptr; RECT lockRect = {}; bool lockReadOnly = false;
+    uint8_t* screenSnap = nullptr; RECT lockRect = {}; bool lockReadOnly = false; bool syncLock = false;
     HDC dc = nullptr; HBITMAP dib = nullptr; HGDIOBJ dcOld = nullptr; void* dibBits = nullptr; int dibW = 0, dibH = 0; bool dcOut = false;
     SurfFace3 f3; SurfFace7 f7; SurfTex tex;
 
@@ -639,6 +639,9 @@ HRESULT Surface::BltFast(DWORD x, DWORD y, IDirectDrawSurface4* srcI, RECT* sr, 
 // ---- CPU access -------------------------------------------------------------------------------
 HRESULT Surface::Lock(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE h) {
     double t0 = NowMs();
+    // The game's frame routine (swat.exe 0x566c40) locks the screen and unlocks it straight away
+    // without touching the pixels - a 1999 trick to wait for the graphics card. Nothing to read.
+    syncLock = Screen() && __builtin_return_address(0) == (void*)0x566cb7;
     HRESULT hr = LockImpl(r, d, f, h);
     if (Screen()) { g_fr.locks++; g_fr.lockMs += NowMs() - t0; }
     return hr;
@@ -650,12 +653,18 @@ HRESULT Surface::LockImpl(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE) {
     if (Tracing()) TraceLog("LOCK kind %d %dx%d flags %lx", kind, w, h, f);
     if (Screen()) {
         // the screen is on the graphics card: read it back (slow, rare)
-        LogOnce("screenlock", "note: screen surface locked - slow path");
-        g_stats.locks++;
+        if (!syncLock) { LogOnce("screenlock", "note: screen surface locked - slow path"); g_stats.locks++; }
         pitch = ((w * 2) + 3) & ~3;
         if (!bits) bits = (uint8_t*)calloc((size_t)pitch * h, 1);
         static Vec<uint32_t> px; px.resize(w * h);
         RECT all = {0, 0, w, h};
+        if (syncLock) {
+            if (!bits) bits = (uint8_t*)calloc((size_t)pitch * h, 1);
+            lockReadOnly = true;                 // nothing to write back either
+            d->lPitch = pitch; d->lpSurface = bits; d->dwFlags |= DDSD_LPSURFACE;
+            PFFromFmt(kFmt565, d->ddpfPixelFormat);
+            return DD_OK;
+        }
         if (g_lockLogged < 3) {
             g_lockLogged++;
             Log("screen lock %d: flags %08lx, rect %s, called from %p", g_lockLogged, f, r ? "part" : "whole", __builtin_return_address(0));
