@@ -253,7 +253,7 @@ static void GamePipe(Pipe& p) {
     if (g.st[0].colorop == D3DTOP_DISABLE) c.s1[0] = D3DTOP_DISABLE;
     // alpha test; colour keying (texels with the key are not drawn) works like an alpha test
     int af = g.atest ? (int)g.afunc : 0; float ref = (g.aref & 255) / 255.f;
-    if (g.colorkey && keyedTex && (af == 0 || af == D3DCMP_ALWAYS)) { af = D3DCMP_GREATER; ref = 0; }
+    if (g.colorkey && keyedTex && (af == 0 || af == D3DCMP_ALWAYS)) { af = D3DCMP_GREATER; ref = 0.5f; }   // half: filtered edges stay clean
     if (af == D3DCMP_ALWAYS) af = 0;
     c.fogParams[3] = ref;
     c.misc[0] = af;
@@ -834,7 +834,7 @@ void Blit(Tex* t, int texW, int texH, const RECT& src, const RECT& dst, bool ble
     if (!g_ready || !t) return;
     bool stretch = (src.right - src.left) != (dst.right - dst.left) || (src.bottom - src.top) != (dst.bottom - dst.top);
     Pipe p; Pipe2D(p, t, blend, !blend, g_cfg.smoothUI && (stretch || g_scale != floor(g_scale)));
-    if (!blend) p.cb.misc[0] = D3DCMP_GREATER;   // colour key: key texels have alpha 0
+    if (!blend) { p.cb.misc[0] = D3DCMP_GREATER; p.cb.fogParams[3] = 0.5f; }   // colour key: key texels have alpha 0
     Apply(p);
     BindGameTarget();
     ApplyViewport(0, 0, g_vw, g_vh);

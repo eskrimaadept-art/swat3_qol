@@ -257,9 +257,32 @@ struct Surface : IDirectDrawSurface4Stub {
                 d[x] = argb;
             }
         }
+        if (keyed) BleedKey(tmp.p, w, h);
         be::TexUpload(gpu[i], tmp.p, w * 4);
         dirty[i] = false;
         return gpu[i];
+    }
+
+    // Transparent (key) texels keep the key colour (bright pink) in their RGB. When the picture is
+    // scaled smoothly, edge pixels mix in a little of it: a pink outline. Give each transparent
+    // texel the colour of its visible neighbours instead, so the mix has nothing to show.
+    static void BleedKey(uint32_t* px, int w, int h) {
+        static Vec<uint32_t> src;
+        src.resize(w * h);
+        memcpy(src.p, px, (size_t)w * h * 4);
+        for (int y = 0; y < h; y++) for (int x = 0; x < w; x++) {
+            uint32_t& p = px[y * w + x];
+            if (p >> 24) continue;
+            uint32_t r = 0, g = 0, b = 0, n = 0;
+            for (int dy = -1; dy <= 1; dy++) for (int dx = -1; dx <= 1; dx++) {
+                int xx = x + dx, yy = y + dy;
+                if ((dx | dy) == 0 || xx < 0 || yy < 0 || xx >= w || yy >= h) continue;
+                uint32_t q = src.p[yy * w + xx];
+                if (!(q >> 24)) continue;
+                r += (q >> 16) & 255; g += (q >> 8) & 255; b += q & 255; n++;
+            }
+            p = n ? ((r / n) << 16) | ((g / n) << 8) | (b / n) : 0;     // alpha stays 0
+        }
     }
 
     void FillDesc(DDSURFACEDESC2* d) {
