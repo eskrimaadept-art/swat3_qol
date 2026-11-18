@@ -20,10 +20,13 @@ static const char* ModuleOf(void* addr, uintptr_t* off) {
     return "?";
 }
 static LONG WINAPI CrashFilter(EXCEPTION_POINTERS* e) {
-    static bool once = false;
-    if (once) return EXCEPTION_CONTINUE_SEARCH;
-    once = true;
+    static int count = 0;
     EXCEPTION_RECORD* r = e->ExceptionRecord; CONTEXT* c = e->ContextRecord;
+    DWORD code = r->ExceptionCode;
+    // only real faults (access violation, illegal instruction, divide by zero, stack overflow...);
+    // the game may still handle some of them itself
+    if (code < 0xC0000000 || code == 0xE06D7363 || count >= 3) return EXCEPTION_CONTINUE_SEARCH;
+    count++;
     uintptr_t off; const char* mod = ModuleOf(r->ExceptionAddress, &off);
     Log("=== CRASH: exception %08lx at %p (%s+%lx)", r->ExceptionCode, r->ExceptionAddress, mod, (unsigned long)off);
     if (r->ExceptionCode == EXCEPTION_ACCESS_VIOLATION && r->NumberParameters >= 2)
