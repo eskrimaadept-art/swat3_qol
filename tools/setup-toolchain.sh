@@ -29,7 +29,7 @@ cat > $D/wcc <<'W'
 R=/home/claude/deps/sysroot32
 exec clang --target=i686-w64-windows-gnu -isystem $R/include -D_WIN32_WINNT=0x0601 -DWINVER=0x0601 \
   -msse2 -mfpmath=sse -fno-math-errno -fno-stack-protector -fno-exceptions -fno-rtti -fno-threadsafe-statics \
-  -fms-extensions -Wno-ignored-attributes -Wno-pragma-pack -nostdlib -nostdinc++ "$@"
+  -fms-extensions -D__USE_MINGW_ANSI_STDIO=0 -Wno-ignored-attributes -Wno-pragma-pack -nostdlib -nostdinc++ "$@"
 W
 chmod +x $D/wcc
 mkdir -p $D/rt

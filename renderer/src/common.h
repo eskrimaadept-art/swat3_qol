@@ -55,7 +55,7 @@ void TraceStart();
 // ---- tiny growable array (POD-ish element types) --------------------------------------------
 template <class T> struct Vec {
     T* p = nullptr; int n = 0, cap = 0;
-    Vec() {}
+    constexpr Vec() {}
     Vec(const Vec&) = delete; Vec& operator=(const Vec&) = delete;
     ~Vec() { free(p); }
     void reserve(int c) { if (c <= cap) return; int nc = cap ? cap : 8; while (nc < c) nc *= 2; p = (T*)realloc(p, sizeof(T) * nc); cap = nc; }

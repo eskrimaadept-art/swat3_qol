@@ -148,7 +148,7 @@ static LRESULT CALLBACK HookProc(HWND h, UINT m, WPARAM wp, LPARAM lp) {
         if (be::Ready()) { POINT pt = {(short)LOWORD(lp), (short)HIWORD(lp)}; r_ScreenToClient(h, &pt); lp = MapMouse(MAKELPARAM(pt.x, pt.y)); }
         break;
     case WM_SIZE:                                      // the game sees its own resolution
-        if (be::Ready() && wp != SIZE_MINIMIZED) { int w, hh; be::GetVirtualMode(&w, &hh); lp = MAKELPARAM(w, hh); }
+        if (be::Window() && wp != SIZE_MINIMIZED) { int w, hh; be::GetVirtualMode(&w, &hh); lp = MAKELPARAM(w, hh); }
         break;
     }
     return CallWindowProcA(g_oldProc, h, m, wp, lp);
