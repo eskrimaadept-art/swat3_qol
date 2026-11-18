@@ -11,7 +11,8 @@ cbuffer Frame : register(b0) {
     int4   g_s0b;        //          alpha arg1, alpha arg2, texcoord index, unused
     int4   g_s1;         // stage 1, same layout
     int4   g_s1b;
-    int4   g_misc;       // alpha test func (0 = off, else D3DCMP 1..8), fog mode (0 off, 1 vertex, 2 exp, 3 exp2, 4 linear), specular add, unused
+    int4   g_misc;       // alpha test func (0 = off, else D3DCMP 1..8), fog mode (0 off, 1 vertex, 2 exp, 3 exp2, 4 linear), specular add,
+                         // sharp scaling of stage 0 (output pixels per texel x 1000, 0 = off)
 };
 Texture2D    g_t0 : register(t0);
 Texture2D    g_t1 : register(t1);
@@ -73,11 +74,26 @@ float4 Combine(int op, float4 a1, float4 a2, float4 cur, float4 tex, float4 dif)
     return saturate(r);
 }
 
+// "Sharp bilinear": each texel is drawn as a crisp block; only the one output pixel where two
+// texels meet is blended. Scaled 2D art and text keep even, sharp shapes at any scale.
+float2 SharpUV(Texture2D t, float2 uv, float k) {
+    float w, h;
+    t.GetDimensions(w, h);
+    float2 size = float2(w, h);
+    float2 texel = uv * size;
+    float2 fl = floor(texel);
+    float2 cd = (texel - fl) - 0.5;
+    float range = 0.5 - 0.5 / k;
+    float2 f = (cd - clamp(cd, -range, range)) * k + 0.5;
+    return (fl + f) / size;
+}
+
 float4 PSMain(VSOut i) : SV_Target {
     float2 c0 = i.uv0;
     if (g_s0b.z == 1) c0 = i.uv1;
     float2 c1 = i.uv1;
     if (g_s1b.z == 0) c1 = i.uv0;
+    if (g_misc.w > 1000) c0 = SharpUV(g_t0, c0, g_misc.w / 1000.0);
     float4 t0 = g_t0.Sample(g_smp0, c0);
     float4 t1 = g_t1.Sample(g_smp1, c1);
     float4 dif = i.dif;

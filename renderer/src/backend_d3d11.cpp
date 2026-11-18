@@ -840,6 +840,11 @@ void Blit(Tex* t, int texW, int texH, const RECT& src, const RECT& dst, bool ble
     // blend them, so outlines and letters keep their shape; unscaled, a plain cut-off is exact.
     Pipe p; Pipe2D(p, t, blend || smooth, true, smooth);
     p.cb.misc[0] = D3DCMP_GREATER; p.cb.fogParams[3] = smooth || blend ? 0.f : 0.5f;
+    if (smooth) {                                       // output pixels per texel
+        double sw = src.right - src.left, dw = dst.right - dst.left;
+        double k = sw > 0 ? g_scale * dw / sw : g_scale;
+        if (k > 1.01) p.cb.misc[3] = (int)(k * 1000);
+    }
     Apply(p);
     BindGameTarget();
     ApplyViewport(0, 0, g_vw, g_vh);

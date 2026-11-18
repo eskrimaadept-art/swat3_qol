@@ -100,6 +100,9 @@ static const char* KindName(Kind k) { static const char* n[] = {"primary", "back
 
 static DDraw* g_dd;
 static struct { int frames, draws, uploads, getdc, locks, reads; } g_stats;
+// per frame, to explain long pauses: what happened and how long the renderer itself took
+static struct { int creates, uploads, locks, draws, blts; double uploadPx, uploadMs, lockMs, bltMs; } g_fr;
+static double NowMs() { static LARGE_INTEGER f = {}; if (!f.QuadPart) QueryPerformanceFrequency(&f); LARGE_INTEGER c; QueryPerformanceCounter(&c); return c.QuadPart * 1000.0 / f.QuadPart; }
 static const uint32_t kDcBlank = 0x010203;
 static int g_lockLogged = 0;    // "nothing drawn here" colour for GDI text on the screen
 static Surface* g_back;        // the game's 3D render surface (the backend's render target)
@@ -266,6 +269,7 @@ struct Surface : IDirectDrawSurface4Stub {
         if (!hasKey) keyed = false;
         int i = (keyed ? 1 : 0) | (formatAlpha ? 2 : 0);
         if (gpu[i] && !dirty[i]) return gpu[i];
+        double t0 = NowMs();
         if (!gpu[i]) gpu[i] = be::TexCreate(w, h, kind == K_TEX && g_cfg.mipmaps);
         if (!gpu[i]) return nullptr;
         const Conv& c = ConvFor(fmt);
@@ -287,6 +291,7 @@ struct Surface : IDirectDrawSurface4Stub {
         be::TexUpload(gpu[i], tmp.p, w * 4);
         dirty[i] = false;
         g_stats.uploads++;
+        g_fr.uploads++; g_fr.uploadPx += (double)w * h; g_fr.uploadMs += NowMs() - t0;
         return gpu[i];
     }
 
@@ -395,6 +400,7 @@ struct Surface : IDirectDrawSurface4Stub {
     // ---- CPU access ----
     HRESULT STDMETHODCALLTYPE Lock(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE) override;
     HRESULT STDMETHODCALLTYPE Unlock(RECT*) override;
+    HRESULT LockImpl(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE h);
     HRESULT STDMETHODCALLTYPE GetDC(HDC* out) override;
     HRESULT STDMETHODCALLTYPE ReleaseDC(HDC) override;
     void FillDC(bool screen, int dibPitch, int dh);
@@ -438,7 +444,18 @@ HRESULT Surface::DeleteAttachedSurface(DWORD, IDirectDrawSurface4* a) {
 static int g_frames = 0;
 static DWORD g_statStart = 0;
 static void PresentFrame() {
+    static double last = 0; static int slowLogged = 0;
+    double t0 = NowMs();
+    if (last > 0 && t0 - last > 250 && slowLogged < 30) {
+        slowLogged++;
+        double ours = g_fr.uploadMs + g_fr.lockMs + g_fr.bltMs;
+        Log("slow frame: %.0f ms (renderer: %.0f ms - texture uploads %d / %.1f Mpixels %.0f ms, screen locks %d %.0f ms, blits %d %.0f ms; "
+            "new surfaces %d, draws %d)%s", t0 - last, ours, g_fr.uploads, g_fr.uploadPx / 1e6, g_fr.uploadMs, g_fr.locks, g_fr.lockMs, g_fr.blts, g_fr.bltMs,
+            g_fr.creates, g_fr.draws, ours < (t0 - last) * 0.5 ? " - most of the time was spent in the game itself" : "");
+    }
+    memset(&g_fr, 0, sizeof(g_fr));
     be::Present();
+    last = NowMs();
     TraceFrameEnd();
     g_frames++;
     g_stats.frames++;
@@ -539,7 +556,14 @@ static void ScreenWrite(const RECT& r, const uint32_t* argb, int pitchPx) {
 
 static uint32_t FillToARGB(Surface* s, uint32_t raw) { return ConvFor(s->Screen() ? kFmt565 : s->fmt).ToARGB(raw) | 0xff000000; }
 
+static HRESULT DoBltImpl(Surface* dst, RECT* dr, Surface* src, RECT* sr, DWORD f, DDBLTFX* fx);
 static HRESULT DoBlt(Surface* dst, RECT* dr, Surface* src, RECT* sr, DWORD f, DDBLTFX* fx) {
+    double t0 = NowMs();
+    HRESULT hr = DoBltImpl(dst, dr, src, sr, f, fx);
+    g_fr.blts++; g_fr.bltMs += NowMs() - t0;
+    return hr;
+}
+static HRESULT DoBltImpl(Surface* dst, RECT* dr, Surface* src, RECT* sr, DWORD f, DDBLTFX* fx) {
     RECT d = dr ? *dr : RECT{0, 0, dst->w, dst->h};
     if (Tracing()) TraceLog("BLT kind %d <- %d flags %lx dst %ld,%ld-%ld,%ld", dst->kind, src ? src->kind : -1, f, d.left, d.top, d.right, d.bottom);
     if (f & DDBLT_COLORFILL) {
@@ -613,7 +637,13 @@ HRESULT Surface::BltFast(DWORD x, DWORD y, IDirectDrawSurface4* srcI, RECT* sr, 
 }
 
 // ---- CPU access -------------------------------------------------------------------------------
-HRESULT Surface::Lock(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE) {
+HRESULT Surface::Lock(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE h) {
+    double t0 = NowMs();
+    HRESULT hr = LockImpl(r, d, f, h);
+    if (Screen()) { g_fr.locks++; g_fr.lockMs += NowMs() - t0; }
+    return hr;
+}
+HRESULT Surface::LockImpl(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE) {
     if (!d) return DDERR_INVALIDPARAMS;
     if (!d->dwSize) d->dwSize = sizeof(DDSURFACEDESC2);
     FillDesc(d);
@@ -650,6 +680,8 @@ HRESULT Surface::Lock(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE) {
 }
 HRESULT Surface::Unlock(RECT*) {
     if (Screen()) {
+        double tu = NowMs();
+        struct T { double t; ~T() { g_fr.lockMs += NowMs() - t; } } timer = {tu};
         if (bits && screenSnap && !lockReadOnly) {
             // pixels the game changed go back onto the screen
             const Conv& c = ConvFor(kFmt565);
@@ -1106,14 +1138,14 @@ struct Device : IDirect3DDevice3Stub {
     HRESULT STDMETHODCALLTYPE DrawPrimitive(D3DPRIMITIVETYPE pt, DWORD fvf, void* v, DWORD n, DWORD flags) override {
         TraceDraw("DP", pt, fvf, v, n, nullptr, 0, flags);
         BindTextures();
-        g_stats.draws++;
+        g_stats.draws++; g_fr.draws++;
         be::DrawPrimitiveTL(pt, fvf, v, n);
         return D3D_OK;
     }
     HRESULT STDMETHODCALLTYPE DrawIndexedPrimitive(D3DPRIMITIVETYPE pt, DWORD fvf, void* v, DWORD n, WORD* idx, DWORD ni, DWORD flags) override {
         TraceDraw("DIP", pt, fvf, v, n, idx, ni, flags);
         BindTextures();
-        g_stats.draws++;
+        g_stats.draws++; g_fr.draws++;
         be::DrawIndexedPrimitiveTL(pt, fvf, v, n, idx, ni);
         return D3D_OK;
     }
@@ -1307,6 +1339,7 @@ HRESULT DDraw::EnumDisplayModes(DWORD, DDSURFACEDESC2* filter, void* ctx, LPDDEN
 
 // ---- surface creation -----------------------------------------------------------------------------
 Surface* DDraw::Create(DDSURFACEDESC2* d) {
+    g_fr.creates++;
     DWORD caps = (d->dwFlags & DDSD_CAPS) ? d->ddsCaps.dwCaps : 0;
     int w = (d->dwFlags & DDSD_WIDTH) ? (int)d->dwWidth : 0, h = (d->dwFlags & DDSD_HEIGHT) ? (int)d->dwHeight : 0;
     Fmt fmt = (d->dwFlags & DDSD_PIXELFORMAT) ? FmtFromPF(d->ddpfPixelFormat) : kFmt565;
