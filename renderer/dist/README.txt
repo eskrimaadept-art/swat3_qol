@@ -1,4 +1,4 @@
-SWAT 3 Direct3D 11 renderer 0.14.7 - REBUILD TEST (stage 1)
+SWAT 3 Direct3D 11 renderer 0.14.8 - REBUILD TEST (stage 1)
 ===========================================================
 This is the renderer rebuilt from scratch after its source code was lost. It should look and
 behave like 0.13.1, but it is new code, so it needs testing.

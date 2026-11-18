@@ -42,6 +42,7 @@ static ID3D11DepthStencilView* g_dsv;
 static ID3D11Texture2D* g_staging;               // CPU read-back
 static int g_rtW, g_rtH;
 static bool g_rtDirty = true;                    // MSAA target changed since the last resolve
+static uint32_t g_gen = 0;                       // counts changes to the picture (for read-back caching)
 
 static int g_vw = 640, g_vh = 480;               // the game's resolution
 static double g_scale = 1, g_offX = 0, g_offY = 0;
@@ -408,7 +409,7 @@ static void Draw(uint32_t prim, const Vtx* v, UINT nv, const uint16_t* idx, UINT
         BindGeometry();
         g_ctx->DrawIndexed(ni, (UINT)fi, first);
     } else g_ctx->Draw(nv, (UINT)first);
-    g_rtDirty = true;
+    g_rtDirty = true; g_gen++;
 }
 
 // A screen-aligned quad in game pixels
@@ -472,7 +473,7 @@ static bool CreateTargets() {
     g_ctx->ClearRenderTargetView(g_rtv, black);
     g_ctx->ClearDepthStencilView(g_dsv, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1, 0);
     BindGameTarget();
-    g_rtDirty = true;
+    g_rtDirty = true; g_gen++;
     Log("virtual %dx%d -> render target %dx%d (scale %.3f) on output %dx%d", g_vw, g_vh, g_rtW, g_rtH, g_scale, g_outW, g_outH);
     return true;
 }
@@ -825,7 +826,7 @@ void Clear(uint32_t count, const D3DRECT* rects, uint32_t flags, uint32_t color,
             }
             UINT df = ((flags & D3DCLEAR_ZBUFFER) ? D3D11_CLEAR_DEPTH : 0) | ((flags & D3DCLEAR_STENCIL) ? D3D11_CLEAR_STENCIL : 0);
             if (df) g_ctx->ClearDepthStencilView(g_dsv, df, z < 0 ? 0 : z > 1 ? 1 : z, (UINT8)stencil);
-            g_rtDirty = true;
+            g_rtDirty = true; g_gen++;
         } else if (r.x2 > r.x1 && r.y2 > r.y1) ClearRect(r, flags, color, z);
     }
 }
@@ -858,7 +859,7 @@ void Fill(const RECT* r, uint32_t argb) {
     if (!r || (r->left <= 0 && r->top <= 0 && r->right >= g_vw && r->bottom >= g_vh)) {
         float c[4] = {((argb >> 16) & 255) / 255.f, ((argb >> 8) & 255) / 255.f, (argb & 255) / 255.f, 1};
         g_ctx->ClearRenderTargetView(g_rtv, c);
-        g_rtDirty = true;
+        g_rtDirty = true; g_gen++;
         return;
     }
     Pipe p; Pipe2D(p, nullptr, false, false, false);
@@ -892,6 +893,7 @@ static void CopyOut(const D3D11_MAPPED_SUBRESOURCE& m, const RECT& r, uint32_t* 
 // Read-back without waiting: while the game keeps reading the screen, every present also copies
 // the finished picture into one of two CPU-readable textures. A read then uses the newest copy
 // (one frame old) instead of stopping until the graphics card has finished the current frame.
+static Vec<uint32_t> g_cpuCopy; static uint32_t g_cpuGen = 0xffffffff;
 static ID3D11Texture2D* g_ring[2]; static bool g_ringValid[2]; static int g_ringNext = 0, g_ringNewest = -1;
 static DWORD g_lastRead = 0;
 static ID3D11Texture2D* MakeStaging() {
@@ -925,13 +927,22 @@ bool ReadBack(const RECT& r, uint32_t* out, int pitch, bool recentOk) {
         ID3D11Texture2D* t = g_ring[g_ringNewest];
         if (SUCCEEDED(g_ctx->Map(t, 0, D3D11_MAP_READ, 0, &m))) { CopyOut(m, r, out, pitch); g_ctx->Unmap(t, 0); return true; }
     }
-    if (!g_staging) g_staging = MakeStaging();
-    if (!g_staging) return false;
-    Resolve();
-    g_ctx->CopyResource(g_staging, g_rtResolve);
-    if (FAILED(g_ctx->Map(g_staging, 0, D3D11_MAP_READ, 0, &m))) return false;
-    CopyOut(m, r, out, pitch);
-    g_ctx->Unmap(g_staging, 0);
+    // The game may read the screen in hundreds of small pieces (popups save the picture behind
+    // them): fetch the picture once and answer every piece from that copy until something is drawn.
+    if (g_cpuGen != g_gen || g_cpuCopy.size() != g_rtW * g_rtH) {
+        if (!g_staging) g_staging = MakeStaging();
+        if (!g_staging) return false;
+        Resolve();
+        g_ctx->CopyResource(g_staging, g_rtResolve);
+        if (FAILED(g_ctx->Map(g_staging, 0, D3D11_MAP_READ, 0, &m))) return false;
+        g_cpuCopy.resize(g_rtW * g_rtH);
+        for (int y = 0; y < g_rtH; y++) memcpy(g_cpuCopy.p + (size_t)y * g_rtW, (const uint8_t*)m.pData + (size_t)y * m.RowPitch, (size_t)g_rtW * 4);
+        g_ctx->Unmap(g_staging, 0);
+        g_cpuGen = g_gen;
+    }
+    D3D11_MAPPED_SUBRESOURCE c;
+    c.pData = g_cpuCopy.p; c.RowPitch = g_rtW * 4; c.DepthPitch = 0;
+    CopyOut(c, r, out, pitch);
     return true;
 }
 

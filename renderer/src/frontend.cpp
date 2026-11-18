@@ -101,7 +101,7 @@ static const char* KindName(Kind k) { static const char* n[] = {"primary", "back
 static DDraw* g_dd;
 static struct { int frames, draws, uploads, getdc, locks, reads; } g_stats;
 // per frame, to explain long pauses: what happened and how long the renderer itself took
-static struct { int creates, uploads, locks, draws, blts; double uploadPx, uploadMs, lockMs, bltMs; } g_fr;
+static struct { int creates, uploads, locks, draws, blts, grabs; double uploadPx, uploadMs, lockMs, bltMs; } g_fr;
 static double NowMs() { static LARGE_INTEGER f = {}; if (!f.QuadPart) QueryPerformanceFrequency(&f); LARGE_INTEGER c; QueryPerformanceCounter(&c); return c.QuadPart * 1000.0 / f.QuadPart; }
 static const uint32_t kDcBlank = 0x010203;
 static int g_lockLogged = 0;    // "nothing drawn here" colour for GDI text on the screen
@@ -449,8 +449,8 @@ static void PresentFrame() {
     if (last > 0 && t0 - last > 250 && slowLogged < 30) {
         slowLogged++;
         double ours = g_fr.uploadMs + g_fr.lockMs + g_fr.bltMs;
-        Log("slow frame: %.0f ms (renderer: %.0f ms - texture uploads %d / %.1f Mpixels %.0f ms, screen locks %d %.0f ms, blits %d %.0f ms; "
-            "new surfaces %d, draws %d)%s", t0 - last, ours, g_fr.uploads, g_fr.uploadPx / 1e6, g_fr.uploadMs, g_fr.locks, g_fr.lockMs, g_fr.blts, g_fr.bltMs,
+        Log("slow frame: %.0f ms (renderer: %.0f ms - texture uploads %d / %.1f Mpixels %.0f ms, screen locks %d %.0f ms, blits %d (%d from the screen) %.0f ms; "
+            "new surfaces %d, draws %d)%s", t0 - last, ours, g_fr.uploads, g_fr.uploadPx / 1e6, g_fr.uploadMs, g_fr.locks, g_fr.lockMs, g_fr.blts, g_fr.grabs, g_fr.bltMs,
             g_fr.creates, g_fr.draws, ours < (t0 - last) * 0.5 ? " - most of the time was spent in the game itself" : "");
     }
     memset(&g_fr, 0, sizeof(g_fr));
@@ -610,7 +610,7 @@ static HRESULT DoBltImpl(Surface* dst, RECT* dr, Surface* src, RECT* sr, DWORD f
         int sw = s.right - s.left, sh = s.bottom - s.top;
         if (sw > 0 && sh > 0 && dst->bits) {
             Vec<uint32_t> px; px.resize(sw * sh);
-            g_stats.reads++;
+            g_stats.reads++; g_fr.grabs++;
             if (be::ReadBack(s, px.p, sw)) {
                 Surface tmp(K_PLAIN, sw, sh, Fmt{32, 0xff0000, 0xff00, 0xff, 0});
                 for (int y = 0; y < sh; y++) memcpy(tmp.bits + (size_t)y * tmp.pitch, px.p + (size_t)y * sw, (size_t)sw * 4);
