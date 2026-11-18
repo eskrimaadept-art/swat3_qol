@@ -833,8 +833,11 @@ void Blit(Tex* t, int texW, int texH, const RECT& src, const RECT& dst, bool ble
     LOCKED;
     if (!g_ready || !t) return;
     bool stretch = (src.right - src.left) != (dst.right - dst.left) || (src.bottom - src.top) != (dst.bottom - dst.top);
-    Pipe p; Pipe2D(p, t, blend, !blend, g_cfg.smoothUI && (stretch || g_scale != floor(g_scale)));
-    if (!blend) { p.cb.misc[0] = D3DCMP_GREATER; p.cb.fogParams[3] = 0.5f; }   // colour key: key texels have alpha 0
+    bool smooth = g_cfg.smoothUI && (stretch || g_scale != floor(g_scale));
+    // Transparent (colour key) texels have alpha 0. Scaled smoothly, edges get in-between alpha:
+    // blend them, so outlines and letters keep their shape; unscaled, a plain cut-off is exact.
+    Pipe p; Pipe2D(p, t, blend || smooth, true, smooth);
+    p.cb.misc[0] = D3DCMP_GREATER; p.cb.fogParams[3] = smooth || blend ? 0.f : 0.5f;
     Apply(p);
     BindGameTarget();
     ApplyViewport(0, 0, g_vw, g_vh);
