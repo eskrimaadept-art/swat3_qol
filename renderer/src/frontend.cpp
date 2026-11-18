@@ -99,6 +99,8 @@ enum Kind { K_PRIMARY, K_BACK, K_ZBUF, K_TEX, K_PLAIN };
 static const char* KindName(Kind k) { static const char* n[] = {"primary", "back buffer", "z-buffer", "texture", "plain"}; return n[k]; }
 
 static DDraw* g_dd;
+static struct { int frames, draws, uploads, getdc, locks, reads; } g_stats;
+static const uint32_t kDcBlank = 0x010203;    // "nothing drawn here" colour for GDI text on the screen
 static Surface* g_back;        // the game's 3D render surface (the backend's render target)
 static Surface* g_primary;
 static Device* g_device;
@@ -215,7 +217,7 @@ struct Surface : IDirectDrawSurface4Stub {
     DWORD uniq = 1;
     // screen lock / DC
     uint8_t* screenSnap = nullptr; RECT lockRect = {}; bool lockReadOnly = false;
-    HDC dc = nullptr; HBITMAP dib = nullptr; HGDIOBJ dcOld = nullptr; void* dibBits = nullptr; uint32_t* dcSnap = nullptr;
+    HDC dc = nullptr; HBITMAP dib = nullptr; HGDIOBJ dcOld = nullptr; void* dibBits = nullptr; int dibW = 0, dibH = 0; bool dcOut = false;
     SurfFace3 f3; SurfFace7 f7; SurfTex tex;
 
     Surface(Kind k, int ww, int hh, const Fmt& f) : kind(k), w(ww), h(hh), fmt(f) {
@@ -225,7 +227,8 @@ struct Surface : IDirectDrawSurface4Stub {
     }
     ~Surface() {
         for (auto& t : gpu) if (t) be::TexDestroy(t);
-        free(bits); free(screenSnap); free(dcSnap);
+        free(bits); free(screenSnap);
+        if (dc) { SelectObject(dc, dcOld); DeleteObject(dib); DeleteDC(dc); }
         if (attached && attached->owner == this) { attached->owner = nullptr; attached->Release(); }
         if (g_back == this) g_back = nullptr;
         if (g_primary == this) g_primary = nullptr;
@@ -260,6 +263,7 @@ struct Surface : IDirectDrawSurface4Stub {
         if (keyed) BleedKey(tmp.p, w, h);
         be::TexUpload(gpu[i], tmp.p, w * 4);
         dirty[i] = false;
+        g_stats.uploads++;
         return gpu[i];
     }
 
@@ -392,6 +396,7 @@ struct Surface : IDirectDrawSurface4Stub {
     HRESULT STDMETHODCALLTYPE Unlock(RECT*) override;
     HRESULT STDMETHODCALLTYPE GetDC(HDC* out) override;
     HRESULT STDMETHODCALLTYPE ReleaseDC(HDC) override;
+    void FillDC(bool screen, int dibPitch, int dh);
 };
 
 static Surface* AsSurface(void* p) {
@@ -430,10 +435,22 @@ HRESULT Surface::DeleteAttachedSurface(DWORD, IDirectDrawSurface4* a) {
 
 // ---- presenting -------------------------------------------------------------------------------
 static int g_frames = 0;
+static DWORD g_statStart = 0;
 static void PresentFrame() {
     be::Present();
     TraceFrameEnd();
     g_frames++;
+    g_stats.frames++;
+    DWORD now = GetTickCount();
+    if (!g_statStart) g_statStart = now;
+    if (now - g_statStart >= 30000) {          // a performance line every 30 seconds
+        double s = (now - g_statStart) / 1000.0;
+        Log("perf: %.0f fps | per frame: %.0f draws, %.1f texture uploads, %.2f screen text, %.2f screen locks, %.2f screen reads",
+            g_stats.frames / s, (double)g_stats.draws / g_stats.frames, (double)g_stats.uploads / g_stats.frames,
+            (double)g_stats.getdc / g_stats.frames, (double)g_stats.locks / g_stats.frames, (double)g_stats.reads / g_stats.frames);
+        memset(&g_stats, 0, sizeof(g_stats));
+        g_statStart = now;
+    }
 }
 HRESULT Surface::Flip(IDirectDrawSurface4*, DWORD) { PresentFrame(); return DD_OK; }
 
@@ -496,12 +513,23 @@ static void CpuBlit(Surface* dst, RECT d, Surface* src, RECT s, bool key) {
 static void ScreenWrite(const RECT& r, const uint32_t* argb, int pitchPx) {
     int w = r.right - r.left, h = r.bottom - r.top;
     if (w <= 0 || h <= 0) return;
-    be::Tex* t = be::TexCreate(w, h, false);
-    if (!t) return;
-    be::TexUpload(t, argb, pitchPx * 4);
+    // the same text usually lands in the same box every frame: keep a few textures around
+    static struct { be::Tex* t; int w, h; DWORD used; } cache[4];
+    int pick = -1, oldest = 0;
+    for (int i = 0; i < 4; i++) {
+        if (cache[i].t && cache[i].w == w && cache[i].h == h) { pick = i; break; }
+        if (cache[i].used < cache[oldest].used) oldest = i;
+    }
+    if (pick < 0) {
+        pick = oldest;
+        if (cache[pick].t) be::TexDestroy(cache[pick].t);
+        cache[pick].t = be::TexCreate(w, h, false); cache[pick].w = w; cache[pick].h = h;
+        if (!cache[pick].t) return;
+    }
+    cache[pick].used = GetTickCount();
+    be::TexUpload(cache[pick].t, argb, pitchPx * 4);
     RECT s = {0, 0, w, h};
-    be::Blit(t, w, h, s, r, false);
-    be::TexDestroy(t);
+    be::Blit(cache[pick].t, w, h, s, r, false);
 }
 
 static uint32_t FillToARGB(Surface* s, uint32_t raw) { return ConvFor(s->Screen() ? kFmt565 : s->fmt).ToARGB(raw) | 0xff000000; }
@@ -553,6 +581,7 @@ static HRESULT DoBlt(Surface* dst, RECT* dr, Surface* src, RECT* sr, DWORD f, DD
         int sw = s.right - s.left, sh = s.bottom - s.top;
         if (sw > 0 && sh > 0 && dst->bits) {
             Vec<uint32_t> px; px.resize(sw * sh);
+            g_stats.reads++;
             if (be::ReadBack(s, px.p, sw)) {
                 Surface tmp(K_PLAIN, sw, sh, Fmt{32, 0xff0000, 0xff00, 0xff, 0});
                 for (int y = 0; y < sh; y++) memcpy(tmp.bits + (size_t)y * tmp.pitch, px.p + (size_t)y * sw, (size_t)sw * 4);
@@ -587,6 +616,7 @@ HRESULT Surface::Lock(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE) {
     if (Screen()) {
         // the screen is on the graphics card: read it back (slow, rare)
         LogOnce("screenlock", "note: screen surface locked - slow path");
+        g_stats.locks++;
         pitch = ((w * 2) + 3) & ~3;
         free(bits); bits = (uint8_t*)calloc((size_t)pitch * h, 1);
         free(screenSnap); screenSnap = nullptr;
@@ -640,12 +670,15 @@ HRESULT Surface::Unlock(RECT*) {
 
 HRESULT Surface::GetDC(HDC* out) {
     if (!out) return DDERR_INVALIDPARAMS;
-    if (dc) { *out = dc; return DD_OK; }
+    if (dcOut) { *out = dc; return DD_OK; }
     int dw = w, dh = h;
-    struct { BITMAPINFOHEADER h; DWORD masks[3]; } bi = {};
-    bi.h.biSize = sizeof(BITMAPINFOHEADER); bi.h.biWidth = dw; bi.h.biHeight = -dh; bi.h.biPlanes = 1;
     bool screen = Screen();
     Fmt f = screen ? Fmt{32, 0xff0000, 0xff00, 0xff, 0} : fmt;
+    int dibPitch = ((dw * f.bpp / 8) + 3) & ~3;
+    if (dc && dibW == dw && dibH == dh) { dcOut = true; FillDC(screen, dibPitch, dh); *out = dc; return DD_OK; }
+    if (dc) { SelectObject(dc, dcOld); DeleteObject(dib); DeleteDC(dc); dc = nullptr; dib = nullptr; dibBits = nullptr; }
+    struct { BITMAPINFOHEADER h; DWORD masks[3]; } bi = {};
+    bi.h.biSize = sizeof(BITMAPINFOHEADER); bi.h.biWidth = dw; bi.h.biHeight = -dh; bi.h.biPlanes = 1;
     bi.h.biBitCount = (WORD)f.bpp;
     bi.h.biCompression = f.bpp == 24 ? BI_RGB : BI_BITFIELDS;
     bi.masks[0] = f.r; bi.masks[1] = f.g; bi.masks[2] = f.b;
@@ -653,50 +686,54 @@ HRESULT Surface::GetDC(HDC* out) {
     dib = CreateDIBSection(dc, (BITMAPINFO*)&bi, DIB_RGB_COLORS, &dibBits, nullptr, 0);
     if (!dc || !dib || !dibBits) { if (dib) DeleteObject(dib); if (dc) DeleteDC(dc); dc = nullptr; dib = nullptr; return DDERR_GENERIC; }
     dcOld = SelectObject(dc, dib);
-    int dibPitch = ((dw * f.bpp / 8) + 3) & ~3;
-    if (screen) {
-        RECT all = {0, 0, w, h};
-        be::ReadBack(all, (uint32_t*)dibBits, dibPitch / 4);
-        free(dcSnap); dcSnap = (uint32_t*)malloc((size_t)dibPitch * dh);
-        memcpy(dcSnap, dibBits, (size_t)dibPitch * dh);
-    } else if (bits) {
-        for (int y = 0; y < dh; y++) memcpy((uint8_t*)dibBits + (size_t)y * dibPitch, bits + (size_t)y * pitch, (size_t)(dibPitch < pitch ? dibPitch : pitch));
-    }
+    dibW = dw; dibH = dh; dcOut = true;
+    FillDC(screen, dibPitch, dh);
     *out = dc;
     return DD_OK;
 }
+void Surface::FillDC(bool screen, int dibPitch, int dh) {
+    if (screen) {
+        // No read-back from the graphics card (too slow every frame): GDI draws onto a blank page
+        // and only what it drew is put on the screen afterwards.
+        uint32_t* p = (uint32_t*)dibBits;
+        for (size_t i = 0, n = (size_t)dibPitch / 4 * dh; i < n; i++) p[i] = kDcBlank;
+        g_stats.getdc++;
+    } else if (bits) {
+        for (int y = 0; y < dh; y++) memcpy((uint8_t*)dibBits + (size_t)y * dibPitch, bits + (size_t)y * pitch, (size_t)(dibPitch < pitch ? dibPitch : pitch));
+    }
+}
 HRESULT Surface::ReleaseDC(HDC) {
-    if (!dc) return DD_OK;
+    if (!dc || !dcOut) return DD_OK;
+    dcOut = false;
     GdiFlush();
     int dw = w, dh = h;
     bool screen = Screen();
     int bpp = screen ? 32 : fmt.bpp;
     int dibPitch = ((dw * bpp / 8) + 3) & ~3;
-    if (screen && dcSnap) {
+    if (screen) {
         const uint32_t* now = (const uint32_t*)dibBits;
         int x0 = dw, y0 = dh, x1 = -1, y1 = -1, pp = dibPitch / 4;
-        for (int y = 0; y < dh; y++) for (int x = 0; x < dw; x++)
-            if (now[y * pp + x] != dcSnap[y * pp + x]) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+        for (int y = 0; y < dh; y++) {
+            const uint32_t* row = now + (size_t)y * pp;
+            for (int x = 0; x < dw; x++)
+                if ((row[x] & 0xffffff) != kDcBlank) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+        }
         if (x1 >= x0) {
             int ww = x1 - x0 + 1, hh = y1 - y0 + 1;
             Vec<uint32_t> px; px.resize(ww * hh);
             for (int y = 0; y < hh; y++) for (int x = 0; x < ww; x++) {
-                uint32_t a = now[(y0 + y) * pp + x0 + x], b = dcSnap[(y0 + y) * pp + x0 + x];
-                px[y * ww + x] = a != b ? (a | 0xff000000) : 0;
+                uint32_t a = now[(y0 + y) * pp + x0 + x] & 0xffffff;
+                px[y * ww + x] = a != kDcBlank ? (a | 0xff000000) : 0;
             }
             RECT rr = {x0, y0, x1 + 1, y1 + 1};
             ScreenWrite(rr, px.p, ww);
         }
-        free(dcSnap); dcSnap = nullptr;
         if (kind == K_PRIMARY) PresentFrame();
     } else if (bits) {
         for (int y = 0; y < dh; y++) memcpy(bits + (size_t)y * pitch, (uint8_t*)dibBits + (size_t)y * dibPitch, (size_t)(dibPitch < pitch ? dibPitch : pitch));
         Changed();
     }
-    SelectObject(dc, dcOld);
-    DeleteObject(dib); DeleteDC(dc);
-    dc = nullptr; dib = nullptr; dibBits = nullptr;
-    return DD_OK;
+    return DD_OK;          // the DC and its bitmap are kept for the next GetDC
 }
 
 // ---- faces: forwarding with descriptor conversion ------------------------------------------------
@@ -1059,12 +1096,14 @@ struct Device : IDirect3DDevice3Stub {
     HRESULT STDMETHODCALLTYPE DrawPrimitive(D3DPRIMITIVETYPE pt, DWORD fvf, void* v, DWORD n, DWORD flags) override {
         TraceDraw("DP", pt, fvf, v, n, nullptr, 0, flags);
         BindTextures();
+        g_stats.draws++;
         be::DrawPrimitiveTL(pt, fvf, v, n);
         return D3D_OK;
     }
     HRESULT STDMETHODCALLTYPE DrawIndexedPrimitive(D3DPRIMITIVETYPE pt, DWORD fvf, void* v, DWORD n, WORD* idx, DWORD ni, DWORD flags) override {
         TraceDraw("DIP", pt, fvf, v, n, idx, ni, flags);
         BindTextures();
+        g_stats.draws++;
         be::DrawIndexedPrimitiveTL(pt, fvf, v, n, idx, ni);
         return D3D_OK;
     }

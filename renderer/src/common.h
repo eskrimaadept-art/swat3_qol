@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define SWAT3D11_VERSION "0.14.2"
+#define SWAT3D11_VERSION "0.14.3"
 
 // ---- settings ---------------------------------------------------------------------------------
 struct Config {
