@@ -1,0 +1,3756 @@
+!This program cannot be run in DOS mode.$
+`.rdata
+@.buildid5
+@.data
+@.gcc_exc
+D$$j@QP
+D$(PWShVq
+Vj h8@
+ffffff.
+9p tV9p$t]
+t$$9l$4u
+D$4+D$
+D$$+D$H
+ffffff.
+4fffff.
+8fffff.
+fffff.
+%ffffff.
++ffffff.
+t$|QRV
+T$|VQR
+L$$+L$
+L$$9L$0
+L$T;L$X
+ffffff.
+|$4)<$
+t$DRQP
+L$L+L$$
+t$DQPh
+ffffff.
++t$p+T$t
+#|$(#D$$	
+ffffff.
+ ffffff.
+L$4QRPV
+ffffff.
+fffff.
+ffffff.
+t$ SWh
+ffffff.
+t>WRQPh
+fffff.
+ffffff.
+fffff.
+l$(QRVWSU
+L$,PWQ
+D$>Sj6j
+ffffff.
+ffffff.
+ffffff.
+fffff.
+ffffff.
+|$4WVRUQP
+ffffff.
+|$4WVSRQP
+ffffff.
+|$4WVRUQP
+ffffff.
+|$4WVSRQP
+ffffff.
+%UUUU)
+,ffff.
+(ffffff.
+ffffff.
+ffffff.
+ffffff.
+ffffff.
+'ffffff.
+ffffff.
+ffffff.
+ffffff.
+ffffff.
+L$x+D$l+L$pj`QPSWj
+D$lSPj
+fffff.
+ffffff.
+ffffff.
+ffffff.
+ffffff.
+ffffff.
+ffffff.
+ffffff.
+|$TRWP
+|$TRWP
+fffff.
+D$(;D$
+4$fff.
+fffff.
+t$0RVP
+$fffff.
+9>t<h&
+\$,tU9
+ffffff.
+fffff.
+t$ j Vh
+t$ j Vh
+ffffff.
+ffffff.
+T$Htmf
+T$HF9t$@u
+fffff.
+ffffff.
+ffffff.
+t$ Wj Vh-$
+Wj Vhe$
+Wj Vh4$
+Wj Vh4$
+Wj Vh4$
+j VhK%
+ffffff.
+uB;5TG
+bffffff.
+RQPh]'
+D$,+D$(
+l$4~J1
+L$$9\$ t
+D$,;D$(
+Effff.
+D$,+D$(
+ffffff.
+fffff.
+fffff.
+7fffff.
+"ffff.
++ffff.
+ffffff.
+ffffff.
+ffffff.
+ffffff.
+fffff.
+ffffff.
+L$Tfff.
+fffff.
+SjPh2,
+t$ j Vhr,
+ffffff.
+ffffff.
+\$4j Sh
+j Wh-0
+j Wh@0
+j WhS0
+j Whh0
+ffffff.
+tr;|$4vn)
+ffffff.
+ffffff.
+T$(PQR
+fffff.
+T$4WVR
+t$8WPR
+\$ f;4;
+t$(SRP
+D$(PSVR
+fffff.
+,_f9,^w
+,{f9,yw
+,wf9,rw
+D$ f;4xu	G9|$(u
+,pf9,qw
+D$	stolf
+D$	stouf
+D$	stolf
+D$	stouf
+fffff.
+fffff.
+ffffff.
+fffff.
+++CG3P
+++CG3K1
+++CG3Q1
+|$8;D$
+t$ ShZ
+\$0;D$
+4$WUVj
+\$<USV
+|$ Wh$
+w)fffff.
+ffffff.
+fffff.
+ffffff.
+fffff.
+D$|PSW
+0ffff.
+fffff.
+D$$fff.
+D$$ffffff.
+fffff.
+Fffffff.
+ffffff.
+L$8},)
+\$p+t$
+D$<;D$8
+ffffff.
+D$49D$d
+D$x	D$
+D$<;D$8
+D$d;D$
+fffff.
+ffffff.
+$ffffff.
+fffff.
+w)fffff.
+t%ffffff.
+D$ 9D$$
+ffffff.
+fffff.
+ffffff.
+fffff.
+ffffff.
+?Stt91
+?fptP1
+	w#ffff.
+fffff.
+ffffff.
+~ffffff.
+%ffffff.
+4$ffffff.
+$ffff.
+ffffff.
+&ffffff.
+ffffff.
+	r j	h
+ffffff.
+fffff.
+Afffff.
+l$ ffffff.
+4:ffff.
+ffffff.
+fffff.
+4$fff.
+D$$;D$
+|$894$s
+fffff.
+ffffff.
+fffff.
+fffff.
+DirectDrawCreateEx called (DirectX 7 interface) - not supported
+Primary Display Driver
+DirectDrawCreateClipper called - not supported
+=== CRASH: exception %08lx at %p (%s+%lx)
+    %s address %08lx
+    eax=%08lx ebx=%08lx ecx=%08lx edx=%08lx esi=%08lx edi=%08lx ebp=%08lx esp=%08lx
+    stack+%03x: %08lx %s+%lx
+%s %s - SWAT 3 %s
+0.13.1
+add-on (context menu, FOV) for dgVoodoo
+Direct3D 11 renderer
+UNIMPLEMENTED: %s (please send this log)
+Fullscreen
+OutputWidth
+OutputHeight
+WindowWidth
+WindowHeight
+Anisotropy
+FieldOfView
+MissionResolution
+InGameResolutions
+SkipIntro
+MaxTextureSize
+DrawDistance
+ExtraResolutions
+MaxDistance
+BuiltInShaders
+==== end of frame %d ====
+trace written to %s_trace.txt
+SWAT3D9_TRACE_NOW
+%s %s frame trace
+F11: tracing 2 frames
+basic_string
+length_error was thrown in -fno-exceptions mode with message "%s"
+=texload
+note: Texture2::Load between different sizes/formats
+Surface::QueryInterface unsupported
+note: AddAttachedSurface of non-z surface
+BLT kind %d <- %d flags %lx dst %ld,%ld-%ld,%ld
+note: Blt without source, flags %08lx
+note: destination colour key blit not supported
+note: Blt DDFX effects (%08lx) ignored
+plain2prim
+note: blit straight to the front buffer (drawn on back buffer + present)
+back2back
+note: back buffer self-blit ignored
+note: unsupported Blt combination %d <- %d
+BLTFAST kind %d <- %d at %lu,%lu
+LOCK kind %d %dx%d flags %lx from %p
+screenlock
+note: screen surface locked for reading (caller %08lx) - slow path
+DirectDraw::QueryInterface unsupported
+DirectDraw object released
+ERROR: Direct3D 11 initialisation failed
+The SWAT 3 Direct3D 11 renderer could not start.
+Please send swat3d11.log (next to swat.exe).
+To play in the meantime, put your dgVoodoo files back.
+SWAT 3 renderer
+SetCooperativeLevel(hwnd=%p, flags=%08lx)
+SetDisplayMode(%lu x %lu x %lu)
+CreateSurface: primary %dx%d%s
+ with back buffer
+CreateSurface: z-buffer %dx%d %d-bit
+note: 3D render surface %dx%d differs from mode %dx%d - using surface size
+CreateSurface: 3D back buffer %dx%d
+CreateSurface: %s %dx%d %d-bit
+ alpha %u..%u (%u%% fully transparent, centre %08x)
+TEX %lu = %p %dx%d bpp %d amask %lx key %d(%lx)%s
+TEX %lu = none
+VIEWPORT %p: %lu,%lu %lux%lu  clip %.3f,%.3f %.3fx%.3f  z %.3f..%.3f
+CLEAR vp %p count %lu flags %lx color %08lx z %.4f
+   rect %ld,%ld - %ld,%ld
+Direct3D HAL (swat3d11)
+Direct3D HAL
+CreateDevice on %s surface
+back buffer
+note: DirectDrawCreate with a specific device GUID (ignored)
+DirectDrawCreate -> %p
+note: blit source rect out of bounds - clamped
+length_error was thrown in -fno-exceptions mode with message "%s"
+bad_array_new_length was thrown in -fno-exceptions mode
+IDirect3D3::CreateLight
+note: 8-bit palettized surface requested (unsupported)
+%s {%08lx-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x}
+IDirectDraw::CreatePalette
+CreateSurface (DirectDraw v1/v2 caller): %lux%lu caps %08lx
+IDirectDraw::DuplicateSurface
+IDirectDraw::EnumSurfaces
+SetCooperativeLevel from old-interface caller (hwnd=%p, flags=%08lx) ignored
+SetDisplayMode %lux%lu from old-interface caller ignored
+IDirectDraw2::CreatePalette
+IDirectDraw2::DuplicateSurface
+IDirectDraw2::EnumSurfaces
+IDirectDraw7::CreatePalette
+IDirectDraw7::DuplicateSurface
+IDirectDraw7::EnumSurfaces
+SetCooperativeLevel from DirectDraw7 caller (hwnd=%p, flags=%08lx) ignored
+SetDisplayMode %lux%lu from DirectDraw7 caller ignored
+IDirectDraw7::GetSurfaceFromDC
+SWAT 3 Direct3D 11 renderer
+IDirectDraw7::StartModeTest
+IDirectDraw7::EvaluateMode
+IDirectDrawSurface4::AddOverlayDirtyRect
+IDirectDrawSurface4::BltBatch
+IDirectDrawSurface4::EnumAttachedSurfaces
+IDirectDrawSurface4::EnumOverlayZOrders
+IDirectDrawSurface4::GetOverlayPosition
+IDirectDrawSurface4::GetPalette
+IDirectDrawSurface4::SetOverlayPosition
+IDirectDrawSurface4::UpdateOverlay
+IDirectDrawSurface4::UpdateOverlayDisplay
+IDirectDrawSurface4::UpdateOverlayZOrder
+IDirectDrawSurface4::SetSurfaceDesc
+IDirectDrawSurface4::GetPrivateData
+IDirectDrawSurface4::FreePrivateData
+IDirect3DViewport3::TransformVertices
+IDirect3DViewport3::LightElements
+IDirect3DViewport3::GetBackground
+IDirect3DViewport3::SetBackgroundDepth
+IDirect3DViewport3::GetBackgroundDepth
+IDirect3DViewport3::NextLight
+IDirect3DViewport3::SetBackgroundDepth2
+IDirect3DViewport3::GetBackgroundDepth2
+Device3::QueryInterface unsupported
+BeginScene
+end of 3D scene
+swat3d11_snap%02d.bmp
+SNAP %02d (%s)
+SET CURRENT VIEWPORT %p
+note: render target set to a non-screen surface (ignored)
+IDirect3DDevice3::Begin
+IDirect3DDevice3::BeginIndexed
+IDirect3DDevice3::Vertex
+IDirect3DDevice3::Index
+IDirect3DDevice3::End
+RS %d = %lu
+lightstate
+note: SetLightState ignored
+settransform
+note: SetTransform ignored (game uses pre-transformed vertices)
+%s prim %d fvf %lx n %lu (empty)
+%s prim %d fvf %lx verts %lu idx %lu flags %lx  x %.1f..%.1f y %.1f..%.1f z %.5f..%.5f rhw %.4f..%.4f alpha %lu..%lu
+    v%lu  %.2f %.2f  z %.6f rhw %.6f  col %08lx  uv %.3f %.3f
+after large draw
+IDirect3DDevice3::DrawPrimitiveStrided
+IDirect3DDevice3::DrawIndexedPrimitiveStrided
+IDirect3DDevice3::DrawPrimitiveVB
+IDirect3DDevice3::DrawIndexedPrimitiveVB
+IDirect3DDevice3::ComputeSphereVisibility
+TSS %lu.%d = %lu
+IDirect3D3::CreateMaterial
+IDirect3D3::FindDevice
+IDirect3D3::CreateVertexBuffer
+IDirectDrawClipper::GetClipList
+IDirectDraw4::CreatePalette
+IDirectDraw4::DuplicateSurface
+IDirectDraw4::EnumSurfaces
+IDirectDraw4::GetSurfaceFromDC
+IDirectDrawSurface3::AddOverlayDirtyRect
+IDirectDrawSurface3::BltBatch
+IDirectDrawSurface3::EnumOverlayZOrders
+IDirectDrawSurface3::GetOverlayPosition
+IDirectDrawSurface3::SetOverlayPosition
+IDirectDrawSurface3::UpdateOverlay
+IDirectDrawSurface3::UpdateOverlayDisplay
+IDirectDrawSurface3::UpdateOverlayZOrder
+IDirectDrawSurface3::SetSurfaceDesc
+IDirectDrawSurface7::AddOverlayDirtyRect
+IDirectDrawSurface7::BltBatch
+IDirectDrawSurface7::EnumAttachedSurfaces
+IDirectDrawSurface7::EnumOverlayZOrders
+IDirectDrawSurface7::GetOverlayPosition
+IDirectDrawSurface7::SetOverlayPosition
+IDirectDrawSurface7::UpdateOverlay
+IDirectDrawSurface7::UpdateOverlayDisplay
+IDirectDrawSurface7::UpdateOverlayZOrder
+IDirectDrawSurface7::SetSurfaceDesc
+IDirectDrawSurface7::GetPrivateData
+IDirectDrawSurface7::FreePrivateData
+texture %dx%d failed %08lx
+RS6 %u = %u
+TSS6 %u %u = %u
+note: texture stage %u used - only two stages are drawn
+presentfail
+Present failed %08lx (reason %08lx)
+STATE z %u zwrite %u zfunc %u | blend %u src %u dst %u | atest %u afunc %u aref %u | colorkey %u | cull %u fill %u zbias %u
+STATE fog %u mode %u color %08x start %g end %g density %g | specular %u | tfactor %08x | stencil %u
+STATE stage %d: colorop %u (arg1 %u arg2 %u) alphaop %u (arg1 %u arg2 %u) texcoord %u addr %u/%u mag %u min %u mip %u | texture %s key %d
+STATE viewport %d,%d %dx%d
+d3d11.dll
+cannot load d3d11.dll - DirectX 11 is not available on this system
+D3D11CreateDeviceAndSwapChain
+D3D11CreateDeviceAndSwapChain not found
+flip-discard
+flip-sequential
+Direct3D 11 device creation failed %08lx (a DirectX 10 class graphics card is required)
+Adapter: %s
+MSAA x%d not supported
+Direct3D 11 device created (feature level %x.%x, %s presentation), output %dx%d, vsync %d, msaa %d
+swap chain buffer unavailable
+swap chain view failed %08lx
+constant buffer failed
+geometry buffers failed
+window -> monitor %dx%d at %d,%d (SetWindowPos %d, client now %ldx%ld)
+built-in bytecode
+d3dcompiler_47.dll
+D3DCompile
+cbuffer Frame : register(b0) {
+    float4 g_vp;         // viewport x, y, width, height (render-target pixels)
+    float4 g_fogColor;
+    float4 g_fogParams;  // start, end, density, alpha reference (0..1)
+    float4 g_tfactor;
+    int4   g_s0;         // stage 0: colour op, colour arg1, colour arg2, alpha op
+    int4   g_s0b;        //          alpha arg1, alpha arg2, texcoord index, unused
+    int4   g_s1;         // stage 1, same layout
+    int4   g_s1b;
+    int4   g_misc;       // alpha test func (0 = off, else D3DCMP 1..8), fog mode (0 off, 1 vertex, 2 exp, 3 exp2, 4 linear), specular add, unused
+Texture2D    g_t0 : register(t0);
+Texture2D    g_t1 : register(t1);
+SamplerState g_smp0 : register(s0);
+SamplerState g_smp1 : register(s1);
+struct VSIn  { float4 pos : POSITION; float4 dif : COLOR0; float4 spec : COLOR1; float2 uv0 : TEXCOORD0; float2 uv1 : TEXCOORD1; };
+struct VSOut { float4 pos : SV_Position; float4 dif : COLOR0; float4 spec : COLOR1; float2 uv0 : TEXCOORD0; float2 uv1 : TEXCOORD1; };
+// Vertices arrive in DirectX 6 screen space: x, y in pixels (pixel centres on integers), z the
+// depth value, w the reciprocal of the homogeneous w.
+// 1999 hardware rasterised these exactly where they are: no clipping against the near/far planes
+// (depth saturates) and no rejection of a negative w. SWAT 3 relies on that: mirror reflections
+// are drawn with z slightly above 1 and negative reciprocal w. So only the magnitude of w is used
+// (it weights the perspective-correct interpolation), and depth clipping is off (depth clamps).
+VSOut VSMain(VSIn i) {
+    VSOut o;
+    float w = 1.0;
+    float rhw = abs(i.pos.w);
+    if (rhw > 0.0000001) w = 1.0 / rhw;
+    float x = (i.pos.x + 0.5 - g_vp.x) / g_vp.z * 2.0 - 1.0;
+    float y = 1.0 - (i.pos.y + 0.5 - g_vp.y) / g_vp.w * 2.0;
+    o.pos = float4(x * w, y * w, i.pos.z * w, w);
+    o.dif = i.dif;
+    o.spec = i.spec;
+    o.uv0 = i.uv0;
+    o.uv1 = i.uv1;
+    return o;
+float4 PickArg(int a, float4 cur, float4 tex, float4 dif, float4 spec) {
+    int sel = a & 15;
+    float4 v = dif;
+    if (sel == 1) v = cur;
+    else if (sel == 2) v = tex;
+    else if (sel == 3) v = g_tfactor;
+    else if (sel == 4) v = spec;
+    if ((a & 16) != 0) v = float4(1.0, 1.0, 1.0, 1.0) - v;
+    if ((a & 32) != 0) v = v.aaaa;
+    return v;
+float4 Combine(int op, float4 a1, float4 a2, float4 cur, float4 tex, float4 dif) {
+    float4 r = a1;
+    if (op == 3) r = a2;
+    else if (op == 4) r = a1 * a2;
+    else if (op == 5) r = a1 * a2 * 2.0;
+    else if (op == 6) r = a1 * a2 * 4.0;
+    else if (op == 7) r = a1 + a2;
+    else if (op == 8) r = a1 + a2 - 0.5;
+    else if (op == 9) r = (a1 + a2 - 0.5) * 2.0;
+    else if (op == 10) r = a1 - a2;
+    else if (op == 11) r = a1 + a2 - a1 * a2;
+    else if (op == 12) r = lerp(a2, a1, dif.a);
+    else if (op == 13) r = lerp(a2, a1, tex.a);
+    else if (op == 14) r = lerp(a2, a1, g_tfactor.a);
+    else if (op == 15) r = a1 + a2 * (1.0 - tex.a);
+    else if (op == 16) r = lerp(a2, a1, cur.a);
+    return saturate(r);
+float4 PSMain(VSOut i) : SV_Target {
+    float2 c0 = i.uv0;
+    if (g_s0b.z == 1) c0 = i.uv1;
+    float2 c1 = i.uv1;
+    if (g_s1b.z == 0) c1 = i.uv0;
+    float4 t0 = g_t0.Sample(g_smp0, c0);
+    float4 t1 = g_t1.Sample(g_smp1, c1);
+    float4 dif = i.dif;
+    float4 spec = i.spec;
+    float4 cur = dif;
+    if (g_s0.x != 1) {
+        float4 c = Combine(g_s0.x, PickArg(g_s0.y, cur, t0, dif, spec), PickArg(g_s0.z, cur, t0, dif, spec), cur, t0, dif);
+        float4 a = cur;
+        if (g_s0.w != 1) a = Combine(g_s0.w, PickArg(g_s0b.x, cur, t0, dif, spec), PickArg(g_s0b.y, cur, t0, dif, spec), cur, t0, dif);
+        cur = float4(c.rgb, a.a);
+        if (g_s1.x != 1) {
+            float4 c2 = Combine(g_s1.x, PickArg(g_s1.y, cur, t1, dif, spec), PickArg(g_s1.z, cur, t1, dif, spec), cur, t1, dif);
+            float4 a2 = cur;
+            if (g_s1.w != 1) a2 = Combine(g_s1.w, PickArg(g_s1b.x, cur, t1, dif, spec), PickArg(g_s1b.y, cur, t1, dif, spec), cur, t1, dif);
+            cur = float4(c2.rgb, a2.a);
+        }
+    int af = g_misc.x;
+    if (af != 0) {
+        float a8 = floor(cur.a * 255.0 + 0.5);
+        float r8 = floor(g_fogParams.w * 255.0 + 0.5);
+        bool keep = true;
+        if (af == 1) keep = false;
+        else if (af == 2) keep = a8 < r8;
+        else if (af == 3) keep = a8 == r8;
+        else if (af == 4) keep = a8 <= r8;
+        else if (af == 5) keep = a8 > r8;
+        else if (af == 6) keep = a8 != r8;
+        else if (af == 7) keep = a8 >= r8;
+        if (!keep) discard;
+    if (g_misc.z != 0) cur.rgb = saturate(cur.rgb + spec.rgb);
+    int fm = g_misc.y;
+    if (fm != 0) {
+        float f = spec.a;
+        float d = i.pos.z;
+        if (fm == 2) f = exp(-g_fogParams.z * d);
+        else if (fm == 3) f = exp(-(g_fogParams.z * d) * (g_fogParams.z * d));
+        else if (fm == 4) f = (g_fogParams.y - d) / max(g_fogParams.y - g_fogParams.x, 0.000001);
+        cur.rgb = lerp(g_fogColor.rgb, cur.rgb, saturate(f));
+    return cur;
+vertex shader compile failed %08lx: %s
+pixel shader compile failed %08lx: %s
+compiled with d3dcompiler_47
+shader creation failed (%s): %08lx %08lx %08lx
+shaders ready (%s)
+SV_Position
+g_fogColor
+g_fogParams
+g_tfactor
+vkd3d-shader 1.16 (Wine bundled)
+SV_Position
+SV_Target
+g_fogColor
+g_fogParams
+g_tfactor
+vkd3d-shader 1.16 (Wine bundled)
+MSAA render target failed (%08lx), disabling MSAA
+render target %dx%d failed %08lx
+render target view failed
+resolve texture failed
+render target shader view failed
+depth buffer failed %08lx
+depth view failed
+?Virtual %dx%d -> render target %dx%d (scale %.3f) on output %dx%d
+fvf_nonTL
+note: non-pretransformed vertex format %08x drawn as screen coordinates
+length_error was thrown in -fno-exceptions mode with message "%s"
+bad_array_new_length was thrown in -fno-exceptions mode
+blendfail
+CreateBlendState failed (src %u dst %u)
+CreateDepthStencilState failed
+CreateRasterizerState failed
+CreateSamplerState failed
+ESWAT3D9_TEST_INTROFLAG
+SWAT3D9_TEST_INTROSTR
+-nointro
+skip intro: this swat.exe build is not recognised - intro left on
+skip intro: could not change the setting
+skip intro: on
+SWAT3D9_TEST_FIXDELTA
+game adjustments off
+MaxTextureSize=%d ignored (use 256, 512, 1024, 2048 or 4096)
+texture size limit: this swat.exe build is not recognised - left unchanged
+texture size limit: unexpected value %u - left unchanged
+texture size limit: %d -> %d
+texture size limit: already %d
+DrawDistance=%d ignored (use 700 to 6000; 1400 = original game, 2800 = Last Resort)
+draw distance: this swat.exe build is not recognised - left unchanged
+draw distance: unexpected value %g - left unchanged
+draw distance: already %d
+draw distance: %g -> %d
+Qin-game resolutions: this swat.exe build is not recognised - unchanged
+in-game resolutions: already unlocked
+in-game resolutions: all sizes up to 2048 pixels unlocked in the game's video options
+mission resolution: left to the game
+MissionResolution=%s not understood (use desktop, game, or e.g. 1920x1080; at most 2048 each way)
+SWAT3D9_TEST_SETMODE_SLOT
+SWAT3D9_TEST_SETMODE_FN
+SWAT3D9_TEST_MENURES
+mission resolution: this swat.exe build is not recognised - left to the game
+mission resolution: %dx%d
+mission resolution: desktop size
+mission resolution: %dx%d instead of the game's %dx%d
+?dsound.dll
+QolRawMouse
+WARNING: the dgVoodoo add-on (dsound.dll from the QoL add-on) is also loaded. It is made for dgVoodoo; move it out of the game folder while using this renderer.
+user32.dll
+GetCursorPos
+SetCursorPos
+ScreenToClient
+ClientToScreen
+GetClientRect
+GetWindowRect
+GetSystemMetrics
+SetWindowPos
+GetKeyState
+%s%s.ini
+%sswat.cfg
+input translation installed on window %p
+hooked %s!%s
+R`SWAT3D9_TEST_HUDSITE
+HUD hook: this swat.exe build is not recognised - right-click command menu unavailable
+HUD hook installed
+FieldOfView: this swat.exe build is not recognised - FOV unchanged
+FieldOfView set to %d degrees (horizontal)
+SWAT3D9_TEST_SPEECH
+speech mute: this swat.exe build is not recognised - menu navigation stays audible
+speech mute installed
+?SWAT3D9_TEST_GLOBALS
+basic_string
+out_of_range was thrown in -fno-exceptions mode with message "%s"
+length_error was thrown in -fno-exceptions mode with message "%s"
+bad_array_new_length was thrown in -fno-exceptions mode
+ContextMenuKey
+context menu key: %s (code %d)
+TeamCycleKey
+TeamElementKey
+TeamRedKey
+TeamBlueKey
+OpenAtSelectedTeam
+ContextReports
+DynamicStack
+context reports: %d, stack in dynamic mode: %d
+team keys: cycle %d, element %d, red %d, blue %d; menu opens at selected team: %d
+SWAT3D9_TEST_MENUVTBL
+key name '%s' not recognised - ignored
+BACKSPACE
+RED TEAM
+BLUE TEAM
+%d   %s%s
+dynamic stack: %s
+Stack available on 9 (dynamic mode)
+restored (stealth mode)
+Stack row and button-9 row found
+menu layout not recognised - off
+All commands
+command menu (current menu %d):
+   %d '%s' -> menu %d%s
+ (unavailable)
+basic_string
+length_error was thrown in -fno-exceptions mode with message "%s"
+bad_array_new_length was thrown in -fno-exceptions mode
+menu step %d timed out
+Report: 
+context reports available:
+context menu opened
+report: %s
+nametag: %s at %d,%d (distance %.0f)
+SWAT3D9_TEST_ENGINE
+SWAT3D9_TEST_ISCLASS
+length_error was thrown in -fno-exceptions mode with message "%s"
+bad_array_new_length was thrown in -fno-exceptions mode
+QuickRestrain
+ReturnToWeapon
+usegeneric
+handcuffs
+SWAT3D9_TEST_SECURE
+SWAT3D9_TEST_NOTIFY
+quick restrain: interact/handcuffs/fire not all bound in swat.cfg - disabled
+[%s]  Restrain
+quick restrain: %s (interact %d, handcuffs %d, fire %d, gun1 %d, gun2 %d, reach %.0f)
+person no longer complied - cancelled
+handcuffs never came out
+restrained
+person no longer complied - stopped
+timed out (not restrained)
+quick restrain: started
+SWAT3D9_TEST_TRACE
+quick restrain: trace not recognised - no line-of-sight check
+quick restrain: %s
+quick restrain: own character not found - not restrained
+quick restrain: person no longer complied
+quick restrain: (no item named 'handcuffs' in inventory - restraining anyway)
+quick restrain: restrained
+quick restrain: the game did not restrain them (state %d)
+>Blood
+WallSplatter
+IncludeOfficers
+splatter_sm
+blood: wall splatter off
+SWAT3D9_TEST_BLOODSITE
+SWAT3D9_TEST_TRACE
+SWAT3D9_TEST_SPAWN
+SWAT3D9_TEST_BLOODON
+SWAT3D9_TEST_PAINTBALL
+SWAT3D9_TEST_AMMOMGR
+SWAT3D9_TEST_AMMO
+SWAT3D9_TEST_ISCLASS
+blood: this swat.exe build is not recognised - wall splatter unavailable
+blood: hit call not recognised - wall splatter unavailable
+blood: wall splatter on (reach %.0f, chance %d%%, officers %d, sprite %s%s)
+ +more
+blood: no splatter (%s)
+blood: nothing within %.0f units behind
+blood: someone else behind
+sprite=%s, depth=24
+blood: splatter at %.0f,%.0f,%.0f (%.0f units behind the wound)
+blood is off
+paintball
+no character
+excluded class
+less-lethal round
+]$C9"D
+3!XI-X
+3]X+1 
+1"EYg-
+qAZf4[
+#3:O4j
+z~3	L~
+9^Y$'cF
+d#8H%F
+3us?\y
+tpnS`;)
+CB2:fF
+~DQ(}d
+AMHo(^7XD
+v%]G{(
+[Mfd%q\F
+St14overflow_error
+St13runtime_error
+St9exception
+basic_string
+St20bad_array_new_length
+St9bad_alloc
+string_view::substr
+St12length_error
+St11logic_error
+St12out_of_range
+: no conversion
+St16invalid_argument
+: out of range
+mutex lock failed
+recursive_mutex constructor failed
+recursive_mutex lock failed
+recursive_timed_mutex lock limit reached
+%s failed to acquire mutex
+%s failed to release mutex
+%s failed to broadcast
+  Unknown pseudo relocation protocol version %d.
+  Unknown pseudo relocation bit size %d.
+%d bit pseudo relocation at %p out of range, targeting %p, yielding the value %p.
+Address %p has no image-section
+  VirtualQuery failed for %d bytes at address %p
+  VirtualProtect failed with code 0x%x
+Mingw-w64 runtime failure:
+runtime error %d
+St12domain_error
+St11range_error
+St15underflow_error
+unwind_phase2
+during phase1 personality function said it would stop here, but now in phase2 it did not stop here
+N10__cxxabiv116__shim_type_infoE
+St9type_info
+N10__cxxabiv117__class_type_infoE
+catching a class without an object?
+%s:%d: %s
+N10__cxxabiv117__pbase_type_infoE
+N10__cxxabiv119__pointer_type_infoE
+N10__cxxabiv120__function_type_infoE
+N10__cxxabiv129__pointer_to_member_type_infoE
+N10__cxxabiv123__fundamental_type_infoE
+N10__cxxabiv117__array_type_infoE
+N10__cxxabiv116__enum_type_infoE
+N10__cxxabiv120__si_class_type_infoE
+N10__cxxabiv121__vmi_class_type_infoE
+results.reason == _URC_HANDLER_FOUND
+actions & _UA_CLEANUP_PHASE
+St13bad_exception
+actions & (_UA_SEARCH_PHASE | _UA_HANDLER_FRAME | _UA_FORCE_UNWIND)
+actions & (_UA_SEARCH_PHASE | _UA_FORCE_UNWIND)
+actions & _UA_SEARCH_PHASE
+(base != 0) && "DW_EH_PE_datarel is invalid with a base of 0"
+unexpected_handler unexpectedly returned
+terminate_handler unexpectedly returned
+terminate_handler unexpectedly threw an exception
+std::exception
+std::bad_exception
+std::bad_alloc
+bad_array_new_length
+unspecified generic_category error
+Unknown error
+NSt3__112system_errorE
+NSt3__112__do_messageE
+NSt3__114error_categoryE
+NSt3__124__generic_error_categoryE
+NSt3__123__system_error_categoryE
+unknown error %d
+basic_string
+condition_variable::wait: mutex not locked
+condition_variable wait failed
+condition_variable::timed wait: mutex not locked
+condition_variable timed_wait failed
+libc++abi: 
+%s:%d: %s
+LIBUNWIND_PRINT_APIS
+LIBUNWIND_PRINT_UNWINDING
+LIBUNWIND_PRINT_DWARF
+getRegister
+unsupported x86 register
+setRegister
+getFloatRegister
+no x86 float registers
+setFloatRegister
+lastReg >= (int)cieInfo.returnAddressRegister && "register range does not contain return address register"
+parseFDEInstructions(instructions=0x%0llx)
+DW_CFA_nop
+DW_CFA_set_loc
+DW_CFA_advance_loc1: new offset=%llu
+DW_CFA_advance_loc2: new offset=%llu
+DW_CFA_advance_loc4: new offset=%llu
+DW_CFA_offset_extended(reg=%llu, offset=%lld)
+DW_CFA_restore_extended(reg=%llu)
+DW_CFA_undefined(reg=%llu)
+DW_CFA_same_value(reg=%llu)
+DW_CFA_register(reg=%llu, reg2=%llu)
+DW_CFA_remember_state
+DW_CFA_restore_state
+DW_CFA_def_cfa(reg=%llu, offset=%llu)
+DW_CFA_def_cfa_register(%llu)
+DW_CFA_def_cfa_offset(%d)
+length < static_cast<pint_t>(~0) && "pointer overflow"
+DW_CFA_def_cfa_expression(expression=0x%llx, length=%llu)
+DW_CFA_expression(reg=%llu, expression=0x%llx, length=%llu)
+DW_CFA_offset_extended_sf(reg=%llu, offset=%lld)
+DW_CFA_def_cfa_sf(reg=%llu, offset=%lld)
+DW_CFA_def_cfa_offset_sf(%d)
+DW_CFA_val_offset(reg=%llu, offset=%lld
+DW_CFA_val_offset_sf(reg=%llu, offset=%lld
+DW_CFA_val_expression(reg=%llu, expression=0x%llx, length=%llu)
+DW_CFA_GNU_args_size(%llu)
+DW_CFA_GNU_negative_offset_extended(%lld)
+DW_CFA_offset(reg=%d, offset=%lld)
+DW_CFA_advance_loc: new offset=%llu
+DW_CFA_restore(reg=%llu)
+unknown CFA opcode 0x%02X
+getEncodedP
+unknown pointer encoding
+DW_EH_PE_textrel pointer encoding not supported
+DW_EH_PE_datarel is invalid with a datarelBase of 0
+DW_EH_PE_funcrel pointer encoding not supported
+DW_EH_PE_aligned pointer encoding not supported
+getULEB128
+truncated uleb128 expression
+malformed uleb128 expression
+getSLEB128
+truncated sleb128 expression
+0 && "getCFA(): unknown location"
+evaluateExpression
+DW_OP_fbreg not implemented
+DW_OP_piece not implemented
+DW_OP_deref_size with bad size
+DWARF opcode not implemented
+getSavedRegister
+unsupported restore location for register
+unknown register
+FDE has zero length
+FDE is really a CIE
+CIE start does not match
+CIE ID is not zero
+CIE version is not 1 or 3
+raReg < 255 && "return address register too large"
+std::bad_cast
+std::bad_typeid
+St8bad_cast
+St10bad_typeid
+Pure virtual function called!
+Deleted virtual function called!
+terminating
+terminating due to %s foreign exception
+terminating due to %s exception of type %s: %s
+terminating due to %s exception of type %s
+unexpected
+0000000000000000Infinity
+0123456789abcdef
+GetSystemTimePreciseAsFileTime
+thread::join failed
+thread::detach failed
+%s:%d: %s
+unknown mangling node kind
+NodeArrayNode
+<null>
+DotSuffix
+"%.*s"
+VendorExtQualType
+QualConst
+QualVolatile
+QualRestrict
+ConversionOperatorType
+PostfixQualifiedType
+ElaboratedTypeSpefType
+TransformedType
+AbiTagAttr
+EnableIfAttr
+ObjCProtoName
+PointerType
+ReferenceType
+ReferenceKind::LValue
+ReferenceKind::RValue
+PointerToMemberType
+ArrayType
+FunctionType
+FunctionRefQual::FrefQualNone
+FunctionRefQual::FrefQualLValue
+FunctionRefQual::FrefQualRValue
+NoexceptSpec
+DynamicExceptionSpec
+FunctionEncoding
+LiteralOperator
+SpecialName
+CtorVtableSpecialName
+QualifiedName
+NestedName
+MemberLikeFriendName
+LocalName
+ModuleName
+ModuleEntity
+VectorType
+PixelVectorType
+BinaryFPType
+BitIntType
+SyntheticTemplateParamName
+TemplateParamKind::Type
+TemplateParamKind::NonType
+TemplateParamKind::Template
+TemplateParamQualifiedArg
+TypeTemplateParamDecl
+ConstrainedTypeTemplateParamDecl
+NonTypeTemplateParamDecl
+TemplateTemplateParamDecl
+TemplateParamPackDecl
+ParameterPack
+TemplateArgumentPack
+ParameterPackExpansion
+TemplateArgs
+ForwardTemplateReference(
+NameWithTemplateArgs
+GlobalQualifiedName
+ExpandedSpecialSubstitution
+SpecialSubKind::allocator
+SpecialSubKind::basic_string
+SpecialSubKind::string
+SpecialSubKind::istream
+SpecialSubKind::ostream
+SpecialSubKind::iostream
+SpecialSubstitution
+CtorDtorName
+UnnamedTypeName
+ClosureTypeName
+StructuredBindingName
+BinaryExpr
+Node::Prec::Primary
+Node::Prec::Postfix
+Node::Prec::Unary
+Node::Prec::Cast
+Node::Prec::PtrMem
+Node::Prec::Multiplicative
+Node::Prec::Additive
+Node::Prec::Shift
+Node::Prec::Spaceship
+Node::Prec::Relational
+Node::Prec::Equality
+Node::Prec::And
+Node::Prec::Xor
+Node::Prec::Ior
+Node::Prec::AndIf
+Node::Prec::OrIf
+Node::Prec::Conditional
+Node::Prec::Assign
+Node::Prec::Comma
+Node::Prec::Default
+ArraySubscriptExpr
+PostfixExpr
+ConditionalExpr
+MemberExpr
+SubobjectExpr
+EnclosingExpr
+SizeofParamPackExpr
+DeleteExpr
+PrefixExpr
+FunctionParam
+ConversionExpr
+PointerToMemberConversionExpr
+InitListExpr
+ThrowExpr
+StringLiteral
+LambdaExpr
+EnumLiteral
+IntegerLiteral
+FloatLiteral
+DoubleLiteral
+LongDoubleLiteral
+BracedExpr
+BracedRangeExpr
+RequiresExpr
+ExprRequirement
+TypeRequirement
+NestedRequirement
+ExplicitObjectParameter
+invocation function for block in 
+Ua9enable_ifI
+template parameter object for 
+vtable for 
+VTT for 
+typeinfo for 
+typeinfo name for 
+covariant return thunk to 
+thread-local wrapper routine for 
+thread-local initialization routine for 
+virtual thunk to 
+non-virtual thunk to 
+guard variable for 
+reference temporary for 
+initializer for module 
+N12_GLOBAL__N_116itanium_demangle11SpecialNameE
+N12_GLOBAL__N_116itanium_demangle4NodeE
+N12_GLOBAL__N_116itanium_demangle21CtorVtableSpecialNameE
+construction vtable for 
+(anonymous namespace)
+N12_GLOBAL__N_116itanium_demangle8NameTypeE
+N12_GLOBAL__N_116itanium_demangle10ModuleNameE
+N12_GLOBAL__N_116itanium_demangle24ForwardTemplateReferenceE
+Invalid access!
+noexcept 
+sizeof... 
+operator&=
+operator=
+operator&&
+operator&
+alignof 
+operator co_await
+const_cast
+operator()
+operator,
+operator~
+operator/=
+operator delete[]
+dynamic_cast
+operator*
+operator delete
+operator.*
+operator.
+operator/
+operator^=
+operator^
+operator==
+operator>=
+operator>
+operator[]
+operator<<=
+operator<=
+operator<<
+operator<
+operator-=
+operator*=
+operator-
+operator--
+operator new[]
+operator!=
+operator!
+operator new
+operator|=
+operator||
+operator|
+operator+=
+operator+
+operator->*
+operator++
+operator->
+operator?
+operator%=
+operator>>=
+reinterpret_cast
+operator%
+operator>>
+static_cast
+operator<=>
+sizeof 
+typeid 
+operator name does not start with 'operator'
+N12_GLOBAL__N_116itanium_demangle10BinaryExprE
+N12_GLOBAL__N_116itanium_demangle10PrefixExprE
+N12_GLOBAL__N_116itanium_demangle11PostfixExprE
+N12_GLOBAL__N_116itanium_demangle18ArraySubscriptExprE
+N12_GLOBAL__N_116itanium_demangle10MemberExprE
+N12_GLOBAL__N_116itanium_demangle7NewExprE
+N12_GLOBAL__N_116itanium_demangle10DeleteExprE
+N12_GLOBAL__N_116itanium_demangle8CallExprE
+N12_GLOBAL__N_116itanium_demangle14ConversionExprE
+N12_GLOBAL__N_116itanium_demangle15ConditionalExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+N12_GLOBAL__N_116itanium_demangle13EnclosingExprE
+signed char
+unsigned char
+unsigned short
+unsigned __int128
+N12_GLOBAL__N_116itanium_demangle14IntegerLiteralE
+N12_GLOBAL__N_116itanium_demangle8BoolExprE
+N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIfEE
+N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIdEE
+N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIeEE
+N12_GLOBAL__N_116itanium_demangle13StringLiteralE
+'block-literal'
+N12_GLOBAL__N_116itanium_demangle15UnnamedTypeNameE
+N12_GLOBAL__N_116itanium_demangle26SyntheticTemplateParamNameE
+N12_GLOBAL__N_116itanium_demangle21TypeTemplateParamDeclE
+typename 
+N12_GLOBAL__N_116itanium_demangle32ConstrainedTypeTemplateParamDeclE
+N12_GLOBAL__N_116itanium_demangle24NonTypeTemplateParamDeclE
+N12_GLOBAL__N_116itanium_demangle25TemplateTemplateParamDeclE
+template<
+> typename 
+ requires 
+N12_GLOBAL__N_116itanium_demangle21TemplateParamPackDeclE
+Popping empty vector!
+N12_GLOBAL__N_116itanium_demangle15ClosureTypeNameE
+'lambda
+shrinkToSize() can't expand!
+N12_GLOBAL__N_116itanium_demangle10LambdaExprE
+N12_GLOBAL__N_116itanium_demangle11EnumLiteralE
+N12_GLOBAL__N_116itanium_demangle13FunctionParamE
+N12_GLOBAL__N_116itanium_demangle8FoldExprE
+N12_GLOBAL__N_116itanium_demangle22ParameterPackExpansionE
+N12_GLOBAL__N_116itanium_demangle10BracedExprE
+N12_GLOBAL__N_116itanium_demangle15BracedRangeExprE
+N12_GLOBAL__N_116itanium_demangle12InitListExprE
+N12_GLOBAL__N_116itanium_demangle29PointerToMemberConversionExprE
+N12_GLOBAL__N_116itanium_demangle15ExprRequirementE
+ noexcept
+N12_GLOBAL__N_116itanium_demangle15TypeRequirementE
+ typename 
+N12_GLOBAL__N_116itanium_demangle17NestedRequirementE
+N12_GLOBAL__N_116itanium_demangle12RequiresExprE
+N12_GLOBAL__N_116itanium_demangle13SubobjectExprE
+ at offset 
+N12_GLOBAL__N_116itanium_demangle19SizeofParamPackExprE
+sizeof...
+N12_GLOBAL__N_116itanium_demangle13NodeArrayNodeE
+N12_GLOBAL__N_116itanium_demangle9ThrowExprE
+throw 
+N12_GLOBAL__N_116itanium_demangle13QualifiedNameE
+N12_GLOBAL__N_116itanium_demangle8DtorNameE
+N12_GLOBAL__N_116itanium_demangle22ConversionOperatorTypeE
+operator 
+N12_GLOBAL__N_116itanium_demangle15LiteralOperatorE
+operator"" 
+N12_GLOBAL__N_116itanium_demangle19GlobalQualifiedNameE
+N12_GLOBAL__N_116itanium_demangle19SpecialSubstitutionE
+N12_GLOBAL__N_116itanium_demangle27ExpandedSpecialSubstitutionE
+<char, std::char_traits<char>
+, std::allocator<char>
+allocator
+basic_string
+basic_istream
+basic_ostream
+basic_iostream
+N12_GLOBAL__N_116itanium_demangle10AbiTagAttrE
+N12_GLOBAL__N_116itanium_demangle21StructuredBindingNameE
+N12_GLOBAL__N_116itanium_demangle12CtorDtorNameE
+N12_GLOBAL__N_116itanium_demangle12ModuleEntityE
+N12_GLOBAL__N_116itanium_demangle20MemberLikeFriendNameE
+::friend 
+N12_GLOBAL__N_116itanium_demangle10NestedNameE
+string literal
+N12_GLOBAL__N_116itanium_demangle9LocalNameE
+N12_GLOBAL__N_116itanium_demangle13ParameterPackE
+N12_GLOBAL__N_116itanium_demangle12TemplateArgsE
+N12_GLOBAL__N_116itanium_demangle20NameWithTemplateArgsE
+N12_GLOBAL__N_116itanium_demangle20TemplateArgumentPackE
+N12_GLOBAL__N_116itanium_demangle25TemplateParamQualifiedArgE
+N12_GLOBAL__N_116itanium_demangle12EnableIfAttrE
+ [enable_if:
+N12_GLOBAL__N_116itanium_demangle23ExplicitObjectParameterE
+N12_GLOBAL__N_116itanium_demangle16FunctionEncodingE
+ const
+ volatile
+ restrict
+N12_GLOBAL__N_116itanium_demangle9DotSuffixE
+unsigned int
+unsigned long
+long long
+unsigned long long
+long double
+decimal64
+decimal128
+decimal32
+std::bfloat16_t
+short _Accum
+unsigned short _Accum
+unsigned _Accum
+long _Accum
+unsigned long _Accum
+short _Fract
+unsigned short _Fract
+unsigned _Fract
+long _Fract
+unsigned long _Fract
+decltype(auto)
+ decltype(auto)
+std::nullptr_t
+ complex
+ imaginary
+N12_GLOBAL__N_116itanium_demangle12NoexceptSpecE
+N12_GLOBAL__N_116itanium_demangle20DynamicExceptionSpecE
+N12_GLOBAL__N_116itanium_demangle12FunctionTypeE
+objcproto
+N12_GLOBAL__N_116itanium_demangle13ObjCProtoNameE
+N12_GLOBAL__N_116itanium_demangle17VendorExtQualTypeE
+N12_GLOBAL__N_116itanium_demangle8QualTypeE
+N12_GLOBAL__N_116itanium_demangle15TransformedTypeE
+N12_GLOBAL__N_116itanium_demangle12BinaryFPTypeE
+N12_GLOBAL__N_116itanium_demangle10BitIntTypeE
+unsigned 
+N12_GLOBAL__N_116itanium_demangle20PostfixQualifiedTypeE
+N12_GLOBAL__N_116itanium_demangle15PixelVectorTypeE
+pixel vector[
+N12_GLOBAL__N_116itanium_demangle10VectorTypeE
+N12_GLOBAL__N_116itanium_demangle9ArrayTypeE
+0123456789ABCDEF
+N12_GLOBAL__N_116itanium_demangle19PointerToMemberTypeE
+N12_GLOBAL__N_116itanium_demangle22ElaboratedTypeSpefTypeE
+N12_GLOBAL__N_116itanium_demangle11PointerTypeE
+objc_object
+N12_GLOBAL__N_116itanium_demangle13ReferenceTypeE
+The associated promise has been destructed prior to the associated state becoming ready.
+The future has already been retrieved from the promise or packaged_task.
+The state of the promise has already been set.
+Operation not permitted on an object without an associated state.
+unspecified future_errc value
+NSt3__112future_errorE
+NSt3__117__assoc_sub_stateE
+NSt3__114__shared_countE
+NSt3__123__future_error_categoryE
+unique_lock::unlock: not locked
+St16nested_exception
+bad_weak_ptr
+NSt3__119__shared_weak_countE
+NSt3__112bad_weak_ptrE
+ddraw.dll
+DirectDrawCreate
+DirectDrawCreateClipper
+DirectDrawCreateEx
+DirectDrawEnumerateA
+DirectDrawEnumerateExA
+AdjustWindowRect
+CallWindowProcA
+ClientToScreen
+ClipCursor
+DispatchMessageA
+GetAsyncKeyState
+GetClientRect
+GetCursorPos
+GetForegroundWindow
+GetKeyNameTextA
+GetKeyState
+GetMonitorInfoA
+GetSystemMetrics
+GetWindowLongA
+GetWindowRect
+MapVirtualKeyA
+MessageBoxA
+MonitorFromWindow
+PeekMessageA
+ScreenToClient
+SetCursorPos
+SetWindowLongA
+SetWindowPos
+TranslateMessage
+CreateCompatibleDC
+CreateDIBSection
+CreateFontA
+DeleteObject
+GetTextExtentPoint32A
+SelectObject
+SetBkMode
+SetTextAlign
+SetTextColor
+strerror_s
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+CloseHandle
+DeleteCriticalSection
+DisableThreadLibraryCalls
+EnterCriticalSection
+FlsGetValue
+FlsSetValue
+FlushInstructionCache
+FormatMessageA
+GetCurrentProcess
+GetCurrentThreadId
+GetEnvironmentVariableA
+GetLastError
+GetModuleFileNameA
+GetModuleHandleA
+GetModuleHandleExA
+GetModuleHandleW
+GetPrivateProfileIntA
+GetPrivateProfileStringA
+GetProcAddress
+GetSystemInfo
+GetSystemTimeAsFileTime
+GetThreadId
+GetTickCount
+InitOnceExecuteOnce
+InitializeCriticalSection
+IsBadReadPtr
+IsBadStringPtrA
+K32EnumProcessModules
+LeaveCriticalSection
+LoadLibraryA
+LocalFree
+MultiByteToWideChar
+QueryPerformanceCounter
+QueryPerformanceFrequency
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+SetUnhandledExceptionFilter
+SleepConditionVariableSRW
+SwitchToThread
+TlsGetValue
+TryAcquireSRWLockExclusive
+TryEnterCriticalSection
+VirtualProtect
+VirtualQuery
+WaitForSingleObjectEx
+WakeAllConditionVariable
+WakeConditionVariable
+WideCharToMultiByte
+lstrcmpiA
+lstrcpynA
+localeconv
+USER32.dll
+GDI32.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-convert-l1-1-0.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-utility-l1-1-0.dll
+KERNEL32.dll
+api-ms-win-crt-heap-l1-1-0.dll
+api-ms-win-crt-locale-l1-1-0.dll
+api-ms-win-crt-environment-l1-1-0.dll
+SLLD PDB.
+0-0>0V0x0
+1$1*1K1_1k1
+1)2=2N2f2{2
+3+31363=3s3
+4#4/4l4
+5,5>5m5
+8$828B8O8l8
+;!;(;/;4;9;@;G;L;Q;X;_;d;i;p;w;|;
+<"<)<0<5<:<A<H<M<R<Y<`<e<j<q<x<}<
+=<=D=M=S=`=v=|=
+>*>]>k>y>
+2 2@2\2x2
+6?7N7p7
+=E>M>d>
+2]3h3n3}3
+5`5j5u5
+;a<x=$>`>
+>!?&?6?l?
+2j2K3Z3_3
+</<F<s<
+=&=6=C=
+='>B?G?a?g?
+1!1C1Z1
+1'343V3m3
+7&8+8V8":':5:	;
+=4>;>O>V>
+!515A5Q5A6Q6a8
+=!=N=p=
+516A6Q6a6q6C7
+,0Q1a1
+0!1A1Q1
+=+=M=d=
+6g7r7	8
+888O8	9)9
+00>0a0q0
+<D>H>L>P>T>X>
+11171Q1W1q1w1
+2$2\2p2
+3-3B3H3k3y3
+4#464G4R4
+545@5H5P5h5s5
+6$7F7g7o7z7
+868>8R8a8q8z8
+:):0:7:>:D:N:\:g:o:w:~:
+;*;1;7;A;K;T;Y;^;c;i;s;
+<#<,<6<j<x<
+=(=/=?=O=T=n=
+>+>2>Z>_>q>
+?!?D?M?V?d?q?w?|?
+0%0.0>0G0W0`0p0z0
+1 1&1+101@1I1Y1b1r1{1
+2#2A2Q2i2y2
+3'3-393?3J3P3[3e3i3o3x3~3
+5]5j5p5
+6(696?6E6K6v6
+7#7H7V7
+8+848B8]8d8x8
+9(9?9T9Z9_9q9{9
+:.:;:K:W:h:t:z:
+;";9;A;X;b;l;z;
+;-<:<@<\<
+=X=a=g=u=
+>6>I>R>X>`>q>w>}>
+0$0*00060u0
+1!1,171B1M1X1c1n1
+2'222=2H2\2c2k2v2
+3%3:3@3F3L3^3o3u3{3
+5 5&585M5S5Y5_5x5
+6!6G6P6V6c6m6s6y6
+7!7'707=7J7
+: :1:A:G:P:X:
+> >&>3>O>
+030[0a0
+1!111F1L1R1X1j1{1
+2 2.272?2N2Y2w2
+354C4Q4V4
+656G6X6`6r6
+8O9T9n9z9
+;'<A<U<a<u<
+<>>H>Q>y>
+>"?=?B?V?_?d?
+0h1p1|1
+1L2W2^2l2
+455B5U5h5
+6*646=6R6X6]6i6s6y6
+7*70767C7}7
+8!8=8I8
+919;9E9M9q9w9
+:$:*:::O:U:[:a:s:
+<1<O<W<a<k<s<{<
+=">1>J>P>k>w>
+0!0*020l0z0
+2Q2`2f2o2|2
+6B6O6U6]6j6w6
+7*7<7f7x7
+8.888A8^8g8p8
+9"97:C:V:
+<)=A=O=c=j=r=
+>#>7>E>Z>`>f>l>~>
+?!?3???N?W?g?t?
+0*000U0d0s0N1[1j1p1
+222>2j2p2
+4&4,4H4T4`465C5M5U5k5}5
+6-666<6L6a6g6m6s6
+9#9,929G9P9V9c9x9~9
+:":(:9:?:E:K:Z:k:q:w:}:
+; ;&;2;G;M;S;Y;k;|;
+< <&<,<2<8<=<M<V<^<h<p<z<
+=B=Q=X=]=c=i=o=v={=
+> >&>8>I>O>U>[>
+?*?>?D?Y?h?|?
+2"2>2P2g2l2
+3$3,333:3A3H3N3X3b3m3t3z3
+4&404:4C4Q4[4e4n4
+9Q:a:w:
+;!;D;b;z;
+<*<><D<y<
+=1=I=S=
+>9>X>b>g>n>
+?,?5?M?W?
+1,1C1K1Q1l1
+2#252@2J2n2t2
+313Q3t3}3
+5"5+525;5Z5c5h5w5|5
+6%6C6R6m6
+8%828;8\8d8x8
+:%:0:6:D:J:\:d:l:t:
+:(;/;5;G;j;z;
+<@=F>p>
+0"0C0~0
+2h2t2|2
+4!444:4W4d4n4
+5"5+595@5F5
+7 8&8D8J8X8
+:";(;t;M<S<
+4!4W4o4
+5!5&545?5D5I5W5`5e5j5x5
+6"6)686?6E6K6Q6V6f6l6
+657N7|7
+808Q8Z8g8q8x8
+8	919`9
+:#:3:;:C:i:}:
+<'<0<9<
+=.=8=M=V=e=s=}=
+>$>5>;>G>i>n>
+>Q?V?a?
+0!0'01070A0G0X0
+1+151E1L1m5<6H6
+8%8+8@8G8\8s8
+:":B:L:R:i:t:
+: ;,;2;=;P;a;k;q;
+;Q<b<|<
+=%=.=A=R=[=a=
+>?>G>S>[>d>l>r>
+?-?S?`?f?v?
+0J0P0[0a0h0u0
+131@1G1M1[1e1o1u1
+2 2e2r2x2
+6(6/6;6A6X6b6z6
+8!888>8u8
+<?<E<L<T<d<
+=(=2=;=H=
+>5>?>E>Z>r>|>
+9&:=:H:
+<-<B<L<Q<c<x<
+= =.=5=<=D=O=Z=`=i=
+>#>?>a>
+1K1c1|1
+2 2F2Z2o2
+32=<=F=O=]=g=q=z=
+00080=0H0P0U0c0k0w0
+1.161<1R1X1b1k1t1|1
+2<2C2P2U2[2e2k2q2w2}2
+5!5.54595G5P5Y5c5h5p5
+676@6T6]6j6p6}6
+8 8-8:8@8Z8g8w8
+9?9L9W9
+:^:p:{:
+;%;A;M;T;
+;%<s<y<
+<2=8=R=a=
+>'>R>}>
+?"?-?7?<?B?K?b?t?}?
+0-0S0[0`0k0s0x0
+151>1D1T1d1{1
+2!2:2@2H2N2g2m2u2{2
+31383@3J3T3^3h3t3
+5"535E5S5x5~5
+7M7^7m7v7
+7<8K8P8\8n8|8
+>)>F>c>w>
+0$0;0X0l0
+1)1=1P1g1u1
+9"9'9?9[9`9j9o9
+:2:H:[:`:j:o:|:
+<5<?<`<m<
+=&=7=^=d=i=
+?$?6?x?
+;M<Z<#=D=`=
+1$1Z1g1
+162A2h2s2
+636>6h6q6
+7<7A7^7c7
+:,:1:e:j:S<
+:	;j=o=u=
+4!6A6R6q6
+778A8N8f8
+929H9]9j9y9
+:6:J:W:
+>S>\>b>s>
+9?9M9S9t9z9
+:<:J:R:X:^:i:o:v:|:
+1 1)1J1Z1e1
+2 2I2Y2d2
+5$585R5k5
+6@6I6U6`6j6y6
+7!7+797C7K7X7~7
+8&808>8H8P8^8
+929;9E9S9]9e9t9
+:4:]:f:p:~:
+;(;N;k;t;~;
+<H<\<i<
+>"?3?T?Y?}?
+1>2J2O2T2|2
+3 3$3(3,3034383<3@3D3R3\3b3
+5$515=5B5G5
+< <$<(<,<0<4<8<<<@<
+=!=e=k=x=e>r>
+4.5;5`5m5
+8+989U9h9u9
+:*:7:A:O:Y:g:t:~:
+;+;5;C;M;[;i;p;~;
+< <*<4<B<L<Z<j<t<
+=(=2=@=J=X=b=l=z=
+> >.>8>F>j>q>
+?(?2?@?J?X?h?o?}?
+1&131C1Q1[1e1p1
+2#222?2O2\2k2x2
+3#3-3<3d3m3}3
+42474=4G4L4R4\4a4g4l4p4t4x4|4
+5 5$5(5,5054585_5
+6 6&6,6064686<6@6D6H6L6P6
+727>7C7L7P7T7X7\7`7d7h7l7p7t7x7|7
+9&9.9:9?9D9h9l9p9t9x9|9
+9";.;3;8;\;h;0<E<
+1#2/242<2H2P2\2d2p2u2}2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+7!8F9P9V9c9
+=-=8=?=P=]=i=u=z=
+==>O>g>7?p?
+1"141F1X1e1
+474D4I4N4b4
+5$6-646E6P6T6Y6f6o6
+7?8G8L8q8~8
+8#919@9|9
+:):.:K:
+;!;p;x;};
+<+<m<y<~<
+=P=X=]={=
+>6>P>]>
+>3?@?p?|?
+0&0`0~0
+3?3L3e3r3
+4(454^4j4o4
+405<5A5
+5 6,616
+7@8L8Q8
+80989=9[9v9
+:C;P;d;
+=$>1>O>
+222?2I2V2~2
+3P3X3]3{3
+5>5J5O5
+8!8?8p8|8
+9@9L9Q9
+<3<@<E<T<
+=P=\=a=
+1!1?1n1z1
+2@2L2Q2
+6P6X6]6{6
+:N:Z:_:
+;$;1;B;O;`;m;~;
+="=^=j=o=
+=0><>A>
+?@?H?M?k?
+2'242A2N2[2h2u2
+3%323<3I3S3`3j3w3
+3%424`4
+6%727r7
+;$;`;l;q;
+=6>C>~>
+4>4J4O4
+:<:n:z:
+;>;J;O;
+7d7*828
+50686T7Y7%878U8
+:4:Y:`:y:
+;$;7;J;S;\;o;
+5H6>7N8{9
+7#7;7W7
+<e<,>_?
+2^2&343F3W3
+<,<=<N<_<
+8D8N8S8F9
+:N;x<)=1=r?
+}1V3r3
+:,:A=K=P=b=l=q=:>
+8.868B8N8_819
+0L1V1[1
+9'9&;B;
+>1?R?n?
+2"293U3q4
+4U5q5E6a6v9
+<1<;<B<Q<V<g<n<
+=+=0=B=I=m=w=|=
+6\9d9v;n<
+;J<V<b<
+3n3s3S4|4
+4Y586B6G6
+7!7)717U7i7x7}7
+<,<C<W<c<i<q<y<
+=H=Q=W=_=e=
+L0a0g0o0u0
+3'3V3^3d3W4c4h4o4
+;;;F;Q;\;
+;,<7<S<\<b<s<
+92:8:>:D:J:P:V:\:b:h:n:t:z:
+;";(;.;4;:;@;F;L;R;X;^;d;j;p;v;|;
+<$<*<0<6<<<B<H<N<T<Z<`<f<l<r<x<~<
+= =&=,=2=8=>=D=J=P=V=\=b=h=n=t=z=
+3P4T4X4\4`4d4h4l4p4t4x4|4
+5`5d5h5l5
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3
+4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3p5t5x5|5
+6$6,646<6D6L6T6\6d6
+: :$:(:,:0:4:8:<:8;<;@;D;H;L;|;
+t9x9|9
+:<:@:D:l:p:t:
+?4?8?<?@?H?L?P?T?\?`?d?h?l?p?t?
+0 0$0(00;4;8;<;@;h;l;
+;4<8<<<d<h<l<
+= =$=(=0=4=8=<=@=D=H=L=P=|=
+> >(>,>4><>@>H>P>T>\>`>h>p>t>|>
+? ?$?,?0?8?@?D?L?T?X?`?d?l?t?x?
+0$0(00040<0D0H0P0X0\0d0h0p0x0|0
+1 1,10181<1D1L1P1X1`1d1l1p1x1
+2 2(24282@2D2L2T2X2`2l2p2x2|2
+3 3$3(3,303\3`3d3h3l3p3t3x3|3
+4<4@4D4H4L4P4X4\4`4d4h4l4t4x4|4
+4$5(5,5D6H6L6P6T6X6\6`6d6h6l6p6t6x6
+7 7$7(7,707\7`7d7h7
+8<8@8D8H8L8P8T8X8`8d8h8l8p8t8x8
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+=\>`>d>h>
+2 2$2(2,2024282<2@2D2H2L2P2
+1 1$1(1,101@1D1H1<2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3
+3t4x4|4
+p1t1x1|1
+2 2$2(2,2024282<2@2
+2$3(3,3034383<3@3D3H3L3P3T3X3
+7(747@7L7X7d7p7|7
+8$808<8H8T8`8l8x8
+9 9,989D9P9\9h9t9
+: :$:(:,:0:4:p:t:x:|:
+;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+;(<,<0<4<8<<<@<D<H<L<P<T<X<\<
+= =$=(=,=0=4=8=<=p=t=x=|=
+>X>\>`>d>h>l>p>t>x>|>
+0 0$0(0,0004080<0@0D0H0L0
+1 1$1(1,1p1t1x1|1
+2 2t2x2|2
+3 3$3(3,303|3
+4 4$4(4,404
+5 5$5(5,505
+5(6,6064686<6@6D6H6L6P6T6X6\6
+64787<7@7D7H7L7P7T7X7\7`7d7h7
+7 8$8(8,8084888<8@8D8H8L8P8T8
+9 9$9(9,90949p9t9x9|9
+:X:\:`:d:h:l:p:t:x:|:
+;X;\;`;d;h;l;p;t;x;|;
+<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+<4=8=<=@=D=H=L=P=T=X=\=`=d=h=
+=$>(>,>0>4>8><>@>D>H>L>P>T>X>
+? ?$?(?,?0?4?8?<?@?D?|?
+0 0$0(0,00040|0
+1 1$1`1d1h1
+1d2h2l2p2t2x2|2
+3P3T3X3\3`3d3h3l3p3t3x3|3
+3044484<4@4D4H4L4P4T4X4\4`4d4
+4,5054585<5@5D5H5L5P5T5X5\5`5
+6 6$6(6,6064686<6x6|6
+7 7$7h7l7p7t7x7|7
+8`8d8h8l8p8t8x8|8
+9p9t9x9|9
+= =$=(=,=0=4=8=<=@=D=H=L=
+> >$>(>,>0>4>8><>x>|>
+? ?T?X?\?`?d?h?l?p?t?x?|?
+80<0@0D0H0L0P0T0X0\0`0d0h0l0
+0014181<1@1D1H1L1P1T1X1\1`1d1
+2 2$2(2,2024282<2@2D2H2L2P2
+4 4$4(4,4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?
+2 2$2(2,20242T2X2x2|2
+3 3$3(3034383<3@3D3H3L3X3
+0,181T1X1p1t1x1|1
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3
+ 0P0w0
+2(2\2p2
+3 4T4l4
+> >T>p>
+1(2D2p2
+9,9L9x9
+?C?X?a?
+0 1)1p1y1
+6!6<6E6`6i6
+:,:@:T:h:|:
+;,;@;g;|;
+=,>@>T>
+?(?<?T?l?
+182A2X2a2
+3,3@3h3
+>0>P>p>
+?0?L?`?t?
+9(9<9P9o9
+:(:D:X:t:
+:(;@;X;p;
+<(=<=T=|=
+4	4d4m4
+5$5-5H5Q5l5u5
+(0`0t0
+0,1@1X1l1
+606P6d6x6
+8(8S8h8q8
+9(9P9d9
+;<;E;d;m;
+4(4P4x4
+5$686L6`6t6
+: ;<;l;
+=$>T>|>
+6$7L7t7
+<8<`<|<
+8(9D9`9
+?,?H?d?
+,0H0p0
+0(1D1X1l1
+= >4>H>d>
+3D5M5P6Y6H7Q7
+888A8t8}8
+?	?p?y?
+3$4P4d4
+4(515p5y5
+5,656|6
+6<7E7t7}7
+8 9)9h9q9
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+crtdll.c
+internal.h
+dxguid.c
+tlssup.c
+gccmain.c
+natstart.c
+internal.h
+cinitexe.c
+pseudo-reloc.c
+ucrt_amsg_exit.c
+ceilf.S
+K>]YKg=>0L=
+floorf.S
+K>]YKg=>0L=
+ucrt_fprintf.c
+ucrt_snprintf.c
+ucrt_sscanf.c
+ucrt_vfprintf.c
+ucrt_vsnprintf.c
+gdtoa.h
+strtopx.c
+wcstof.c
+mb_wc_common.h
+wcstold.c
+ucrt_swprintf.c
+tlsthrd.c
+tlsmcrt.c
+pesect.c
+pseudo-reloc-list.c
+ucrt___local_stdio_printf_options.c
+ucrt___local_stdio_scanf_options.c
+strtodg.c
+gdtoa.h
+gdtoaimp.h
+g__fmt.c
+gdtoa.h
+mb_wc_common.h
+CRT_fp10.c
+misc.c
+gdtoaimp.h
+gdtoa.h
+gdtoa.h
+gethex.c
+gdtoaimp.h
+smisc.c
+gdtoaimp.h
+gdtoa.h
+gmisc.c
+gdtoaimp.h
+gdtoa.h
+gdtoaimp.h
+gdtoa.h
+gdtoa.h
+hexnan.c
+gdtoaimp.h
+gdtoa.h
+dmisc.c
+hd_init.c
+loadcfg.S
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+atexit_table
+unsigned int
+ExceptionList
+ExceptionCode
+unsigned long
+ExceptionFlags
+ExceptionRecord
+ExceptionAddress
+NumberParameters
+ExceptionInformation
+ULONG_PTR
+ContextFlags
+FloatSave
+ControlWord
+StatusWord
+ErrorOffset
+ErrorSelector
+DataOffset
+DataSelector
+RegisterArea
+unsigned char
+Cr0NpxState
+FLOATING_SAVE_AREA
+ExtendedRegisters
+EXCEPTION_ROUTINE
+PEXCEPTION_ROUTINE
+StackBase
+StackLimit
+SubSystemTib
+FiberData
+ArbitraryUserPointer
+NtCurrentTeb
+Destination
+Comperand
+hDllHandle
+lpreserved
+lock_free
+DllMainCRTStartup
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+GUID_MAX_POWER_SAVINGS
+unsigned long
+unsigned short
+unsigned char
+GUID_MIN_POWER_SAVINGS
+GUID_TYPICAL_POWER_SAVINGS
+NO_SUBGROUP_GUID
+ALL_POWERSCHEMES_GUID
+GUID_POWERSCHEME_PERSONALITY
+GUID_ACTIVE_POWERSCHEME
+GUID_IDLE_RESILIENCY_SUBGROUP
+GUID_IDLE_RESILIENCY_PERIOD
+GUID_DISK_COALESCING_POWERDOWN_TIMEOUT
+GUID_EXECUTION_REQUIRED_REQUEST_TIMEOUT
+GUID_VIDEO_SUBGROUP
+GUID_VIDEO_POWERDOWN_TIMEOUT
+GUID_VIDEO_ANNOYANCE_TIMEOUT
+GUID_VIDEO_ADAPTIVE_PERCENT_INCREASE
+GUID_VIDEO_DIM_TIMEOUT
+GUID_VIDEO_ADAPTIVE_POWERDOWN
+GUID_MONITOR_POWER_ON
+GUID_DEVICE_POWER_POLICY_VIDEO_BRIGHTNESS
+GUID_DEVICE_POWER_POLICY_VIDEO_DIM_BRIGHTNESS
+GUID_VIDEO_CURRENT_MONITOR_BRIGHTNESS
+GUID_VIDEO_ADAPTIVE_DISPLAY_BRIGHTNESS
+GUID_CONSOLE_DISPLAY_STATE
+GUID_ALLOW_DISPLAY_REQUIRED
+GUID_VIDEO_CONSOLE_LOCK_TIMEOUT
+GUID_ADAPTIVE_POWER_BEHAVIOR_SUBGROUP
+GUID_NON_ADAPTIVE_INPUT_TIMEOUT
+GUID_DISK_SUBGROUP
+GUID_DISK_POWERDOWN_TIMEOUT
+GUID_DISK_IDLE_TIMEOUT
+GUID_DISK_BURST_IGNORE_THRESHOLD
+GUID_DISK_ADAPTIVE_POWERDOWN
+GUID_SLEEP_SUBGROUP
+GUID_SLEEP_IDLE_THRESHOLD
+GUID_STANDBY_TIMEOUT
+GUID_UNATTEND_SLEEP_TIMEOUT
+GUID_HIBERNATE_TIMEOUT
+GUID_HIBERNATE_FASTS4_POLICY
+GUID_CRITICAL_POWER_TRANSITION
+GUID_SYSTEM_AWAYMODE
+GUID_ALLOW_AWAYMODE
+GUID_ALLOW_STANDBY_STATES
+GUID_ALLOW_RTC_WAKE
+GUID_ALLOW_SYSTEM_REQUIRED
+GUID_SYSTEM_BUTTON_SUBGROUP
+GUID_POWERBUTTON_ACTION
+GUID_SLEEPBUTTON_ACTION
+GUID_USERINTERFACEBUTTON_ACTION
+GUID_LIDCLOSE_ACTION
+GUID_LIDOPEN_POWERSTATE
+GUID_BATTERY_SUBGROUP
+GUID_BATTERY_DISCHARGE_ACTION_0
+GUID_BATTERY_DISCHARGE_LEVEL_0
+GUID_BATTERY_DISCHARGE_FLAGS_0
+GUID_BATTERY_DISCHARGE_ACTION_1
+GUID_BATTERY_DISCHARGE_LEVEL_1
+GUID_BATTERY_DISCHARGE_FLAGS_1
+GUID_BATTERY_DISCHARGE_ACTION_2
+GUID_BATTERY_DISCHARGE_LEVEL_2
+GUID_BATTERY_DISCHARGE_FLAGS_2
+GUID_BATTERY_DISCHARGE_ACTION_3
+GUID_BATTERY_DISCHARGE_LEVEL_3
+GUID_BATTERY_DISCHARGE_FLAGS_3
+GUID_PROCESSOR_SETTINGS_SUBGROUP
+GUID_PROCESSOR_THROTTLE_POLICY
+GUID_PROCESSOR_THROTTLE_MAXIMUM
+GUID_PROCESSOR_THROTTLE_MINIMUM
+GUID_PROCESSOR_ALLOW_THROTTLING
+GUID_PROCESSOR_IDLESTATE_POLICY
+GUID_PROCESSOR_PERFSTATE_POLICY
+GUID_PROCESSOR_PERF_INCREASE_THRESHOLD
+GUID_PROCESSOR_PERF_DECREASE_THRESHOLD
+GUID_PROCESSOR_PERF_INCREASE_POLICY
+GUID_PROCESSOR_PERF_DECREASE_POLICY
+GUID_PROCESSOR_PERF_INCREASE_TIME
+GUID_PROCESSOR_PERF_DECREASE_TIME
+GUID_PROCESSOR_PERF_TIME_CHECK
+GUID_PROCESSOR_PERF_BOOST_POLICY
+GUID_PROCESSOR_PERF_BOOST_MODE
+GUID_PROCESSOR_IDLE_ALLOW_SCALING
+GUID_PROCESSOR_IDLE_DISABLE
+GUID_PROCESSOR_IDLE_STATE_MAXIMUM
+GUID_PROCESSOR_IDLE_TIME_CHECK
+GUID_PROCESSOR_IDLE_DEMOTE_THRESHOLD
+GUID_PROCESSOR_IDLE_PROMOTE_THRESHOLD
+GUID_PROCESSOR_CORE_PARKING_INCREASE_THRESHOLD
+GUID_PROCESSOR_CORE_PARKING_DECREASE_THRESHOLD
+GUID_PROCESSOR_CORE_PARKING_INCREASE_POLICY
+GUID_PROCESSOR_CORE_PARKING_DECREASE_POLICY
+GUID_PROCESSOR_CORE_PARKING_MAX_CORES
+GUID_PROCESSOR_CORE_PARKING_MIN_CORES
+GUID_PROCESSOR_CORE_PARKING_INCREASE_TIME
+GUID_PROCESSOR_CORE_PARKING_DECREASE_TIME
+GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_DECREASE_FACTOR
+GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_THRESHOLD
+GUID_PROCESSOR_CORE_PARKING_AFFINITY_WEIGHTING
+GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_DECREASE_FACTOR
+GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_THRESHOLD
+GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_WEIGHTING
+GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_THRESHOLD
+GUID_PROCESSOR_PARKING_CORE_OVERRIDE
+GUID_PROCESSOR_PARKING_PERF_STATE
+GUID_PROCESSOR_PARKING_CONCURRENCY_THRESHOLD
+GUID_PROCESSOR_PARKING_HEADROOM_THRESHOLD
+GUID_PROCESSOR_PERF_HISTORY
+GUID_PROCESSOR_PERF_LATENCY_HINT
+GUID_PROCESSOR_DISTRIBUTE_UTILITY
+GUID_SYSTEM_COOLING_POLICY
+GUID_LOCK_CONSOLE_ON_WAKE
+GUID_DEVICE_IDLE_POLICY
+GUID_ACDC_POWER_SOURCE
+GUID_LIDSWITCH_STATE_CHANGE
+GUID_BATTERY_PERCENTAGE_REMAINING
+GUID_GLOBAL_USER_PRESENCE
+GUID_SESSION_DISPLAY_STATUS
+GUID_SESSION_USER_PRESENCE
+GUID_IDLE_BACKGROUND_TASK
+GUID_BACKGROUND_TASK_NOTIFICATION
+GUID_APPLAUNCH_BUTTON
+GUID_PCIEXPRESS_SETTINGS_SUBGROUP
+GUID_PCIEXPRESS_ASPM_POLICY
+GUID_ENABLE_SWITCH_FORCED_SHUTDOWN
+PPM_PERFSTATE_CHANGE_GUID
+PPM_PERFSTATE_DOMAIN_CHANGE_GUID
+PPM_IDLESTATE_CHANGE_GUID
+PPM_PERFSTATES_DATA_GUID
+PPM_IDLESTATES_DATA_GUID
+PPM_IDLE_ACCOUNTING_GUID
+PPM_IDLE_ACCOUNTING_EX_GUID
+PPM_THERMALCONSTRAINT_GUID
+PPM_PERFMON_PERFSTATE_GUID
+PPM_THERMAL_POLICY_CHANGE_GUID
+VIRTUAL_STORAGE_TYPE_VENDOR_UNKNOWN
+VIRTUAL_STORAGE_TYPE_VENDOR_MICROSOFT
+IID_IUnknown
+IID_AsyncIUnknown
+IID_IClassFactory
+IID_IMarshal
+IID_INoMarshal
+IID_IAgileObject
+IID_IAgileReference
+IID_IMarshal2
+IID_IMalloc
+IID_IStdMarshalInfo
+IID_IExternalConnection
+IID_IMultiQI
+IID_AsyncIMultiQI
+IID_IInternalUnknown
+IID_IEnumUnknown
+IID_IEnumString
+IID_ISequentialStream
+IID_IStream
+IID_IRpcChannelBuffer
+IID_IRpcChannelBuffer2
+IID_IAsyncRpcChannelBuffer
+IID_IRpcChannelBuffer3
+IID_IRpcSyntaxNegotiate
+IID_IRpcProxyBuffer
+IID_IRpcStubBuffer
+IID_IPSFactoryBuffer
+IID_IChannelHook
+IID_IClientSecurity
+IID_IServerSecurity
+IID_IRpcOptions
+IID_IGlobalOptions
+IID_ISurrogate
+IID_IGlobalInterfaceTable
+IID_ISynchronize
+IID_ISynchronizeHandle
+IID_ISynchronizeEvent
+IID_ISynchronizeContainer
+IID_ISynchronizeMutex
+IID_ICancelMethodCalls
+IID_IAsyncManager
+IID_ICallFactory
+IID_IRpcHelper
+IID_IReleaseMarshalBuffers
+IID_IWaitMultiple
+IID_IAddrTrackingControl
+IID_IAddrExclusionControl
+IID_IPipeByte
+IID_IPipeLong
+IID_IPipeDouble
+IID_IComThreadingInfo
+IID_IProcessInitControl
+IID_IFastRundown
+IID_IMarshalingStream
+IID_IMallocSpy
+IID_IBindCtx
+IID_IEnumMoniker
+IID_IRunnableObject
+IID_IRunningObjectTable
+IID_IPersist
+IID_IPersistStream
+IID_IMoniker
+IID_IROTData
+IID_IEnumSTATSTG
+IID_IStorage
+IID_IPersistFile
+IID_IPersistStorage
+IID_ILockBytes
+IID_IEnumFORMATETC
+IID_IEnumSTATDATA
+IID_IRootStorage
+IID_IAdviseSink
+IID_AsyncIAdviseSink
+IID_IAdviseSink2
+IID_AsyncIAdviseSink2
+IID_IDataObject
+IID_IDataAdviseHolder
+IID_IMessageFilter
+IID_IClassActivator
+IID_IFillLockBytes
+IID_IProgressNotify
+IID_ILayoutStorage
+IID_IBlockingLock
+IID_ITimeAndNoticeControl
+IID_IOplockStorage
+IID_IDirectWriterLock
+IID_IUrlMon
+IID_IForegroundTransfer
+IID_IThumbnailExtractor
+IID_IDummyHICONIncluder
+IID_IProcessLock
+IID_ISurrogateService
+IID_IInitializeSpy
+IID_IApartmentShutdown
+IID_IOleAdviseHolder
+IID_IOleCache
+IID_IOleCache2
+IID_IOleCacheControl
+IID_IParseDisplayName
+IID_IOleContainer
+IID_IOleClientSite
+IID_IOleObject
+IID_IOleWindow
+IID_IOleLink
+IID_IOleItemContainer
+IID_IOleInPlaceUIWindow
+IID_IOleInPlaceActiveObject
+IID_IOleInPlaceFrame
+IID_IOleInPlaceObject
+IID_IOleInPlaceSite
+IID_IContinue
+IID_IViewObject
+IID_IViewObject2
+IID_IDropSource
+IID_IDropTarget
+IID_IDropSourceNotify
+IID_IEnumOLEVERB
+IID_IServiceProvider
+IID_ICreateTypeInfo
+IID_ICreateTypeInfo2
+IID_ICreateTypeLib
+IID_ICreateTypeLib2
+IID_IDispatch
+IID_IEnumVARIANT
+IID_ITypeComp
+IID_ITypeInfo
+IID_ITypeInfo2
+IID_ITypeLib
+IID_ITypeLib2
+IID_ITypeChangeEvents
+IID_IErrorInfo
+IID_ICreateErrorInfo
+IID_ISupportErrorInfo
+IID_ITypeFactory
+IID_ITypeMarshal
+IID_IRecordInfo
+IID_IErrorLog
+IID_IPropertyBag
+LIBID_MSXML
+IID_IXMLDOMNode
+IID_IXMLDOMDocument
+IID_IXMLDOMNodeList
+IID_IXMLDOMNamedNodeMap
+IID_IXMLDOMDocumentFragment
+IID_IXMLDOMCharacterData
+IID_IXMLDOMAttribute
+IID_IXMLDOMElement
+IID_IXMLDOMText
+IID_IXMLDOMComment
+IID_IXMLDOMProcessingInstruction
+IID_IXMLDOMCDATASection
+IID_IXMLDOMDocumentType
+IID_IXMLDOMNotation
+IID_IXMLDOMEntity
+IID_IXMLDOMEntityReference
+IID_IXMLDOMImplementation
+IID_IXMLDOMParseError
+DIID_XMLDOMDocumentEvents
+CLSID_DOMDocument
+CLSID_DOMFreeThreadedDocument
+IID_IXMLHttpRequest
+CLSID_XMLHTTPRequest
+IID_IXMLDSOControl
+CLSID_XMLDSOControl
+IID_IXMLElementCollection
+IID_IXMLElement
+IID_IXMLDocument
+IID_IXMLElement2
+IID_IXMLDocument2
+IID_IXMLAttribute
+IID_IXMLError
+IID_IXMLElementNotificationSink
+CLSID_XMLDocument
+IID_IPersistMoniker
+IID_IMonikerProp
+IID_IBindProtocol
+IID_IBinding
+IID_IBindStatusCallback
+IID_IBindStatusCallbackEx
+IID_IAuthenticate
+IID_IAuthenticateEx
+IID_IHttpNegotiate
+IID_IHttpNegotiate2
+IID_IHttpNegotiate3
+IID_IWinInetFileStream
+IID_IWindowForBindingUI
+IID_ICodeInstall
+IID_IUriContainer
+IID_IUriBuilder
+IID_IUriBuilderFactory
+IID_IWinInetInfo
+IID_IHttpSecurity
+IID_IWinInetHttpInfo
+IID_IWinInetHttpTimeouts
+IID_IWinInetCacheHints
+IID_IWinInetCacheHints2
+IID_IBindHost
+IID_IInternet
+IID_IInternetBindInfo
+IID_IInternetBindInfoEx
+IID_IInternetProtocolRoot
+IID_IInternetProtocol
+IID_IInternetProtocolEx
+IID_IInternetProtocolSink
+IID_IInternetProtocolSinkStackable
+IID_IInternetSession
+IID_IInternetThreadSwitch
+IID_IInternetPriority
+IID_IInternetProtocolInfo
+IID_IInternetSecurityMgrSite
+IID_IInternetSecurityManager
+IID_IInternetSecurityManagerEx
+IID_IInternetSecurityManagerEx2
+IID_IZoneIdentifier
+IID_IInternetHostSecurityManager
+IID_IInternetZoneManager
+IID_IInternetZoneManagerEx
+IID_IInternetZoneManagerEx2
+IID_ISoftDistExt
+IID_ICatalogFileInfo
+IID_IDataFilter
+IID_IEncodingFilterFactory
+IID_IWrappedProtocol
+IID_IGetBindHandle
+IID_IBindCallbackRedirect
+IID_IPropertyStorage
+IID_IPropertySetStorage
+IID_IEnumSTATPROPSTG
+IID_IEnumSTATPROPSETSTG
+GUID_DEVINTERFACE_DISK
+GUID_DEVINTERFACE_CDROM
+GUID_DEVINTERFACE_PARTITION
+GUID_DEVINTERFACE_TAPE
+GUID_DEVINTERFACE_WRITEONCEDISK
+GUID_DEVINTERFACE_VOLUME
+GUID_DEVINTERFACE_MEDIUMCHANGER
+GUID_DEVINTERFACE_FLOPPY
+GUID_DEVINTERFACE_CDCHANGER
+GUID_DEVINTERFACE_STORAGEPORT
+GUID_DEVINTERFACE_VMLUN
+GUID_DEVINTERFACE_SES
+GUID_DEVINTERFACE_ZNSDISK
+GUID_DEVINTERFACE_SERVICE_VOLUME
+GUID_DEVINTERFACE_HIDDEN_VOLUME
+GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB
+GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE
+GUID_SCM_PD_HEALTH_NOTIFICATION
+GUID_SCM_PD_PASSTHROUGH_INVDIMM
+GUID_DEVINTERFACE_COMPORT
+GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
+IID_IPrintDialogCallback
+IID_IPrintDialogServices
+D3DCRYPTOTYPE_AES128_CTR
+D3DCRYPTOTYPE_PROPRIETARY
+D3DKEYEXCHANGE_RSAES_OAEP
+D3DKEYEXCHANGE_DXVA
+IID_IDirect3D9
+IID_IDirect3DDevice9
+IID_IDirect3DResource9
+IID_IDirect3DVertexBuffer9
+IID_IDirect3DVolume9
+IID_IDirect3DSwapChain9
+IID_IDirect3DSurface9
+IID_IDirect3DIndexBuffer9
+IID_IDirect3DBaseTexture9
+IID_IDirect3DTexture9
+IID_IDirect3DCubeTexture9
+IID_IDirect3DVolumeTexture9
+IID_IDirect3DVertexDeclaration9
+IID_IDirect3DVertexShader9
+IID_IDirect3DPixelShader9
+IID_IDirect3DStateBlock9
+IID_IDirect3DQuery9
+IID_IDirect3D9Ex
+IID_IDirect3DSwapChain9Ex
+IID_IDirect3DDevice9Ex
+IID_IEnumConnections
+IID_IConnectionPoint
+IID_IEnumConnectionPoints
+IID_IConnectionPointContainer
+IID_IClassFactory2
+IID_IProvideClassInfo
+IID_IProvideClassInfo2
+IID_IProvideMultipleClassInfo
+IID_IOleControl
+IID_IOleControlSite
+IID_IPropertyPage
+IID_IPropertyPage2
+IID_IPropertyPageSite
+IID_IPropertyNotifySink
+IID_ISpecifyPropertyPages
+IID_IPersistMemory
+IID_IPersistStreamInit
+IID_IPersistPropertyBag
+IID_ISimpleFrameSite
+IID_IFont
+IID_IPicture
+IID_IPicture2
+IID_IFontEventsDisp
+IID_IFontDisp
+IID_IPictureDisp
+IID_IOleInPlaceObjectWindowless
+IID_IOleInPlaceSiteEx
+IID_IOleInPlaceSiteWindowless
+IID_IViewObjectEx
+IID_IOleUndoUnit
+IID_IOleParentUndoUnit
+IID_IEnumOleUndoUnits
+IID_IOleUndoManager
+IID_IPointerInactive
+IID_IObjectWithSite
+IID_IPerPropertyBrowsing
+IID_IPropertyBag2
+IID_IPersistPropertyBag2
+IID_IAdviseSinkEx
+IID_IQuickActivate
+IID_IDXGIObject
+IID_IDXGIDeviceSubObject
+IID_IDXGIResource
+IID_IDXGIKeyedMutex
+IID_IDXGISurface
+IID_IDXGISurface1
+IID_IDXGIOutput
+IID_IDXGIAdapter
+IID_IDXGISwapChain
+IID_IDXGIFactory
+IID_IDXGIDevice
+IID_IDXGIAdapter1
+IID_IDXGIDevice1
+IID_IDXGIFactory1
+IID_ID3D10Blob
+IID_ID3DDestructionNotifier
+WKPDID_D3DDebugObjectName
+IID_ID3D10DeviceChild
+IID_ID3D10Resource
+IID_ID3D10Buffer
+IID_ID3D10Texture1D
+IID_ID3D10Texture2D
+IID_ID3D10Texture3D
+IID_ID3D10View
+IID_ID3D10DepthStencilView
+IID_ID3D10RenderTargetView
+IID_ID3D10ShaderResourceView
+IID_ID3D10BlendState
+IID_ID3D10DepthStencilState
+IID_ID3D10GeometryShader
+IID_ID3D10InputLayout
+IID_ID3D10PixelShader
+IID_ID3D10RasterizerState
+IID_ID3D10SamplerState
+IID_ID3D10VertexShader
+IID_ID3D10Asynchronous
+IID_ID3D10Counter
+IID_ID3D10Query
+IID_ID3D10Predicate
+IID_ID3D10Device
+IID_ID3D10Multithread
+IID_ID3D10Debug
+IID_ID3D10SwitchToRef
+IID_ID3D10InfoQueue
+IID_ID3D10ShaderReflectionType
+IID_ID3D10ShaderReflectionVariable
+IID_ID3D10ShaderReflectionConstantBuffer
+IID_ID3D10ShaderReflection
+IID_ID3D10EffectType
+IID_ID3D10EffectVariable
+IID_ID3D10EffectConstantBuffer
+IID_ID3D10EffectScalarVariable
+IID_ID3D10EffectVectorVariable
+IID_ID3D10EffectMatrixVariable
+IID_ID3D10EffectStringVariable
+IID_ID3D10EffectShaderResourceVariable
+IID_ID3D10EffectRenderTargetViewVariable
+IID_ID3D10EffectDepthStencilViewVariable
+IID_ID3D10EffectShaderVariable
+IID_ID3D10EffectBlendVariable
+IID_ID3D10EffectDepthStencilVariable
+IID_ID3D10EffectRasterizerVariable
+IID_ID3D10EffectSamplerVariable
+IID_ID3D10EffectTechnique
+IID_ID3D10Effect
+IID_ID3D10EffectPool
+IID_ID3D10EffectPass
+IID_ID3D10StateBlock
+D3D11_DECODER_PROFILE_MPEG2_MOCOMP
+D3D11_DECODER_PROFILE_MPEG2_IDCT
+D3D11_DECODER_PROFILE_MPEG2_VLD
+D3D11_DECODER_PROFILE_MPEG1_VLD
+D3D11_DECODER_PROFILE_MPEG2and1_VLD
+D3D11_DECODER_PROFILE_H264_MOCOMP_NOFGT
+D3D11_DECODER_PROFILE_H264_MOCOMP_FGT
+D3D11_DECODER_PROFILE_H264_IDCT_NOFGT
+D3D11_DECODER_PROFILE_H264_IDCT_FGT
+D3D11_DECODER_PROFILE_H264_VLD_NOFGT
+D3D11_DECODER_PROFILE_H264_VLD_FGT
+D3D11_DECODER_PROFILE_H264_VLD_WITHFMOASO_NOFGT
+D3D11_DECODER_PROFILE_H264_VLD_STEREO_PROGRESSIVE_NOFGT
+D3D11_DECODER_PROFILE_H264_VLD_STEREO_NOFGT
+D3D11_DECODER_PROFILE_H264_VLD_MULTIVIEW_NOFGT
+D3D11_DECODER_PROFILE_WMV8_POSTPROC
+D3D11_DECODER_PROFILE_WMV8_MOCOMP
+D3D11_DECODER_PROFILE_WMV9_POSTPROC
+D3D11_DECODER_PROFILE_WMV9_MOCOMP
+D3D11_DECODER_PROFILE_WMV9_IDCT
+D3D11_DECODER_PROFILE_VC1_POSTPROC
+D3D11_DECODER_PROFILE_VC1_MOCOMP
+D3D11_DECODER_PROFILE_VC1_IDCT
+D3D11_DECODER_PROFILE_VC1_VLD
+D3D11_DECODER_PROFILE_VC1_D2010
+D3D11_DECODER_PROFILE_MPEG4PT2_VLD_SIMPLE
+D3D11_DECODER_PROFILE_MPEG4PT2_VLD_ADVSIMPLE_NOGMC
+D3D11_DECODER_PROFILE_MPEG4PT2_VLD_ADVSIMPLE_GMC
+D3D11_DECODER_PROFILE_HEVC_VLD_MAIN
+D3D11_DECODER_PROFILE_HEVC_VLD_MAIN10
+D3D11_DECODER_PROFILE_VP9_VLD_PROFILE0
+D3D11_DECODER_PROFILE_VP9_VLD_10BIT_PROFILE2
+D3D11_DECODER_PROFILE_VP8_VLD
+IID_ID3D11DeviceChild
+IID_ID3D11Asynchronous
+IID_ID3D11Query
+IID_ID3D11Resource
+IID_ID3D11View
+IID_ID3D11BlendState
+IID_ID3D11Buffer
+IID_ID3D11ClassInstance
+IID_ID3D11ClassLinkage
+IID_ID3D11CommandList
+IID_ID3D11ComputeShader
+IID_ID3D11Counter
+IID_ID3D11DepthStencilState
+IID_ID3D11DepthStencilView
+IID_ID3D11DomainShader
+IID_ID3D11GeometryShader
+IID_ID3D11HullShader
+IID_ID3D11InputLayout
+IID_ID3D11PixelShader
+IID_ID3D11Predicate
+IID_ID3D11RasterizerState
+IID_ID3D11RenderTargetView
+IID_ID3D11SamplerState
+IID_ID3D11ShaderResourceView
+IID_ID3D11Texture1D
+IID_ID3D11Texture2D
+IID_ID3D11Texture3D
+IID_ID3D11UnorderedAccessView
+IID_ID3D11VertexShader
+IID_ID3D11DeviceContext
+IID_ID3D11AuthenticatedChannel
+IID_ID3D11CryptoSession
+IID_ID3D11VideoDecoder
+IID_ID3D11VideoProcessorEnumerator
+IID_ID3D11VideoProcessor
+IID_ID3D11VideoDecoderOutputView
+IID_ID3D11VideoProcessorInputView
+IID_ID3D11VideoProcessorOutputView
+IID_ID3D11VideoDevice
+IID_ID3D11VideoContext
+IID_ID3D11Device
+IID_ID3D10ShaderReflection1
+IID_ID3D10BlendState1
+IID_ID3D10ShaderResourceView1
+IID_ID3D10Device1
+DXGI_DEBUG_D3D11
+IID_ID3D11Debug
+IID_ID3D11SwitchToRef
+IID_ID3D11InfoQueue
+IID_IDXGIOutputDuplication
+IID_IDXGISurface2
+IID_IDXGIResource1
+IID_IDXGIDisplayControl
+IID_IDXGIDevice2
+IID_IDXGISwapChain1
+IID_IDXGIFactory2
+IID_IDXGIAdapter2
+IID_IDXGIOutput1
+IID_ID3D11BlendState1
+IID_ID3DDeviceContextState
+IID_ID3D11DeviceContext1
+IID_ID3D11VideoContext1
+IID_ID3D11VideoDevice1
+IID_ID3D11VideoProcessorEnumerator1
+IID_ID3DUserDefinedAnnotation
+IID_ID3D11RasterizerState1
+IID_ID3D11Device1
+IID_IDXGIDevice3
+IID_IDXGISwapChain2
+IID_IDXGIOutput2
+IID_IDXGIFactory3
+IID_IDXGIDecodeSwapChain
+IID_IDXGIFactoryMedia
+IID_IDXGISwapChainMedia
+IID_IDXGIOutput3
+IID_ID3D11DeviceContext2
+IID_ID3D11Device2
+IID_ID3D11Texture2D1
+IID_ID3D11Texture3D1
+IID_ID3D11RasterizerState2
+IID_ID3D11ShaderResourceView1
+IID_ID3D11RenderTargetView1
+IID_ID3D11UnorderedAccessView1
+IID_ID3D11Query1
+IID_ID3D11DeviceContext3
+IID_ID3D11Fence
+IID_ID3D11DeviceContext4
+IID_ID3D11Device3
+IID_IDXGISwapChain3
+IID_IDXGIOutput4
+IID_IDXGIFactory4
+IID_IDXGIAdapter3
+IID_IDXGIOutput5
+IID_IDXGISwapChain4
+IID_IDXGIDevice4
+IID_IDXGIFactory5
+IID_ID3D11Device4
+IID_ID3D11Device5
+IID_ID3D11Multithread
+IID_ID3D11VideoContext2
+IID_ID3D12Object
+IID_ID3D12DeviceChild
+IID_ID3D12Pageable
+IID_ID3D12Heap
+IID_ID3D12Resource
+IID_ID3D12CommandList
+IID_ID3D12DescriptorHeap
+IID_ID3D12QueryHeap
+IID_ID3D12CommandSignature
+IID_ID3D12GraphicsCommandList
+IID_ID3D12GraphicsCommandList1
+IID_ID3D12GraphicsCommandList2
+IID_ID3D12ProtectedSession
+IID_ID3D12ProtectedResourceSession
+IID_ID3D12GraphicsCommandList3
+IID_ID3D12CommandQueue
+IID_ID3D12RootSignature
+IID_ID3D12PipelineState
+IID_ID3D12Fence
+IID_ID3D12Fence1
+IID_ID3D12CommandAllocator
+IID_ID3D12Device
+IID_ID3D12PipelineLibrary
+IID_ID3D12PipelineLibrary1
+IID_ID3D12Device1
+IID_ID3D12Device2
+IID_ID3D12Device3
+IID_ID3D12RootSignatureDeserializer
+IID_ID3D12VersionedRootSignatureDeserializer
+IID_ID3D12Device4
+IID_ID3D12LifetimeOwner
+IID_ID3D12SwapChainAssistant
+IID_ID3D12LifetimeTracker
+IID_ID3D12StateObject
+IID_ID3D12StateObjectProperties
+IID_ID3D12Device5
+IID_ID3D12DeviceRemovedExtendedDataSettings
+IID_ID3D12DeviceRemovedExtendedDataSettings1
+IID_ID3D12DeviceRemovedExtendedData
+IID_ID3D12DeviceRemovedExtendedData1
+IID_ID3D12DeviceRemovedExtendedData2
+IID_ID3D12Device6
+D3D12_PROTECTED_RESOURCES_SESSION_HARDWARE_PROTECTED
+IID_ID3D12ProtectedResourceSession1
+IID_ID3D12Device7
+IID_ID3D12Device8
+IID_ID3D12Resource1
+IID_ID3D12Resource2
+IID_ID3D12Heap1
+IID_ID3D12MetaCommand
+IID_ID3D12GraphicsCommandList4
+IID_ID3D12ShaderCacheSession
+IID_ID3D12Device9
+IID_ID3D12Device10
+IID_ID3D12VirtualizationGuestDevice
+IID_ID3D12Tools
+CLSID_D3D12Debug
+CLSID_D3D12Tools
+CLSID_D3D12DeviceRemovedExtendedData
+CLSID_D3D12SDKConfiguration
+IID_ID3D12SDKConfiguration
+IID_ID3D12GraphicsCommandList5
+IID_ID3D12GraphicsCommandList6
+IID_ID3D12GraphicsCommandList7
+IID_ID3D12Debug
+IID_ID3D12Debug1
+IID_ID3D12Debug2
+IID_ID3D12Debug3
+IID_ID3D12Debug4
+IID_ID3D12Debug5
+IID_ID3D12DebugDevice
+IID_ID3D12DebugDevice1
+IID_ID3D12DebugDevice2
+IID_ID3D12SharingContract
+IID_ID3D12InfoQueue
+IID_ID3D12InfoQueue1
+IID_ID3D11On12Device
+IID_ID3D11On12Device1
+IID_ID3D11On12Device2
+IID_ID3D11ShaderReflectionType
+IID_ID3D11ShaderReflectionVariable
+IID_ID3D11ShaderReflectionConstantBuffer
+IID_ID3D11ShaderReflection
+IID_ID3D11ModuleInstance
+IID_ID3D11Module
+IID_ID3D11Linker
+IID_ID3D11LinkingNode
+IID_ID3D11FunctionLinkingGraph
+IID_ID3D12ShaderReflectionType
+IID_ID3D12ShaderReflectionVariable
+IID_ID3D12ShaderReflectionConstantBuffer
+IID_ID3D12ShaderReflection
+IID_ID3D12FunctionParameterReflection
+IID_ID3D12FunctionReflection
+IID_ID3D12LibraryReflection
+IID_ID3D12VideoDecoderHeap
+IID_ID3D12VideoDevice
+IID_ID3D12VideoDecoder
+IID_ID3D12VideoDecodeCommandList
+IID_ID3D12VideoDecodeCommandList1
+IID_ID3D12VideoMotionEstimator
+IID_ID3D12VideoMotionVectorHeap
+IID_ID3D12VideoDevice1
+IID_ID3D12VideoEncodeCommandList
+IID_ID3D12VideoExtensionCommand
+IID_ID3D12VideoDevice2
+IID_ID3D12VideoEncodeCommandList1
+D3D12_VIDEO_DECODE_PROFILE_MPEG2
+D3D12_VIDEO_DECODE_PROFILE_MPEG1_AND_MPEG2
+D3D12_VIDEO_DECODE_PROFILE_H264
+D3D12_VIDEO_DECODE_PROFILE_H264_STEREO_PROGRESSIVE
+D3D12_VIDEO_DECODE_PROFILE_H264_STEREO
+D3D12_VIDEO_DECODE_PROFILE_H264_MULTIVIEW
+D3D12_VIDEO_DECODE_PROFILE_VC1
+D3D12_VIDEO_DECODE_PROFILE_VC1_D2010
+D3D12_VIDEO_DECODE_PROFILE_MPEG4PT2_SIMPLE
+D3D12_VIDEO_DECODE_PROFILE_MPEG4PT2_ADVSIMPLE_NOGMC
+D3D12_VIDEO_DECODE_PROFILE_HEVC_MAIN
+D3D12_VIDEO_DECODE_PROFILE_HEVC_MAIN10
+D3D12_VIDEO_DECODE_PROFILE_VP9
+D3D12_VIDEO_DECODE_PROFILE_VP9_10BIT_PROFILE2
+D3D12_VIDEO_DECODE_PROFILE_VP8
+D3D12_VIDEO_DECODE_PROFILE_AV1_PROFILE0
+D3D12_VIDEO_DECODE_PROFILE_AV1_PROFILE1
+D3D12_VIDEO_DECODE_PROFILE_AV1_PROFILE2
+D3D12_VIDEO_DECODE_PROFILE_AV1_12BIT_PROFILE2
+D3D12_VIDEO_DECODE_PROFILE_AV1_12BIT_PROFILE2_420
+IID_ID3D12VideoEncoder
+IID_ID3D12VideoEncoderHeap
+IID_ID3D12VideoDevice3
+IID_ID3D12VideoEncodeCommandList2
+DXGI_DEBUG_ALL
+DXGI_DEBUG_DX
+DXGI_DEBUG_DXGI
+DXGI_DEBUG_APP
+IID_IDXGIInfoQueue
+IID_IDXGIDebug
+IID_IDXGIDebug1
+IID_IDXGIAdapter4
+IID_IDXGIOutput6
+IID_IDXGIFactory6
+IID_IDXGIFactory7
+CLSID_CDirect3DRM
+CLSID_CDirect3DRMAnimation
+CLSID_CDirect3DRMAnimationSet
+CLSID_CDirect3DRMClippedVisual
+CLSID_CDirect3DRMDevice
+CLSID_CDirect3DRMFace
+CLSID_CDirect3DRMFrame
+CLSID_CDirect3DRMFrameInterpolator
+CLSID_CDirect3DRMLight
+CLSID_CDirect3DRMLightInterpolator
+CLSID_CDirect3DRMMaterial
+CLSID_CDirect3DRMMaterialInterpolator
+CLSID_CDirect3DRMMesh
+CLSID_CDirect3DRMMeshBuilder
+CLSID_CDirect3DRMMeshInterpolator
+CLSID_CDirect3DRMProgressiveMesh
+CLSID_CDirect3DRMShadow
+CLSID_CDirect3DRMTexture
+CLSID_CDirect3DRMTextureInterpolator
+CLSID_CDirect3DRMUserVisual
+CLSID_CDirect3DRMViewport
+CLSID_CDirect3DRMViewportInterpolator
+CLSID_CDirect3DRMWrap
+CLSID_CDirectXFile
+CLSID_DirectDraw
+CLSID_DirectDraw7
+CLSID_DirectDrawClipper
+CLSID_DirectDrawFactory2
+CLSID_DirectInput
+CLSID_DirectInput8
+CLSID_DirectInputDevice
+CLSID_DirectInputDevice8
+CLSID_DirectMusic
+CLSID_DirectMusicAudioPathConfig
+CLSID_DirectMusicBand
+CLSID_DirectMusicBandTrack
+CLSID_DirectMusicCollection
+CLSID_DirectMusicCommandTrack
+CLSID_DirectMusicComposer
+CLSID_DirectMusicContainer
+CLSID_DirectMusicGraph
+CLSID_DirectMusicChordMap
+CLSID_DirectMusicChordMapTrack
+CLSID_DirectMusicChordTrack
+CLSID_DirectMusicLoader
+CLSID_DirectMusicLyricsTrack
+CLSID_DirectMusicMarkerTrack
+CLSID_DirectMusicMelodyFormulationTrack
+CLSID_DirectMusicMotifTrack
+CLSID_DirectMusicMuteTrack
+CLSID_DirectMusicParamControlTrack
+CLSID_DirectMusicPatternTrack
+CLSID_DirectMusicPerformance
+CLSID_DirectMusicScript
+CLSID_DirectMusicScriptTrack
+CLSID_DirectMusicSegment
+CLSID_DirectMusicSegmentState
+CLSID_DirectMusicSegmentTriggerTrack
+CLSID_DirectMusicSeqTrack
+CLSID_DirectMusicSignPostTrack
+CLSID_DirectMusicSong
+CLSID_DirectMusicStyle
+CLSID_DirectMusicStyleTrack
+CLSID_DirectMusicSynth
+CLSID_DirectMusicSysExTrack
+CLSID_DirectMusicTempoTrack
+CLSID_DirectMusicTimeSigTrack
+CLSID_DirectMusicWaveTrack
+CLSID_DirectPlay
+CLSID_DirectPlay8Address
+CLSID_DirectPlay8Client
+CLSID_DirectPlay8LobbiedApplication
+CLSID_DirectPlay8LobbyClient
+CLSID_DirectPlay8ThreadPool
+CLSID_DirectPlay8NATResolver
+CLSID_DirectPlay8Peer
+CLSID_DirectPlay8Server
+CLSID_DirectPlayLobby
+CLSID_DirectPlayVoiceClient
+CLSID_DirectPlayVoiceServer
+CLSID_DirectPlayVoiceTest
+CLSID_DirectSound
+CLSID_DirectSound8
+CLSID_DirectSoundCapture
+CLSID_DirectSoundCapture8
+CLSID_DirectSoundFullDuplex
+CLSID_DirectSoundWave
+CLSID_DirectSoundPrivate
+DSPROPSETID_DirectSoundDevice
+CLSID_DP8SP_IPX
+CLSID_DP8SP_MODEM
+CLSID_DP8SP_SERIAL
+CLSID_DP8SP_TCPIP
+CLSID_DP8SP_BLUETOOTH
+DDVPTYPE_BROOKTREE
+DDVPTYPE_CCIR656
+DDVPTYPE_E_HREFH_VREFH
+DDVPTYPE_E_HREFH_VREFL
+DDVPTYPE_E_HREFL_VREFH
+DDVPTYPE_E_HREFL_VREFL
+DDVPTYPE_PHILIPS
+DPAID_ComPort
+DPAID_INet
+DPAID_INetPort
+DPAID_INetW
+DPAID_LobbyProvider
+DPAID_Modem
+DPAID_ModemW
+DPAID_Phone
+DPAID_PhoneW
+DPAID_ServiceProvider
+DPAID_TotalSize
+DPLPROPERTY_LobbyGuid
+DPLPROPERTY_MessagesSupported
+DPLPROPERTY_PlayerGuid
+DPLPROPERTY_PlayerScore
+DPSPGUID_IPX
+DPSPGUID_TCPIP
+DPSPGUID_SERIAL
+DPSPGUID_MODEM
+DPVCTGUID_ADPCM
+DPVCTGUID_GSM
+DPVCTGUID_NONE
+DPVCTGUID_SC03
+DPVCTGUID_SC06
+DPVCTGUID_TRUESPEECH
+DPVCTGUID_VR12
+DS3DALG_HRTF_FULL
+DS3DALG_HRTF_LIGHT
+DS3DALG_NO_VIRTUALIZATION
+DSDEVID_DefaultCapture
+DSDEVID_DefaultPlayback
+DSDEVID_DefaultVoiceCapture
+DSDEVID_DefaultVoicePlayback
+GUID_All_Objects
+GUID_BandParam
+GUID_Buffer_3D_Dry
+GUID_Buffer_EnvReverb
+GUID_Buffer_Mono
+GUID_Buffer_Reverb
+GUID_Buffer_Stereo
+GUID_Button
+GUID_Clear_All_Bands
+GUID_Clear_All_MelodyFragments
+GUID_ColorControlCallbacks
+GUID_CommandParam
+GUID_CommandParam2
+GUID_CommandParamNext
+GUID_ConnectToDLSCollection
+GUID_ConstantForce
+GUID_CustomForce
+GUID_D3DCallbacks2
+GUID_D3DCallbacks3
+GUID_D3DExtendedCaps
+GUID_D3DParseUnknownCommandCallback
+GUID_Damper
+GUID_DDMoreCaps
+GUID_DDMoreSurfaceCaps
+GUID_DDStereoMode
+GUID_DefaultGMCollection
+GUID_DirectDrawPaletteStream
+GUID_DirectDrawSurfaceStream
+GUID_DirectMusicAllTypes
+GUID_Disable_Auto_Download
+GUID_DisableTempo
+GUID_DisableTimeSig
+GUID_DMUS_PROP_DLS1
+GUID_DMUS_PROP_DLS2
+GUID_DMUS_PROP_Effects
+GUID_DMUS_PROP_GM_Hardware
+GUID_DMUS_PROP_GS_Capable
+GUID_DMUS_PROP_GS_Hardware
+GUID_DMUS_PROP_INSTRUMENT2
+GUID_DMUS_PROP_LegacyCaps
+GUID_DMUS_PROP_MemorySize
+GUID_DMUS_PROP_SampleMemorySize
+GUID_DMUS_PROP_SamplePlaybackRate
+GUID_DMUS_PROP_SynthSink_DSOUND
+GUID_DMUS_PROP_SynthSink_WAVE
+GUID_DMUS_PROP_Volume
+GUID_DMUS_PROP_WavesReverb
+GUID_DMUS_PROP_WriteLatency
+GUID_DMUS_PROP_WritePeriod
+GUID_DMUS_PROP_XG_Capable
+GUID_DMUS_PROP_XG_Hardware
+GUID_Download
+GUID_DownloadToAudioPath
+GUID_DSCFX_CLASS_AEC
+GUID_DSCFX_CLASS_NS
+GUID_DSCFX_MS_AEC
+GUID_DSCFX_MS_NS
+GUID_DSCFX_SYSTEM_AEC
+GUID_DSCFX_SYSTEM_NS
+GUID_DSFX_STANDARD_COMPRESSOR
+GUID_DSFX_STANDARD_DISTORTION
+GUID_DSFX_STANDARD_ECHO
+GUID_DSFX_STANDARD_FLANGER
+GUID_DSFX_STANDARD_GARGLE
+GUID_DSFX_STANDARD_CHORUS
+GUID_DSFX_STANDARD_I3DL2REVERB
+GUID_DSFX_STANDARD_PARAMEQ
+GUID_DSFX_WAVES_REVERB
+GUID_Enable_Auto_Download
+GUID_EnableTempo
+GUID_EnableTimeSig
+GUID_Friction
+GUID_HIDClass
+GUID_ChordParam
+GUID_IDirectMusicBand
+GUID_IDirectMusicChordMap
+GUID_IDirectMusicStyle
+GUID_Inertia
+GUID_Joystick
+GUID_KernelCallbacks
+GUID_KernelCaps
+GUID_KeyboardClass
+GUID_MediaClass
+GUID_MelodyFragment
+GUID_Miscellaneous2Callbacks
+GUID_MiscellaneousCallbacks
+GUID_MotionCompCallbacks
+GUID_MouseClass
+GUID_MuteParam
+GUID_NonLocalVidMemCaps
+GUID_NOTIFICATION_COMMAND
+GUID_NOTIFICATION_CHORD
+GUID_NOTIFICATION_MEASUREANDBEAT
+GUID_NOTIFICATION_PERFORMANCE
+GUID_NOTIFICATION_RECOMPOSE
+GUID_NOTIFICATION_SEGMENT
+GUID_NTCallbacks
+GUID_OptSurfaceKmodeInfo
+GUID_OptSurfaceUmodeInfo
+GUID_PerfAutoDownload
+GUID_PerfMasterGrooveLevel
+GUID_PerfMasterTempo
+GUID_PerfMasterVolume
+GUID_Play_Marker
+GUID_RampForce
+GUID_RhythmParam
+GUID_RxAxis
+GUID_RyAxis
+GUID_RzAxis
+GUID_SawtoothDown
+GUID_SawtoothUp
+GUID_SeedVariations
+GUID_Sine
+GUID_Slider
+GUID_Spring
+GUID_Square
+GUID_StandardMIDIFile
+GUID_Synth_Default
+GUID_SysKeyboard
+GUID_SysKeyboardEm
+GUID_SysKeyboardEm2
+GUID_SysMouse
+GUID_SysMouseEm
+GUID_SysMouseEm2
+GUID_TempoParam
+GUID_TimeSignature
+GUID_Triangle
+GUID_Unknown
+GUID_Unload
+GUID_UnloadFromAudioPath
+GUID_UserModeDriverInfo
+GUID_UserModeDriverPassword
+GUID_Valid_Start_Time
+GUID_Variations
+GUID_VideoPortCallbacks
+GUID_VideoPortCaps
+GUID_XAxis
+GUID_YAxis
+GUID_ZAxis
+GUID_ZPixelFormats
+IID_ID3DXAnimationController
+IID_ID3DXAnimationMixer
+IID_ID3DXAnimationSet
+IID_ID3DXBaseMesh
+IID_ID3DXBuffer
+IID_ID3DXEffect
+IID_ID3DXEffectCompiler
+IID_ID3DXEffectPool
+IID_ID3DXInterpolator
+IID_ID3DXKeyFrameInterpolator
+IID_ID3DXMatrixStack
+IID_ID3DXMesh
+IID_ID3DXPMesh
+IID_ID3DXSkinMesh
+IID_ID3DXSPMesh
+IID_ID3DXTechnique
+IID_IDDVideoPortContainer
+IID_IDirect3D
+IID_IDirect3D2
+IID_IDirect3D3
+IID_IDirect3D7
+IID_IDirect3D8
+IID_IDirect3DBaseTexture8
+IID_IDirect3DCubeTexture8
+IID_IDirect3DDevice
+IID_IDirect3DDevice2
+IID_IDirect3DDevice3
+IID_IDirect3DDevice7
+IID_IDirect3DDevice8
+IID_IDirect3DExecuteBuffer
+IID_IDirect3DHALDevice
+IID_IDirect3DIndexBuffer8
+IID_IDirect3DLight
+IID_IDirect3DMaterial
+IID_IDirect3DMaterial2
+IID_IDirect3DMaterial3
+IID_IDirect3DMMXDevice
+IID_IDirect3DNullDevice
+IID_IDirect3DRampDevice
+IID_IDirect3DRefDevice
+IID_IDirect3DResource8
+IID_IDirect3DRGBDevice
+IID_IDirect3DRM
+IID_IDirect3DRM2
+IID_IDirect3DRM3
+IID_IDirect3DRMAnimation
+IID_IDirect3DRMAnimation2
+IID_IDirect3DRMAnimationArray
+IID_IDirect3DRMAnimationSet
+IID_IDirect3DRMAnimationSet2
+IID_IDirect3DRMClippedVisual
+IID_IDirect3DRMDevice
+IID_IDirect3DRMDevice2
+IID_IDirect3DRMDevice3
+IID_IDirect3DRMDeviceArray
+IID_IDirect3DRMFace
+IID_IDirect3DRMFace2
+IID_IDirect3DRMFaceArray
+IID_IDirect3DRMFrame
+IID_IDirect3DRMFrame2
+IID_IDirect3DRMFrame3
+IID_IDirect3DRMFrameArray
+IID_IDirect3DRMInterpolator
+IID_IDirect3DRMLight
+IID_IDirect3DRMLightArray
+IID_IDirect3DRMMaterial
+IID_IDirect3DRMMaterial2
+IID_IDirect3DRMMesh
+IID_IDirect3DRMMeshBuilder
+IID_IDirect3DRMMeshBuilder2
+IID_IDirect3DRMMeshBuilder3
+IID_IDirect3DRMObject
+IID_IDirect3DRMObject2
+IID_IDirect3DRMObjectArray
+IID_IDirect3DRMPicked2Array
+IID_IDirect3DRMPickedArray
+IID_IDirect3DRMProgressiveMesh
+IID_IDirect3DRMShadow
+IID_IDirect3DRMShadow2
+IID_IDirect3DRMTexture
+IID_IDirect3DRMTexture2
+IID_IDirect3DRMTexture3
+IID_IDirect3DRMUserVisual
+IID_IDirect3DRMViewport
+IID_IDirect3DRMViewport2
+IID_IDirect3DRMViewportArray
+IID_IDirect3DRMVisual
+IID_IDirect3DRMVisualArray
+IID_IDirect3DRMWinDevice
+IID_IDirect3DRMWrap
+IID_IDirect3DSurface8
+IID_IDirect3DSwapChain8
+IID_IDirect3DTexture
+IID_IDirect3DTexture2
+IID_IDirect3DTexture8
+IID_IDirect3DTnLHalDevice
+IID_IDirect3DVertexBuffer
+IID_IDirect3DVertexBuffer7
+IID_IDirect3DVertexBuffer8
+IID_IDirect3DViewport
+IID_IDirect3DViewport2
+IID_IDirect3DViewport3
+IID_IDirect3DVolume8
+IID_IDirect3DVolumeTexture8
+IID_IDirectDraw
+IID_IDirectDraw2
+IID_IDirectDraw4
+IID_IDirectDraw7
+IID_IDirectDrawClipper
+IID_IDirectDrawColorControl
+IID_IDirectDrawFactory2
+IID_IDirectDrawGammaControl
+IID_IDirectDrawOptSurface
+IID_IDirectDrawPalette
+IID_IDirectDrawPalette2
+IID_IDirectDrawSurface
+IID_IDirectDrawSurface2
+IID_IDirectDrawSurface3
+IID_IDirectDrawSurface4
+IID_IDirectDrawSurface7
+IID_IDirectDrawVideoPort
+IID_IDirectDrawVideoPortNotify
+IID_IDirectInput2A
+IID_IDirectInput2W
+IID_IDirectInput7A
+IID_IDirectInput7W
+IID_IDirectInput8A
+IID_IDirectInput8W
+IID_IDirectInputA
+IID_IDirectInputDevice2A
+IID_IDirectInputDevice2W
+IID_IDirectInputDevice7A
+IID_IDirectInputDevice7W
+IID_IDirectInputDevice8A
+IID_IDirectInputDevice8W
+IID_IDirectInputDeviceA
+IID_IDirectInputDeviceW
+IID_IDirectInputEffect
+IID_IDirectInputEffectDriver
+IID_IDirectInputJoyConfig
+IID_IDirectInputJoyConfig8
+IID_IDirectInputPIDDriver
+IID_IDirectInputW
+IID_IDirectMusic
+IID_IDirectMusic2
+IID_IDirectMusic8
+IID_IDirectMusicAudioPath
+IID_IDirectMusicBand
+IID_IDirectMusicBuffer
+IID_IDirectMusicCollection
+IID_IDirectMusicComposer
+IID_IDirectMusicContainer
+IID_IDirectMusicDownload
+IID_IDirectMusicDownloadedInstrument
+IID_IDirectMusicGetLoader
+IID_IDirectMusicGraph
+IID_IDirectMusicChordMap
+IID_IDirectMusicInstrument
+IID_IDirectMusicLoader
+IID_IDirectMusicLoader8
+IID_IDirectMusicObject
+IID_IDirectMusicPatternTrack
+IID_IDirectMusicPerformance
+IID_IDirectMusicPerformance2
+IID_IDirectMusicPerformance8
+IID_IDirectMusicPort
+IID_IDirectMusicPortDownload
+IID_IDirectMusicScript
+IID_IDirectMusicSegment
+IID_IDirectMusicSegment2
+IID_IDirectMusicSegment8
+IID_IDirectMusicSegmentState
+IID_IDirectMusicSegmentState8
+IID_IDirectMusicSong
+IID_IDirectMusicStyle
+IID_IDirectMusicStyle8
+IID_IDirectMusicThru
+IID_IDirectMusicTool
+IID_IDirectMusicTrack
+IID_IDirectMusicTool8
+IID_IDirectMusicTrack8
+IID_IDirectPlay
+IID_IDirectPlay2
+IID_IDirectPlay2A
+IID_IDirectPlay3
+IID_IDirectPlay3A
+IID_IDirectPlay4
+IID_IDirectPlay4A
+IID_IDirectPlay8Address
+IID_IDirectPlay8AddressIP
+IID_IDirectPlay8Client
+IID_IDirectPlay8LobbiedApplication
+IID_IDirectPlay8LobbyClient
+IID_IDirectPlay8NATResolver
+IID_IDirectPlay8Peer
+IID_IDirectPlay8Server
+IID_IDirectPlay8ThreadPool
+IID_IDirectPlayLobby
+IID_IDirectPlayLobby2
+IID_IDirectPlayLobby2A
+IID_IDirectPlayLobby3
+IID_IDirectPlayLobby3A
+IID_IDirectPlayLobbyA
+IID_IDirectPlayVoiceClient
+IID_IDirectPlayVoiceServer
+IID_IDirectPlayVoiceTest
+IID_IDirectSound
+IID_IDirectSound3DBuffer
+IID_IDirectSound3DListener
+IID_IDirectSound8
+IID_IDirectSoundBuffer
+IID_IDirectSoundBuffer8
+IID_IDirectSoundCapture
+IID_IDirectSoundCaptureBuffer
+IID_IDirectSoundCaptureBuffer8
+IID_IDirectSoundCaptureFXAec
+IID_IDirectSoundCaptureFXNoiseSuppress
+IID_IDirectSoundFullDuplex
+IID_IDirectSoundFXCompressor
+IID_IDirectSoundFXDistortion
+IID_IDirectSoundFXEcho
+IID_IDirectSoundFXFlanger
+IID_IDirectSoundFXGargle
+IID_IDirectSoundFXChorus
+IID_IDirectSoundFXI3DL2Reverb
+IID_IDirectSoundFXParamEq
+IID_IDirectSoundFXWavesReverb
+IID_IDirectSoundNotify
+IID_IDirectXFile
+IID_IDirectXFileBinary
+IID_IDirectXFileData
+IID_IDirectXFileDataReference
+IID_IDirectXFileEnumObject
+IID_IDirectXFileObject
+IID_IDirectXFileSaveObject
+IID_IKsControl
+IID_IKsFastClock
+IID_IKsPropertySet
+IID_IReferenceClock
+KSDATAFORMAT_SUBTYPE_DIRECTMUSIC
+KSDATAFORMAT_SUBTYPE_MIDI
+TID_D3DRMAnimation
+TID_D3DRMAnimationKey
+TID_D3DRMAnimationOptions
+TID_D3DRMAnimationSet
+TID_D3DRMAppData
+TID_D3DRMBoolean
+TID_D3DRMBoolean2d
+TID_D3DRMCamera
+TID_D3DRMColorRGB
+TID_D3DRMColorRGBA
+TID_D3DRMCoords2d
+TID_D3DRMExternalVisual
+TID_D3DRMFloatKeys
+TID_D3DRMFrame
+TID_D3DRMFramePosition
+TID_D3DRMFrameRotation
+TID_D3DRMFrameTransformMatrix
+TID_D3DRMFrameVelocity
+TID_D3DRMGuid
+TID_D3DRMIndexedColor
+TID_D3DRMInfo
+TID_D3DRMInlineData
+TID_D3DRMLight
+TID_D3DRMLightAttenuation
+TID_D3DRMLightPenumbra
+TID_D3DRMLightRange
+TID_D3DRMLightUmbra
+TID_D3DRMMaterial
+TID_D3DRMMaterialAmbientColor
+TID_D3DRMMaterialArray
+TID_D3DRMMaterialDiffuseColor
+TID_D3DRMMaterialEmissiveColor
+TID_D3DRMMaterialPower
+TID_D3DRMMaterialSpecularColor
+TID_D3DRMMaterialWrap
+TID_D3DRMMatrix4x4
+TID_D3DRMMesh
+TID_D3DRMMeshFace
+TID_D3DRMMeshFaceWraps
+TID_D3DRMMeshMaterialList
+TID_D3DRMMeshNormals
+TID_D3DRMMeshTextureCoords
+TID_D3DRMMeshVertexColors
+TID_D3DRMProgressiveMesh
+TID_D3DRMPropertyBag
+TID_D3DRMRightHanded
+TID_D3DRMStringProperty
+TID_D3DRMTextureFilename
+TID_D3DRMTextureReference
+TID_D3DRMTimedFloatKeys
+TID_D3DRMUrl
+TID_D3DRMVector
+TID_DXFILEHeader
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long
+PIMAGE_TLS_CALLBACK
+StartAddressOfRawData
+EndAddressOfRawData
+AddressOfIndex
+AddressOfCallBacks
+SizeOfZeroFill
+Characteristics
+IMAGE_TLS_DIRECTORY32
+IMAGE_TLS_DIRECTORY
+ULONG_PTR
+unsigned int
+uintptr_t
+hDllHandle
+lpreserved
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+initialized
+unsigned long
+ptrdiff_t
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned int
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+old_protect
+unsigned long
+base_address
+region_size
+ULONG_PTR
+sec_start
+unsigned char
+PhysicalAddress
+VirtualSize
+VirtualAddress
+SizeOfRawData
+PointerToRawData
+PointerToRelocations
+PointerToLinenumbers
+NumberOfRelocations
+unsigned short
+NumberOfLinenumbers
+Characteristics
+PIMAGE_SECTION_HEADER
+maxSections
+unsigned int
+ptrdiff_t
+runtime_pseudo_reloc_v2
+runtime_pseudo_reloc_item_v1
+runtime_pseudo_reloc_item_v2
+do_pseudo_reloc
+reloc_target
+max_unsigned
+min_signed
+restore_modified_sections
+mark_section_writable
+BaseAddress
+AllocationBase
+AllocationProtect
+RegionSize
+MEMORY_BASIC_INFORMATION
+new_protect
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned int
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long long
+unsigned short
+unsigned int
+threadlocaleinfostruct
+pthreadlocinfo
+threadmbcinfostruct
+pthreadmbcinfo
+localeinfo_struct
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long long
+unsigned int
+unsigned short
+threadlocaleinfostruct
+pthreadlocinfo
+threadmbcinfostruct
+pthreadmbcinfo
+localeinfo_struct
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned int
+unsigned long long
+unsigned short
+threadlocaleinfostruct
+pthreadlocinfo
+threadmbcinfostruct
+pthreadmbcinfo
+localeinfo_struct
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long long
+unsigned short
+unsigned int
+threadlocaleinfostruct
+pthreadlocinfo
+threadmbcinfostruct
+pthreadmbcinfo
+localeinfo_struct
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long long
+unsigned int
+unsigned short
+threadlocaleinfostruct
+pthreadlocinfo
+threadmbcinfostruct
+pthreadmbcinfo
+localeinfo_struct
+vsnprintf
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+sudden_underflow
+unsigned int
+STRTOG_Zero
+STRTOG_Normal
+STRTOG_Denormal
+STRTOG_Infinite
+STRTOG_NaN
+STRTOG_NaNbits
+STRTOG_NoNumber
+STRTOG_Retmask
+STRTOG_Neg
+STRTOG_Inexlo
+STRTOG_Inexhi
+STRTOG_Inexact
+STRTOG_Underflow
+STRTOG_Overflow
+unsigned short
+long double
+unsigned long
+normal_bits
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned short
+unsigned int
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+long double
+unsigned short
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long long
+unsigned short
+unsigned int
+threadlocaleinfostruct
+pthreadlocinfo
+threadmbcinfostruct
+pthreadmbcinfo
+localeinfo_struct
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+DebugInfo
+unsigned short
+CreatorBackTraceIndex
+CriticalSection
+ProcessLocksList
+LIST_ENTRY
+EntryCount
+unsigned long
+ContentionCount
+CreatorBackTraceIndexHigh
+SpareWORD
+PRTL_CRITICAL_SECTION_DEBUG
+LockCount
+RecursionCount
+OwningThread
+LockSemaphore
+SpinCount
+ULONG_PTR
+RTL_CRITICAL_SECTION
+CRITICAL_SECTION
+key_dtor_list
+unsigned int
+hDllHandle
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned short
+e_cparhdr
+e_minalloc
+e_maxalloc
+e_oeminfo
+PIMAGE_DOS_HEADER
+Signature
+unsigned long
+FileHeader
+NumberOfSections
+TimeDateStamp
+PointerToSymbolTable
+NumberOfSymbols
+SizeOfOptionalHeader
+Characteristics
+IMAGE_FILE_HEADER
+OptionalHeader
+MajorLinkerVersion
+unsigned char
+MinorLinkerVersion
+SizeOfCode
+SizeOfInitializedData
+SizeOfUninitializedData
+AddressOfEntryPoint
+BaseOfCode
+BaseOfData
+ImageBase
+SectionAlignment
+FileAlignment
+MajorOperatingSystemVersion
+MinorOperatingSystemVersion
+MajorImageVersion
+MinorImageVersion
+MajorSubsystemVersion
+MinorSubsystemVersion
+Win32VersionValue
+SizeOfImage
+SizeOfHeaders
+Subsystem
+DllCharacteristics
+SizeOfStackReserve
+SizeOfStackCommit
+SizeOfHeapReserve
+SizeOfHeapCommit
+LoaderFlags
+NumberOfRvaAndSizes
+DataDirectory
+VirtualAddress
+IMAGE_DATA_DIRECTORY
+IMAGE_OPTIONAL_HEADER32
+PIMAGE_NT_HEADERS32
+PIMAGE_NT_HEADERS
+PIMAGE_OPTIONAL_HEADER32
+PIMAGE_OPTIONAL_HEADER
+PhysicalAddress
+VirtualSize
+SizeOfRawData
+PointerToRawData
+PointerToRelocations
+PointerToLinenumbers
+NumberOfRelocations
+NumberOfLinenumbers
+PIMAGE_SECTION_HEADER
+ULONG_PTR
+DWORD_PTR
+OriginalFirstThunk
+ForwarderChain
+FirstThunk
+IMAGE_IMPORT_DESCRIPTOR
+PIMAGE_IMPORT_DESCRIPTOR
+pImageBase
+pDOSHeader
+pNTHeader
+pOptHeader
+unsigned int
+rvaTarget
+importsStartRVA
+importDesc
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long long
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long long
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+fivesbits
+unsigned int
+STRTOG_Zero
+STRTOG_Normal
+STRTOG_Denormal
+STRTOG_Infinite
+STRTOG_NaN
+STRTOG_NaNbits
+STRTOG_NoNumber
+STRTOG_Retmask
+STRTOG_Neg
+STRTOG_Inexlo
+STRTOG_Inexhi
+STRTOG_Inexact
+STRTOG_Underflow
+STRTOG_Overflow
+FPI_Round_zero
+FPI_Round_near
+FPI_Round_up
+FPI_Round_down
+unsigned long
+dbl_union
+localeconv
+decimal_point
+thousands_sep
+int_curr_symbol
+currency_symbol
+mon_decimal_point
+mon_thousands_sep
+mon_grouping
+positive_sign
+negative_sign
+int_frac_digits
+frac_digits
+p_cs_precedes
+p_sep_by_space
+n_cs_precedes
+n_sep_by_space
+p_sign_posn
+n_sign_posn
+unsigned short
+sudden_underflow
+decimalpoint
+drop_down
+infnanexp
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+NanDflt_Q_D2A
+unsigned long
+NanDflt_d_D2A
+NanDflt_f_D2A
+NanDflt_xL_D2A
+NanDflt_ldus_D2A
+unsigned short
+localeconv
+decimal_point
+thousands_sep
+int_curr_symbol
+currency_symbol
+mon_decimal_point
+mon_thousands_sep
+mon_grouping
+positive_sign
+negative_sign
+int_frac_digits
+frac_digits
+p_cs_precedes
+p_sep_by_space
+n_cs_precedes
+n_sep_by_space
+p_sign_posn
+n_sign_posn
+unsigned int
+decimalpoint
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned short
+unsigned int
+long double
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long
+private_mem
+dtoa_CS_init
+dtoa_CritSec
+DebugInfo
+unsigned short
+CreatorBackTraceIndex
+CriticalSection
+ProcessLocksList
+LIST_ENTRY
+EntryCount
+ContentionCount
+CreatorBackTraceIndexHigh
+SpareWORD
+PRTL_CRITICAL_SECTION_DEBUG
+LockCount
+RecursionCount
+OwningThread
+LockSemaphore
+SpinCount
+ULONG_PTR
+RTL_CRITICAL_SECTION
+CRITICAL_SECTION
+pmem_next
+unsigned int
+unsigned long long
+dtoa_unlock
+dtoa_lock
+dtoa_lock_cleanup
+last_CS_init
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned int
+STRTOG_Zero
+STRTOG_Normal
+STRTOG_Denormal
+STRTOG_Infinite
+STRTOG_NaN
+STRTOG_NaNbits
+STRTOG_NoNumber
+STRTOG_Retmask
+STRTOG_Neg
+STRTOG_Inexlo
+STRTOG_Inexhi
+STRTOG_Inexact
+STRTOG_Underflow
+STRTOG_Overflow
+FPI_Round_zero
+FPI_Round_near
+FPI_Round_up
+FPI_Round_down
+unsigned char
+unsigned long
+localeconv
+decimal_point
+thousands_sep
+int_curr_symbol
+currency_symbol
+mon_decimal_point
+mon_thousands_sep
+mon_grouping
+positive_sign
+negative_sign
+int_frac_digits
+frac_digits
+p_cs_precedes
+p_sep_by_space
+n_cs_precedes
+n_sep_by_space
+p_sign_posn
+n_sign_posn
+unsigned short
+sudden_underflow
+decimalpoint
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned short
+unsigned long
+unsigned int
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned int
+STRTOG_Zero
+STRTOG_Normal
+STRTOG_Denormal
+STRTOG_Infinite
+STRTOG_NaN
+STRTOG_NaNbits
+STRTOG_NoNumber
+STRTOG_Retmask
+STRTOG_Neg
+STRTOG_Inexlo
+STRTOG_Inexhi
+STRTOG_Inexact
+STRTOG_Underflow
+STRTOG_Overflow
+unsigned char
+unsigned long
+sudden_underflow
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned long
+unsigned long long
+clang version 20.1.7 (https://github.com/llvm/llvm-project.git 6146a88f60492b520a36f8f8f3231e15f3cc6082)
+unsigned char
+@HudDrawElement@4

@@ -1,0 +1,1014 @@
+DllMainCRTStartup@12
+atexit
+DirectDrawCreate@12
+CrashFilter(_EXCEPTION_POINTERS*)@4
+DirectDrawCreateEx@16
+DirectDrawEnumerateA@8
+DirectDrawEnumerateExA@12
+DirectDrawCreateClipper@12
+DllMain@12
+LogInit()
+Log(char const*, ...)
+LogOnce(char const*, char const*, ...)
+Unimpl(char const*)
+ConfigLoad()
+TraceLog(char const*, ...)
+TraceFrameEnd()
+void std::__1::__tree_balance_after_insert[abi:nn200100]<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+SurfTex::QueryInterface(_GUID const&, void**)@12
+Surface::QueryInterface(_GUID const&, void**)@12
+SurfTex::AddRef()@4
+SurfTex::Release()@4
+SurfTex::Load(IDirect3DTexture2*)@8
+Surface::~Surface()
+Surface::~Surface()
+Surface::ReleaseDC(HDC__*)@8
+Surface::FillDesc(_DDSURFACEDESC2*)
+Surface::BlitTex()
+Surface::OpaqueTex()
+Surface::Tex3D()
+Surface::Face3()
+Surface::Face7()
+LogGuid(char const*, _GUID const&)
+Surface::GetDDInterface(void**)@8
+Surface::AddAttachedSurface(IDirectDrawSurface4*)@8
+Surface::DeleteAttachedSurface(unsigned long, IDirectDrawSurface4*)@12
+Surface::GetAttachedSurface(_DDSCAPS2*, IDirectDrawSurface4**)@12
+Surface::Blt(tagRECT*, IDirectDrawSurface4*, tagRECT*, unsigned long, _DDBLTFX*)@24
+PresentFrame()
+ScreenToPlain(Surface*, tagRECT, tagRECT)
+Surface::BltFast(unsigned long, unsigned long, IDirectDrawSurface4*, tagRECT*, unsigned long)@24
+Surface::Flip(IDirectDrawSurface4*, unsigned long)@12
+Surface::Lock(tagRECT*, _DDSURFACEDESC2*, unsigned long, void*)@20
+Surface::Unlock(tagRECT*)@8
+Surface::GetDC(HDC__**)@8
+DDraw::QueryInterface(_GUID const&, void**)@12
+DDraw::Face1()
+DDraw::Face2()
+DDraw::Face7()
+DDraw::Release()@4
+DDraw::EnsureBackend()
+DDraw::SetCooperativeLevel(HWND__*, unsigned long)@12
+DDraw::SetDisplayMode(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long)@24
+DDraw::GetDisplayMode(_DDSURFACEDESC2*)@8
+DDraw::EnumDisplayModes(unsigned long, _DDSURFACEDESC2*, void*, long ( stdcall*)(_DDSURFACEDESC2*, void*))@20
+DDraw::GetCaps(_DDCAPS_DX7*, _DDCAPS_DX7*)@12
+DDraw::CreateSurface(_DDSURFACEDESC2*, IDirectDrawSurface4**, IUnknown*)@16
+FmtFromPF(_DDPIXELFORMAT const&)
+Device::GetCaps(_D3DDeviceDesc*, _D3DDeviceDesc*)@12
+FillDeviceDesc(_D3DDeviceDesc*)
+Device::EnumTextureFormats(long ( stdcall*)(_DDPIXELFORMAT*, void*), void*)@12
+Device::GetDirect3D(IDirect3D3**)@8
+Device::SetTexture(unsigned long, IDirect3DTexture2*)@12
+Viewport::SetViewport2(_D3DVIEWPORT2*)@8
+Viewport::Apply()
+Viewport::Clear2(unsigned long, _D3DRECT*, unsigned long, unsigned long, float, unsigned long)@28
+D3D::EnumDevices(long ( stdcall*)(_GUID*, char*, char*, _D3DDeviceDesc*, _D3DDeviceDesc*, void*), void*)@12
+D3D::CreateDevice(_GUID const&, IDirectDrawSurface4*, IDirect3DDevice3**, IUnknown*)@20
+SurfFace3::GetAttachedSurface(_DDSCAPS*, IDirectDrawSurface3**)@12
+SurfFace7::GetAttachedSurface(_DDSCAPS2*, IDirectDrawSurface7**)@12
+SurfFace3::EnumAttachedSurfaces(void*, long ( stdcall*)(IDirectDrawSurface*, _DDSURFACEDESC*, void*))@12
+DDraw::~DDraw()
+DDraw::~DDraw()
+SurfFace3::GetDDInterface(void**)@8
+SurfFace7::GetDDInterface(void**)@8
+FrontCreateDirectDraw(_GUID*, void**)
+EnumModes1(_DDSURFACEDESC2*, void*)@8
+TraceSnap(char const*)
+TraceDraw(char const*, int, unsigned long, void const*, unsigned long, unsigned short const*, unsigned long, unsigned long)
+TraceSnapIfBig(unsigned long, void const*, unsigned long)
+Surface::AddRef()@4
+Surface::Release()@4
+Clipper::Release()@4
+FmtConv::ToARGB(unsigned int) const
+DDraw::AddRef()@4
+Surface::BlitTexFor(bool)
+FmtConv::Init(Fmt const&)
+D3D::AddRef()@4
+SurfTex::GetHandle(IDirect3DDevice2*, unsigned long*)@12
+SurfTex::PaletteChanged(unsigned long, unsigned long)@12
+IDirectDrawSurface4Stub::AddOverlayDirtyRect(tagRECT*)@8
+IDirectDrawSurface4Stub::BltBatch(_DDBLTBATCH*, unsigned long, unsigned long)@16
+IDirectDrawSurface4Stub::EnumAttachedSurfaces(void*, long ( stdcall*)(IDirectDrawSurface4*, _DDSURFACEDESC2*, void*))@12
+IDirectDrawSurface4Stub::EnumOverlayZOrders(unsigned long, void*, long ( stdcall*)(IDirectDrawSurface4*, _DDSURFACEDESC2*, void*))@16
+Surface::GetBltStatus(unsigned long)@8
+Surface::GetCaps(_DDSCAPS2*)@8
+Surface::GetClipper(IDirectDrawClipper**)@8
+Surface::GetColorKey(unsigned long, _DDCOLORKEY*)@12
+Surface::GetFlipStatus(unsigned long)@8
+IDirectDrawSurface4Stub::GetOverlayPosition(long*, long*)@12
+IDirectDrawSurface4Stub::GetPalette(IDirectDrawPalette**)@8
+Surface::GetPixelFormat(_DDPIXELFORMAT*)@8
+Surface::GetSurfaceDesc(_DDSURFACEDESC2*)@8
+Surface::Initialize(IDirectDraw*, _DDSURFACEDESC2*)@12
+Surface::IsLost()@4
+Surface::Restore()@4
+Surface::SetClipper(IDirectDrawClipper*)@8
+Surface::SetColorKey(unsigned long, _DDCOLORKEY*)@12
+IDirectDrawSurface4Stub::SetOverlayPosition(long, long)@12
+Surface::SetPalette(IDirectDrawPalette*)@8
+IDirectDrawSurface4Stub::UpdateOverlay(tagRECT*, IDirectDrawSurface4*, tagRECT*, unsigned long, _DDOVERLAYFX*)@24
+IDirectDrawSurface4Stub::UpdateOverlayDisplay(unsigned long)@8
+IDirectDrawSurface4Stub::UpdateOverlayZOrder(unsigned long, IDirectDrawSurface4*)@12
+Surface::PageLock(unsigned long)@8
+Surface::PageUnlock(unsigned long)@8
+IDirectDrawSurface4Stub::SetSurfaceDesc(_DDSURFACEDESC2*, unsigned long)@12
+Surface::SetPrivateData(_GUID const&, void*, unsigned long, unsigned long)@20
+IDirectDrawSurface4Stub::GetPrivateData(_GUID const&, void*, unsigned long*)@16
+IDirectDrawSurface4Stub::FreePrivateData(_GUID const&)@8
+Surface::GetUniquenessValue(unsigned long*)@8
+Surface::ChangeUniquenessValue()@4
+Viewport::QueryInterface(_GUID const&, void**)@12
+Viewport::AddRef()@4
+Viewport::Release()@4
+Viewport::Initialize(IDirect3D*)@8
+Viewport::GetViewport(_D3DVIEWPORT*)@8
+Viewport::SetViewport(_D3DVIEWPORT*)@8
+IDirect3DViewport3Stub::TransformVertices(unsigned long, _D3DTRANSFORMDATA*, unsigned long, unsigned long*)@20
+IDirect3DViewport3Stub::LightElements(unsigned long, _D3DLIGHTDATA*)@12
+Viewport::SetBackground(unsigned long)@8
+IDirect3DViewport3Stub::GetBackground(unsigned long*, int*)@12
+IDirect3DViewport3Stub::SetBackgroundDepth(IDirectDrawSurface*)@8
+IDirect3DViewport3Stub::GetBackgroundDepth(IDirectDrawSurface**, int*)@12
+Viewport::Clear(unsigned long, _D3DRECT*, unsigned long)@16
+Viewport::AddLight(IDirect3DLight*)@8
+Viewport::DeleteLight(IDirect3DLight*)@8
+IDirect3DViewport3Stub::NextLight(IDirect3DLight*, IDirect3DLight**, unsigned long)@16
+Viewport::GetViewport2(_D3DVIEWPORT2*)@8
+IDirect3DViewport3Stub::SetBackgroundDepth2(IDirectDrawSurface4*)@8
+IDirect3DViewport3Stub::GetBackgroundDepth2(IDirectDrawSurface4**, int*)@12
+Device::QueryInterface(_GUID const&, void**)@12
+Device::AddRef()@4
+Device::Release()@4
+Device::GetStats(D3DSTATS*)@8
+Device::AddViewport(IDirect3DViewport3*)@8
+Device::DeleteViewport(IDirect3DViewport3*)@8
+Device::NextViewport(IDirect3DViewport3*, IDirect3DViewport3**, unsigned long)@16
+Device::BeginScene()@4
+Device::EndScene()@4
+Device::SetCurrentViewport(IDirect3DViewport3*)@8
+Device::GetCurrentViewport(IDirect3DViewport3**)@8
+Device::SetRenderTarget(IDirectDrawSurface4*, unsigned long)@12
+Device::GetRenderTarget(IDirectDrawSurface4**)@8
+IDirect3DDevice3Stub::Begin(D3DPRIMITIVETYPE, unsigned long, unsigned long)@16
+IDirect3DDevice3Stub::BeginIndexed(D3DPRIMITIVETYPE, unsigned long, void*, unsigned long, unsigned long)@24
+IDirect3DDevice3Stub::Vertex(void*)@8
+IDirect3DDevice3Stub::Index(unsigned short)@8
+IDirect3DDevice3Stub::End(unsigned long)@8
+Device::GetRenderState(D3DRENDERSTATETYPE, unsigned long*)@12
+Device::SetRenderState(D3DRENDERSTATETYPE, unsigned long)@12
+Device::GetLightState(D3DLIGHTSTATETYPE, unsigned long*)@12
+Device::SetLightState(D3DLIGHTSTATETYPE, unsigned long)@12
+Device::SetTransform(_D3DTRANSFORMSTATETYPE, _D3DMATRIX*)@12
+Device::GetTransform(_D3DTRANSFORMSTATETYPE, _D3DMATRIX*)@12
+Device::MultiplyTransform(_D3DTRANSFORMSTATETYPE, _D3DMATRIX*)@12
+Device::DrawPrimitive(D3DPRIMITIVETYPE, unsigned long, void*, unsigned long, unsigned long)@24
+Device::DrawIndexedPrimitive(D3DPRIMITIVETYPE, unsigned long, void*, unsigned long, unsigned short*, unsigned long, unsigned long)@32
+Device::SetClipStatus(_D3DCLIPSTATUS*)@8
+Device::GetClipStatus(_D3DCLIPSTATUS*)@8
+IDirect3DDevice3Stub::DrawPrimitiveStrided(D3DPRIMITIVETYPE, unsigned long, _D3DDRAWPRIMITIVESTRIDEDDATA*, unsigned long, unsigned long)@24
+IDirect3DDevice3Stub::DrawIndexedPrimitiveStrided(D3DPRIMITIVETYPE, unsigned long, _D3DDRAWPRIMITIVESTRIDEDDATA*, unsigned long, unsigned short*, unsigned long, unsigned long)@32
+IDirect3DDevice3Stub::DrawPrimitiveVB(D3DPRIMITIVETYPE, IDirect3DVertexBuffer*, unsigned long, unsigned long, unsigned long)@24
+IDirect3DDevice3Stub::DrawIndexedPrimitiveVB(D3DPRIMITIVETYPE, IDirect3DVertexBuffer*, unsigned short*, unsigned long, unsigned long)@24
+IDirect3DDevice3Stub::ComputeSphereVisibility(_D3DVECTOR*, float*, unsigned long, unsigned long, unsigned long*)@24
+Device::GetTexture(unsigned long, IDirect3DTexture2**)@12
+Device::GetTextureStageState(unsigned long, _D3DTEXTURESTAGESTATETYPE, unsigned long*)@16
+Device::SetTextureStageState(unsigned long, _D3DTEXTURESTAGESTATETYPE, unsigned long)@16
+Device::ValidateDevice(unsigned long*)@8
+D3D::QueryInterface(_GUID const&, void**)@12
+D3D::Release()@4
+D3D::CreateLight(IDirect3DLight**, IUnknown*)@12
+IDirect3D3Stub::CreateMaterial(IDirect3DMaterial3**, IUnknown*)@12
+D3D::CreateViewport(IDirect3DViewport3**, IUnknown*)@12
+IDirect3D3Stub::FindDevice(_D3DFINDDEVICESEARCH*, _D3DFINDDEVICERESULT*)@12
+IDirect3D3Stub::CreateVertexBuffer(_D3DVERTEXBUFFERDESC*, IDirect3DVertexBuffer**, unsigned long, IUnknown*)@20
+D3D::EnumZBufferFormats(_GUID const&, long ( stdcall*)(_DDPIXELFORMAT*, void*), void*)@16
+D3D::EvictManagedTextures()@4
+DDraw::Compact()@4
+DDraw::CreateClipper(unsigned long, IDirectDrawClipper**, IUnknown*)@16
+IDirectDraw4Stub::CreatePalette(unsigned long, tagPALETTEENTRY*, IDirectDrawPalette**, IUnknown*)@20
+IDirectDraw4Stub::DuplicateSurface(IDirectDrawSurface4*, IDirectDrawSurface4**)@12
+IDirectDraw4Stub::EnumSurfaces(unsigned long, _DDSURFACEDESC2*, void*, long ( stdcall*)(IDirectDrawSurface4*, _DDSURFACEDESC2*, void*))@20
+DDraw::FlipToGDISurface()@4
+DDraw::GetFourCCCodes(unsigned long*, unsigned long*)@12
+DDraw::GetGDISurface(IDirectDrawSurface4**)@8
+DDraw::GetMonitorFrequency(unsigned long*)@8
+DDraw::GetScanLine(unsigned long*)@8
+DDraw::GetVerticalBlankStatus(int*)@8
+DDraw::Initialize(_GUID*)@8
+DDraw::RestoreDisplayMode()@4
+DDraw::WaitForVerticalBlank(unsigned long, void*)@12
+DDraw::GetAvailableVidMem(_DDSCAPS2*, unsigned long*, unsigned long*)@16
+IDirectDraw4Stub::GetSurfaceFromDC(HDC__*, IDirectDrawSurface4**)@12
+DDraw::RestoreAllSurfaces()@4
+DDraw::TestCooperativeLevel()@4
+DDraw::GetDeviceIdentifier(tagDDDEVICEIDENTIFIER*, unsigned long)@12
+SurfFace3::QueryInterface(_GUID const&, void**)@12
+SurfFace3::AddRef()@4
+SurfFace3::Release()@4
+SurfFace3::AddAttachedSurface(IDirectDrawSurface3*)@8
+IDirectDrawSurface3Stub::AddOverlayDirtyRect(tagRECT*)@8
+SurfFace3::Blt(tagRECT*, IDirectDrawSurface3*, tagRECT*, unsigned long, _DDBLTFX*)@24
+IDirectDrawSurface3Stub::BltBatch(_DDBLTBATCH*, unsigned long, unsigned long)@16
+SurfFace3::BltFast(unsigned long, unsigned long, IDirectDrawSurface3*, tagRECT*, unsigned long)@24
+SurfFace3::DeleteAttachedSurface(unsigned long, IDirectDrawSurface3*)@12
+IDirectDrawSurface3Stub::EnumOverlayZOrders(unsigned long, void*, long ( stdcall*)(IDirectDrawSurface*, _DDSURFACEDESC*, void*))@16
+SurfFace3::Flip(IDirectDrawSurface3*, unsigned long)@12
+SurfFace3::GetBltStatus(unsigned long)@8
+SurfFace3::GetCaps(_DDSCAPS*)@8
+SurfFace3::GetClipper(IDirectDrawClipper**)@8
+SurfFace3::GetColorKey(unsigned long, _DDCOLORKEY*)@12
+SurfFace3::GetDC(HDC__**)@8
+SurfFace3::GetFlipStatus(unsigned long)@8
+IDirectDrawSurface3Stub::GetOverlayPosition(long*, long*)@12
+SurfFace3::GetPalette(IDirectDrawPalette**)@8
+SurfFace3::GetPixelFormat(_DDPIXELFORMAT*)@8
+SurfFace3::GetSurfaceDesc(_DDSURFACEDESC*)@8
+SurfFace3::Initialize(IDirectDraw*, _DDSURFACEDESC*)@12
+SurfFace3::IsLost()@4
+SurfFace3::Lock(tagRECT*, _DDSURFACEDESC*, unsigned long, void*)@20
+SurfFace3::ReleaseDC(HDC__*)@8
+SurfFace3::Restore()@4
+SurfFace3::SetClipper(IDirectDrawClipper*)@8
+SurfFace3::SetColorKey(unsigned long, _DDCOLORKEY*)@12
+IDirectDrawSurface3Stub::SetOverlayPosition(long, long)@12
+SurfFace3::SetPalette(IDirectDrawPalette*)@8
+SurfFace3::Unlock(void*)@8
+IDirectDrawSurface3Stub::UpdateOverlay(tagRECT*, IDirectDrawSurface3*, tagRECT*, unsigned long, _DDOVERLAYFX*)@24
+IDirectDrawSurface3Stub::UpdateOverlayDisplay(unsigned long)@8
+IDirectDrawSurface3Stub::UpdateOverlayZOrder(unsigned long, IDirectDrawSurface3*)@12
+SurfFace3::PageLock(unsigned long)@8
+SurfFace3::PageUnlock(unsigned long)@8
+IDirectDrawSurface3Stub::SetSurfaceDesc(_DDSURFACEDESC*, unsigned long)@12
+SurfFace7::QueryInterface(_GUID const&, void**)@12
+SurfFace7::AddRef()@4
+SurfFace7::Release()@4
+SurfFace7::AddAttachedSurface(IDirectDrawSurface7*)@8
+IDirectDrawSurface7Stub::AddOverlayDirtyRect(tagRECT*)@8
+SurfFace7::Blt(tagRECT*, IDirectDrawSurface7*, tagRECT*, unsigned long, _DDBLTFX*)@24
+IDirectDrawSurface7Stub::BltBatch(_DDBLTBATCH*, unsigned long, unsigned long)@16
+SurfFace7::BltFast(unsigned long, unsigned long, IDirectDrawSurface7*, tagRECT*, unsigned long)@24
+SurfFace7::DeleteAttachedSurface(unsigned long, IDirectDrawSurface7*)@12
+IDirectDrawSurface7Stub::EnumAttachedSurfaces(void*, long ( stdcall*)(IDirectDrawSurface7*, _DDSURFACEDESC2*, void*))@12
+IDirectDrawSurface7Stub::EnumOverlayZOrders(unsigned long, void*, long ( stdcall*)(IDirectDrawSurface7*, _DDSURFACEDESC2*, void*))@16
+SurfFace7::Flip(IDirectDrawSurface7*, unsigned long)@12
+SurfFace7::GetBltStatus(unsigned long)@8
+SurfFace7::GetCaps(_DDSCAPS2*)@8
+SurfFace7::GetClipper(IDirectDrawClipper**)@8
+SurfFace7::GetColorKey(unsigned long, _DDCOLORKEY*)@12
+SurfFace7::GetDC(HDC__**)@8
+SurfFace7::GetFlipStatus(unsigned long)@8
+IDirectDrawSurface7Stub::GetOverlayPosition(long*, long*)@12
+SurfFace7::GetPalette(IDirectDrawPalette**)@8
+SurfFace7::GetPixelFormat(_DDPIXELFORMAT*)@8
+SurfFace7::GetSurfaceDesc(_DDSURFACEDESC2*)@8
+SurfFace7::Initialize(IDirectDraw*, _DDSURFACEDESC2*)@12
+SurfFace7::IsLost()@4
+SurfFace7::Lock(tagRECT*, _DDSURFACEDESC2*, unsigned long, void*)@20
+SurfFace7::ReleaseDC(HDC__*)@8
+SurfFace7::Restore()@4
+SurfFace7::SetClipper(IDirectDrawClipper*)@8
+SurfFace7::SetColorKey(unsigned long, _DDCOLORKEY*)@12
+IDirectDrawSurface7Stub::SetOverlayPosition(long, long)@12
+SurfFace7::SetPalette(IDirectDrawPalette*)@8
+SurfFace7::Unlock(tagRECT*)@8
+IDirectDrawSurface7Stub::UpdateOverlay(tagRECT*, IDirectDrawSurface7*, tagRECT*, unsigned long, _DDOVERLAYFX*)@24
+IDirectDrawSurface7Stub::UpdateOverlayDisplay(unsigned long)@8
+IDirectDrawSurface7Stub::UpdateOverlayZOrder(unsigned long, IDirectDrawSurface7*)@12
+SurfFace7::PageLock(unsigned long)@8
+SurfFace7::PageUnlock(unsigned long)@8
+IDirectDrawSurface7Stub::SetSurfaceDesc(_DDSURFACEDESC2*, unsigned long)@12
+SurfFace7::SetPrivateData(_GUID const&, void*, unsigned long, unsigned long)@20
+IDirectDrawSurface7Stub::GetPrivateData(_GUID const&, void*, unsigned long*)@16
+IDirectDrawSurface7Stub::FreePrivateData(_GUID const&)@8
+SurfFace7::GetUniquenessValue(unsigned long*)@8
+SurfFace7::ChangeUniquenessValue()@4
+SurfFace7::SetPriority(unsigned long)@8
+SurfFace7::GetPriority(unsigned long*)@8
+SurfFace7::SetLOD(unsigned long)@8
+SurfFace7::GetLOD(unsigned long*)@8
+unsigned int std::__1::__hash_table<std::__1::__hash_value_type<void const*, Surface*>, std::__1::__unordered_map_hasher<void const*, std::__1::__hash_value_type<void const*, Surface*>, std::__1::hash<void const*>, std::__1::equal_to<void const*>, true>, std::__1::__unordered_map_equal<void const*, std::__1::__hash_value_type<void const*, Surface*>, std::__1::equal_to<void const*>, std::__1::hash<void const*>, true>, std::__1::allocator<std::__1::__hash_value_type<void const*, Surface*> > >::__erase_unique<void const*>(void const* const&)
+void std::__1::__hash_table<std::__1::__hash_value_type<void const*, Surface*>, std::__1::__unordered_map_hasher<void const*, std::__1::__hash_value_type<void const*, Surface*>, std::__1::hash<void const*>, std::__1::equal_to<void const*>, true>, std::__1::__unordered_map_equal<void const*, std::__1::__hash_value_type<void const*, Surface*>, std::__1::equal_to<void const*>, std::__1::hash<void const*>, true>, std::__1::allocator<std::__1::__hash_value_type<void const*, Surface*> > >::__do_rehash<true>(unsigned int)
+DDFaceOld<IDirectDrawStub>::QueryInterface(_GUID const&, void**)@12
+DDFaceOld<IDirectDrawStub>::AddRef()@4
+DDFaceOld<IDirectDrawStub>::Release()@4
+DDFaceOld<IDirectDrawStub>::Compact()@4
+DDFaceOld<IDirectDrawStub>::CreateClipper(unsigned long, IDirectDrawClipper**, IUnknown*)@16
+IDirectDrawStub::CreatePalette(unsigned long, tagPALETTEENTRY*, IDirectDrawPalette**, IUnknown*)@20
+DDFaceOld<IDirectDrawStub>::CreateSurface(_DDSURFACEDESC*, IDirectDrawSurface**, IUnknown*)@16
+IDirectDrawStub::DuplicateSurface(IDirectDrawSurface*, IDirectDrawSurface**)@12
+DDFaceOld<IDirectDrawStub>::EnumDisplayModes(unsigned long, _DDSURFACEDESC*, void*, long ( stdcall*)(_DDSURFACEDESC*, void*))@20
+IDirectDrawStub::EnumSurfaces(unsigned long, _DDSURFACEDESC*, void*, long ( stdcall*)(IDirectDrawSurface*, _DDSURFACEDESC*, void*))@20
+DDFaceOld<IDirectDrawStub>::FlipToGDISurface()@4
+DDFaceOld<IDirectDrawStub>::GetCaps(_DDCAPS_DX7*, _DDCAPS_DX7*)@12
+DDFaceOld<IDirectDrawStub>::GetDisplayMode(_DDSURFACEDESC*)@8
+DDFaceOld<IDirectDrawStub>::GetFourCCCodes(unsigned long*, unsigned long*)@12
+DDFaceOld<IDirectDrawStub>::GetGDISurface(IDirectDrawSurface**)@8
+DDFaceOld<IDirectDrawStub>::GetMonitorFrequency(unsigned long*)@8
+DDFaceOld<IDirectDrawStub>::GetScanLine(unsigned long*)@8
+DDFaceOld<IDirectDrawStub>::GetVerticalBlankStatus(int*)@8
+DDFaceOld<IDirectDrawStub>::Initialize(_GUID*)@8
+DDFaceOld<IDirectDrawStub>::RestoreDisplayMode()@4
+DDFaceOld<IDirectDrawStub>::SetCooperativeLevel(HWND__*, unsigned long)@12
+DDFace1::SetDisplayMode(unsigned long, unsigned long, unsigned long)@16
+DDFaceOld<IDirectDrawStub>::WaitForVerticalBlank(unsigned long, void*)@12
+DDFaceOld<IDirectDraw2Stub>::QueryInterface(_GUID const&, void**)@12
+DDFaceOld<IDirectDraw2Stub>::AddRef()@4
+DDFaceOld<IDirectDraw2Stub>::Release()@4
+DDFaceOld<IDirectDraw2Stub>::Compact()@4
+DDFaceOld<IDirectDraw2Stub>::CreateClipper(unsigned long, IDirectDrawClipper**, IUnknown*)@16
+IDirectDraw2Stub::CreatePalette(unsigned long, tagPALETTEENTRY*, IDirectDrawPalette**, IUnknown*)@20
+DDFaceOld<IDirectDraw2Stub>::CreateSurface(_DDSURFACEDESC*, IDirectDrawSurface**, IUnknown*)@16
+IDirectDraw2Stub::DuplicateSurface(IDirectDrawSurface*, IDirectDrawSurface**)@12
+DDFaceOld<IDirectDraw2Stub>::EnumDisplayModes(unsigned long, _DDSURFACEDESC*, void*, long ( stdcall*)(_DDSURFACEDESC*, void*))@20
+IDirectDraw2Stub::EnumSurfaces(unsigned long, _DDSURFACEDESC*, void*, long ( stdcall*)(IDirectDrawSurface*, _DDSURFACEDESC*, void*))@20
+DDFaceOld<IDirectDraw2Stub>::FlipToGDISurface()@4
+DDFaceOld<IDirectDraw2Stub>::GetCaps(_DDCAPS_DX7*, _DDCAPS_DX7*)@12
+DDFaceOld<IDirectDraw2Stub>::GetDisplayMode(_DDSURFACEDESC*)@8
+DDFaceOld<IDirectDraw2Stub>::GetFourCCCodes(unsigned long*, unsigned long*)@12
+DDFaceOld<IDirectDraw2Stub>::GetGDISurface(IDirectDrawSurface**)@8
+DDFaceOld<IDirectDraw2Stub>::GetMonitorFrequency(unsigned long*)@8
+DDFaceOld<IDirectDraw2Stub>::GetScanLine(unsigned long*)@8
+DDFaceOld<IDirectDraw2Stub>::GetVerticalBlankStatus(int*)@8
+DDFaceOld<IDirectDraw2Stub>::Initialize(_GUID*)@8
+DDFaceOld<IDirectDraw2Stub>::RestoreDisplayMode()@4
+DDFaceOld<IDirectDraw2Stub>::SetCooperativeLevel(HWND__*, unsigned long)@12
+DDFace2::SetDisplayMode(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long)@24
+DDFaceOld<IDirectDraw2Stub>::WaitForVerticalBlank(unsigned long, void*)@12
+DDFace2::GetAvailableVidMem(_DDSCAPS*, unsigned long*, unsigned long*)@16
+DDFace7::QueryInterface(_GUID const&, void**)@12
+DDFace7::AddRef()@4
+DDFace7::Release()@4
+DDFace7::Compact()@4
+DDFace7::CreateClipper(unsigned long, IDirectDrawClipper**, IUnknown*)@16
+IDirectDraw7Stub::CreatePalette(unsigned long, tagPALETTEENTRY*, IDirectDrawPalette**, IUnknown*)@20
+DDFace7::CreateSurface(_DDSURFACEDESC2*, IDirectDrawSurface7**, IUnknown*)@16
+IDirectDraw7Stub::DuplicateSurface(IDirectDrawSurface7*, IDirectDrawSurface7**)@12
+DDFace7::EnumDisplayModes(unsigned long, _DDSURFACEDESC2*, void*, long ( stdcall*)(_DDSURFACEDESC2*, void*))@20
+IDirectDraw7Stub::EnumSurfaces(unsigned long, _DDSURFACEDESC2*, void*, long ( stdcall*)(IDirectDrawSurface7*, _DDSURFACEDESC2*, void*))@20
+DDFace7::FlipToGDISurface()@4
+DDFace7::GetCaps(_DDCAPS_DX7*, _DDCAPS_DX7*)@12
+DDFace7::GetDisplayMode(_DDSURFACEDESC2*)@8
+DDFace7::GetFourCCCodes(unsigned long*, unsigned long*)@12
+DDFace7::GetGDISurface(IDirectDrawSurface7**)@8
+DDFace7::GetMonitorFrequency(unsigned long*)@8
+DDFace7::GetScanLine(unsigned long*)@8
+DDFace7::GetVerticalBlankStatus(int*)@8
+DDFace7::Initialize(_GUID*)@8
+DDFace7::RestoreDisplayMode()@4
+DDFace7::SetCooperativeLevel(HWND__*, unsigned long)@12
+DDFace7::SetDisplayMode(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long)@24
+DDFace7::WaitForVerticalBlank(unsigned long, void*)@12
+DDFace7::GetAvailableVidMem(_DDSCAPS2*, unsigned long*, unsigned long*)@16
+IDirectDraw7Stub::GetSurfaceFromDC(HDC__*, IDirectDrawSurface7**)@12
+DDFace7::RestoreAllSurfaces()@4
+DDFace7::TestCooperativeLevel()@4
+DDFace7::GetDeviceIdentifier(tagDDDEVICEIDENTIFIER2*, unsigned long)@12
+IDirectDraw7Stub::StartModeTest(tagSIZE*, unsigned long, unsigned long)@16
+IDirectDraw7Stub::EvaluateMode(unsigned long, unsigned long*)@12
+Clipper::AddRef()@4
+Clipper::QueryInterface(_GUID const&, void**)@12
+IDirectDrawClipperStub::GetClipList(tagRECT*, _RGNDATA*, unsigned long*)@16
+Clipper::GetHWnd(HWND__**)@8
+Clipper::Initialize(IDirectDraw*, unsigned long)@12
+Clipper::IsClipListChanged(int*)@8
+Clipper::SetClipList(_RGNDATA*, unsigned long)@12
+Clipper::SetHWnd(unsigned long, HWND__*)@12
+void std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >::__assign_with_size[abi:nn200100]<unsigned char*, unsigned char*>(unsigned char*, unsigned char*, int)
+void std::__1::__introsort<std::__1::_ClassicAlgPolicy, std::__1::__less<void, void>&, std::__1::pair<int, int>*, false>(std::__1::pair<int, int>*, std::__1::pair<int, int>*, std::__1::__less<void, void>&, std::__1::iterator_traits<std::__1::pair<int, int>*>::difference_type, bool)
+bool std::__1::__insertion_sort_incomplete[abi:nn200100]<std::__1::_ClassicAlgPolicy, std::__1::__less<void, void>&, std::__1::pair<int, int>*>(std::__1::pair<int, int>*, std::__1::pair<int, int>*, std::__1::__less<void, void>&)
+void std::__1::__sift_down[abi:nn200100]<std::__1::_ClassicAlgPolicy, std::__1::__less<void, void>&, std::__1::pair<int, int>*>(std::__1::pair<int, int>*, std::__1::__less<void, void>&, std::__1::iterator_traits<std::__1::pair<int, int>*>::difference_type, std::__1::pair<int, int>*)
+void std::__1::__pop_heap[abi:nn200100]<std::__1::_ClassicAlgPolicy, std::__1::__less<void, void>, std::__1::pair<int, int>*>(std::__1::pair<int, int>*, std::__1::pair<int, int>*, std::__1::__less<void, void>&, std::__1::iterator_traits<std::__1::pair<int, int>*>::difference_type)
+be::Init(HWND__*)
+be::Ready()
+be::Shutdown()
+be::Window()
+be::ReleaseTargets()
+be::ClearCaches()
+be::SetVirtualMode(int, int)
+be::CreateTargets()
+be::GetVirtualMode(int*, int*)
+be::GetMapping()
+be::TexCreate(int, int, bool)
+be::TexUpload(be::Tex*, unsigned int const*, int)
+be::TexDestroy(be::Tex*)
+be::BeginScene()
+be::EndScene()
+be::SetRenderState6(unsigned int, unsigned int)
+be::SetTextureStageState6(unsigned int, unsigned int, unsigned int)
+be::SetTexture(unsigned int, be::Tex*, bool)
+be::SetViewport(int, int, int, int, float, float)
+be::Clear(unsigned int, long const*, unsigned int, unsigned int, float, unsigned int)
+be::ClearRect(be::RRect const&, unsigned int, unsigned int, float, unsigned int)
+be::DrawPrimitiveTL(unsigned int, unsigned int, void const*, unsigned int)
+be::GamePipe(be::Pipe&)
+be::ConvertVerts(unsigned int, void const*, unsigned int)
+be::Apply(be::Pipe const&)
+be::PushIndices(unsigned short const*, unsigned int)
+be::DrawIndexedPrimitiveTL(unsigned int, unsigned int, void const*, unsigned int, unsigned short const*, unsigned int)
+be::Blit(be::Tex*, int, int, tagRECT const&, tagRECT const&, bool)
+be::DrawQuad(float, float, float, float, float, unsigned int, float, float, float, float)
+be::Fill(tagRECT const*, unsigned int)
+be::ReadBack(tagRECT const&, unsigned int*, int)
+be::Present()
+be::SetOverlayPixels(unsigned int const*, int, int, int, int)
+be::SetOverlay(be::Tex*, int, int, int, int)
+be::OverlayClear()
+be::OverlayAdd(be::Tex*, int, int, int, int)
+be::GetOutputSize(int*, int*)
+be::SetPresentCallback(void (*)())
+be::TraceState()
+be::SetHudTransform(bool, float, float, float)
+be::EnsureVB(unsigned int)
+be::EnsureIB(unsigned int)
+be::GetSampler(be::Pipe::Smp const&)
+GameFixEarly()
+GameFixInstall()
+Write(unsigned char*, void const*, unsigned int)
+SetModeHook(void*, int, int, int, int)
+HooksInstall(HWND__*)
+PatchIAT(HINSTANCE__*, char const*, char const*, void*)
+h_GetCursorPos(tagPOINT*)@4
+h_SetCursorPos(int, int)@8
+h_ScreenToClient(HWND__*, tagPOINT*)@8
+h_ClientToScreen(HWND__*, tagPOINT*)@8
+h_GetClientRect(HWND__*, tagRECT*)@8
+h_GetWindowRect(HWND__*, tagRECT*)@8
+h_GetSystemMetrics(int)@4
+h_SetWindowPos(HWND__*, HWND__*, int, int, int, int, unsigned int)@28
+h_GetKeyState(int)@4
+HookProc(HWND__*, unsigned int, unsigned int, long)@16
+ClipToWindow(bool)
+@HudDrawElement@4
+InstallHudPatch()
+InstallFovPatch()
+CamSetThunk(void*, float, float, float)
+SpeechMutedNow
+InstallSpeechMute()
+QolGlobals()
+host::OutputSize(int*, int*)
+host::ShowPixels(unsigned int const*, int, int, int, int)
+host::Hide()
+host::SetRenderCallback(void (*)())
+host::OnPresent()
+host::AfterHudElement(void*)
+host::AddText(char const*, unsigned long, int, double, double, bool, be::Mapping const&)
+host::TextSprite* std::__1::vector<host::TextSprite, std::__1::allocator<host::TextSprite> >::__emplace_back_slow_path<host::TextSprite>(host::TextSprite&&)
+ctx::Init()
+ctx::ParseKey(char const*)
+ctx::Render()
+ctx::BoundKey()
+ctx::OwnsKey(int)
+ctx::Toast(unsigned long*)
+ctx::MenuObject()
+ctx::InGame()
+ctx::Active()
+ctx::OnCommandMenuDrawn(void*)
+ctx::SpeechMuted()
+ctx::OnMouseDelta(int, int)
+ctx::OnMessage(HWND__*, unsigned int, unsigned int, long)
+ctx::IsKeyMsg(unsigned int, unsigned int, int, bool*)
+ctx::Close(bool)
+ctx::Choose()
+ctx::ReadItems()
+ctx::Render()::$_0::operator()(int, int) const
+ctx::Hop(int)
+ctx::Item* std::__1::vector<ctx::Item, std::__1::allocator<ctx::Item> >::__emplace_back_slow_path<ctx::Item const&>(ctx::Item const&)
+tags::NewFrame()
+tags::Chars(tags::Projection*)
+tags::Font(int)
+tags::Prepare(int, int)
+tags::Count()
+tags::Get(int, int*, int*, unsigned long*, char const**)
+tags::Draw(HDC__*, int)
+tags::TestAddr(char const*)
+void std::__1::__introsort<std::__1::_ClassicAlgPolicy, tags::Prepare(int, int)::$_0&, tags::Tag*, false>(tags::Tag*, tags::Tag*, tags::Prepare(int, int)::$_0&, std::__1::iterator_traits<tags::Tag*>::difference_type, bool)
+bool std::__1::__insertion_sort_incomplete[abi:nn200100]<std::__1::_ClassicAlgPolicy, tags::Prepare(int, int)::$_0&, tags::Tag*>(tags::Tag*, tags::Tag*, tags::Prepare(int, int)::$_0&)
+qc::Init(char const*, char const*)
+qc::Cfg(char const*, char const*)
+qc::SetWindow(HWND__*, long ( stdcall*)(HWND__*, unsigned int, unsigned int, long))
+qc::Busy()
+qc::FakeKeyDown(int)
+qc::Update()
+qc::FindItem(unsigned char*, char const*, int*)
+qc::SendKey(int, bool)
+qc::Tap(int)
+qc::Prompt()
+qc::OnMessage(HWND__*, unsigned int, unsigned int, long)
+qc::DirectRestrain(unsigned char*)
+blood::Init(char const*)
+blood::HitHook(void*, void*, int, float, float, float)
+ceilf
+floorf
+fprintf
+snprintf
+sscanf
+vfprintf
+vsnprintf
+unwind_phase2
+unwind_phase2_forced
+strtold
+wcstof
+wcstold
+swprintf
+(anonymous namespace)::fallback_malloc(unsigned int)
+logAPIs
+logUnwinding
+logDWARF
+demangling_terminate_handler()
+demangling_unexpected_handler()
+rvOK
+global constructors keyed to 000100
+fpreset
+(anonymous namespace)::itanium_demangle::Node::dump() const
+void (anonymous namespace)::itanium_demangle::Node::visit<std::__1::reference_wrapper<(anonymous namespace)::DumpVisitor> >(std::__1::reference_wrapper<(anonymous namespace)::DumpVisitor>) const
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::~AbstractManglingParser()
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::NodeArrayNode const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NodeArrayNode const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NodeArrayNode const*&&)
+void (anonymous namespace)::DumpVisitor::printWithPendingNewline<(anonymous namespace)::itanium_demangle::NodeArray>((anonymous namespace)::itanium_demangle::NodeArray)
+void (anonymous namespace)::DumpVisitor::printWithComma<(anonymous namespace)::itanium_demangle::Node const*>((anonymous namespace)::itanium_demangle::Node const*)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::DotSuffix const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DotSuffix const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DotSuffix const*&&)
+void (anonymous namespace)::DumpVisitor::printWithComma<std::__1::basic_string_view<char, std::__1::char_traits<char> > >(std::__1::basic_string_view<char, std::__1::char_traits<char> >)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::VendorExtQualType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::VendorExtQualType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::VendorExtQualType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::QualType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::QualType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::QualType const*&&)
+void (anonymous namespace)::DumpVisitor::printWithComma<(anonymous namespace)::itanium_demangle::Qualifiers>((anonymous namespace)::itanium_demangle::Qualifiers)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ConversionOperatorType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConversionOperatorType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConversionOperatorType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::PostfixQualifiedType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PostfixQualifiedType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PostfixQualifiedType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ElaboratedTypeSpefType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ElaboratedTypeSpefType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ElaboratedTypeSpefType const*&&)
+void (anonymous namespace)::DumpVisitor::printWithComma<(anonymous namespace)::itanium_demangle::Node*>((anonymous namespace)::itanium_demangle::Node*)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TransformedType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TransformedType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TransformedType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::AbiTagAttr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::AbiTagAttr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::AbiTagAttr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::EnableIfAttr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::EnableIfAttr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::EnableIfAttr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ObjCProtoName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ObjCProtoName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ObjCProtoName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::PointerType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PointerType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PointerType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ReferenceType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ReferenceType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ReferenceType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::PointerToMemberType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PointerToMemberType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PointerToMemberType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ArrayType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ArrayType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ArrayType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::FunctionType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::FunctionType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::FunctionType const*&&)
+void (anonymous namespace)::DumpVisitor::printWithComma<(anonymous namespace)::itanium_demangle::NodeArray>((anonymous namespace)::itanium_demangle::NodeArray)
+void (anonymous namespace)::DumpVisitor::printWithComma<(anonymous namespace)::itanium_demangle::FunctionRefQual>((anonymous namespace)::itanium_demangle::FunctionRefQual)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::NoexceptSpec const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NoexceptSpec const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NoexceptSpec const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::DynamicExceptionSpec const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DynamicExceptionSpec const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DynamicExceptionSpec const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::FunctionEncoding const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::FunctionEncoding const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::FunctionEncoding const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::LiteralOperator const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::LiteralOperator const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::LiteralOperator const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::SpecialName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::SpecialName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::SpecialName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::CtorVtableSpecialName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CtorVtableSpecialName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CtorVtableSpecialName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::QualifiedName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::QualifiedName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::QualifiedName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::NestedName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NestedName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NestedName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::MemberLikeFriendName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::MemberLikeFriendName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::MemberLikeFriendName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::LocalName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::LocalName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::LocalName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ModuleName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ModuleName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ModuleName const*&&)
+void (anonymous namespace)::DumpVisitor::printWithComma<bool>(bool)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ModuleEntity const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ModuleEntity const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ModuleEntity const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::VectorType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::VectorType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::VectorType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::PixelVectorType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PixelVectorType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PixelVectorType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::BinaryFPType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BinaryFPType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BinaryFPType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::BitIntType const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BitIntType const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BitIntType const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TemplateParamQualifiedArg const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateParamQualifiedArg const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateParamQualifiedArg const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TypeTemplateParamDecl const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TypeTemplateParamDecl const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TypeTemplateParamDecl const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ConstrainedTypeTemplateParamDecl const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConstrainedTypeTemplateParamDecl const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConstrainedTypeTemplateParamDecl const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::NonTypeTemplateParamDecl const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NonTypeTemplateParamDecl const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NonTypeTemplateParamDecl const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TemplateTemplateParamDecl const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateTemplateParamDecl const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateTemplateParamDecl const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TemplateParamPackDecl const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateParamPackDecl const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateParamPackDecl const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ParameterPack const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ParameterPack const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ParameterPack const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TemplateArgumentPack const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateArgumentPack const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateArgumentPack const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ParameterPackExpansion const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ParameterPackExpansion const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ParameterPackExpansion const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TemplateArgs const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateArgs const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TemplateArgs const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ForwardTemplateReference const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ForwardTemplateReference const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ForwardTemplateReference const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::NameWithTemplateArgs const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NameWithTemplateArgs const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NameWithTemplateArgs const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::GlobalQualifiedName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::GlobalQualifiedName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::GlobalQualifiedName const*&&)
+void (anonymous namespace)::DumpVisitor::CtorArgPrinter::operator()<(anonymous namespace)::itanium_demangle::SpecialSubKind>((anonymous namespace)::itanium_demangle::SpecialSubKind)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::CtorDtorName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CtorDtorName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CtorDtorName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::DtorName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DtorName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DtorName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ClosureTypeName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ClosureTypeName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ClosureTypeName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::StructuredBindingName const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::StructuredBindingName const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::StructuredBindingName const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::BinaryExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BinaryExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BinaryExpr const*&&)
+void (anonymous namespace)::DumpVisitor::printWithComma<(anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::Node::Prec)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ArraySubscriptExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ArraySubscriptExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ArraySubscriptExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::PostfixExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PostfixExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PostfixExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ConditionalExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConditionalExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConditionalExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::MemberExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::MemberExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::MemberExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::SubobjectExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::SubobjectExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::SubobjectExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::EnclosingExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::EnclosingExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::EnclosingExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::CastExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CastExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CastExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::SizeofParamPackExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::SizeofParamPackExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::SizeofParamPackExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::CallExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CallExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::CallExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::NewExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NewExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NewExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::DeleteExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DeleteExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::DeleteExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::PrefixExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PrefixExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PrefixExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ConversionExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConversionExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ConversionExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::PointerToMemberConversionExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PointerToMemberConversionExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::PointerToMemberConversionExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::InitListExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::InitListExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::InitListExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::FoldExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::FoldExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::FoldExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ThrowExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ThrowExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ThrowExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::StringLiteral const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::StringLiteral const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::StringLiteral const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::LambdaExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::LambdaExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::LambdaExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::EnumLiteral const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::EnumLiteral const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::EnumLiteral const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::BracedExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BracedExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BracedExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::BracedRangeExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BracedRangeExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::BracedRangeExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::RequiresExpr const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::RequiresExpr const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::RequiresExpr const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ExprRequirement const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ExprRequirement const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ExprRequirement const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::TypeRequirement const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TypeRequirement const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::TypeRequirement const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::NestedRequirement const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NestedRequirement const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::NestedRequirement const*&&)
+decltype (((std::declval<(anonymous namespace)::DumpVisitor&>)())((std::declval<(anonymous namespace)::itanium_demangle::ExplicitObjectParameter const*>)())) std::__1::__invoke[abi:ne200100]<(anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ExplicitObjectParameter const*>((anonymous namespace)::DumpVisitor&, (anonymous namespace)::itanium_demangle::ExplicitObjectParameter const*&&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseEncoding(bool)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseNumber(bool)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [34], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [34], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseType()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::SaveTemplateParams::SaveTemplateParams((anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>*)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseName((anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::NameState*)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseTemplateArg()
+(anonymous namespace)::itanium_demangle::PODSmallVector<(anonymous namespace)::itanium_demangle::Node*, 32u>::push_back((anonymous namespace)::itanium_demangle::Node* const&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::EnableIfAttr, (anonymous namespace)::itanium_demangle::NodeArray>((anonymous namespace)::itanium_demangle::NodeArray&&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::popTrailingNodeArray(unsigned int)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::FunctionEncoding, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Qualifiers&, (anonymous namespace)::itanium_demangle::FunctionRefQual&>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Qualifiers&, (anonymous namespace)::itanium_demangle::FunctionRefQual&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::SaveTemplateParams::~SaveTemplateParams()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [31], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [31], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [12], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [12], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [9], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [9], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [14], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [14], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [19], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [19], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseCallOffset()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [27], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [27], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::CtorVtableSpecialName, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [41], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [41], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [18], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [18], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [22], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [22], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SpecialName, char const (&) [25], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [25], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseModuleNameOpt((anonymous namespace)::itanium_demangle::ModuleName*&)
+(anonymous namespace)::itanium_demangle::Node::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::Node::hasArraySlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::Node::hasFunctionSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::Node::getSyntaxNode((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::SpecialName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::Node::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::Node::printInitListAsType((anonymous namespace)::itanium_demangle::OutputBuffer&, (anonymous namespace)::itanium_demangle::NodeArray const&) const
+(anonymous namespace)::itanium_demangle::Node::getBaseName() const
+(anonymous namespace)::itanium_demangle::SpecialName::~SpecialName()
+(anonymous namespace)::itanium_demangle::CtorVtableSpecialName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::CtorVtableSpecialName::~CtorVtableSpecialName()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseSourceName((anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::NameState*)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [22]>(char const (&) [22])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, std::__1::basic_string_view<char, std::__1::char_traits<char> >&>(std::__1::basic_string_view<char, std::__1::char_traits<char> >&)
+(anonymous namespace)::itanium_demangle::NameType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NameType::getBaseName() const
+(anonymous namespace)::itanium_demangle::NameType::~NameType()
+(anonymous namespace)::itanium_demangle::ModuleName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ModuleName::~ModuleName()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseUnscopedName((anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::NameState*, bool*)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseTemplateArgs(bool)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameWithTemplateArgs, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseTemplateParam()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseDecltype()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseSubstitution()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseUnqualifiedName((anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::NameState*, (anonymous namespace)::itanium_demangle::Node*, (anonymous namespace)::itanium_demangle::ModuleName*)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, std::__1::basic_string_view<char, std::__1::char_traits<char> > >(std::__1::basic_string_view<char, std::__1::char_traits<char> >&&)
+(anonymous namespace)::itanium_demangle::PODSmallVector<(anonymous namespace)::itanium_demangle::PODSmallVector<(anonymous namespace)::itanium_demangle::Node*, 8u>*, 4u>::push_back((anonymous namespace)::itanium_demangle::PODSmallVector<(anonymous namespace)::itanium_demangle::Node*, 8u>* const&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [5]>(char const (&) [5])
+(anonymous namespace)::itanium_demangle::ForwardTemplateReference::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ForwardTemplateReference::hasArraySlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ForwardTemplateReference::hasFunctionSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ForwardTemplateReference::getSyntaxNode((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ForwardTemplateReference::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ForwardTemplateReference::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ForwardTemplateReference::~ForwardTemplateReference()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseExpr()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PostfixExpr, (anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ArraySubscriptExpr, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::MemberExpr, (anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NewExpr, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, bool&, bool, (anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, bool&, bool&&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::CallExpr, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray, bool, (anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&&, bool&&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ConversionExpr, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ConditionalExpr, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::CastExpr, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec>(std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseExprPrimary()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseFunctionParam()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseFoldExpr()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseBracedExpr()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::InitListExpr, decltype(nullptr), (anonymous namespace)::itanium_demangle::NodeArray>(decltype(nullptr)&&, (anonymous namespace)::itanium_demangle::NodeArray&&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parsePointerToMemberConversionExpr((anonymous namespace)::itanium_demangle::Node::Prec)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::EnclosingExpr, char const (&) [10], (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec>(char const (&) [10], (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseRequiresExpr()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseSubobjectExpr()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ParameterPackExpansion, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::SizeofParamPackExpr, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::EnclosingExpr, char const (&) [11], (anonymous namespace)::itanium_demangle::Node*&>(char const (&) [11], (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NodeArrayNode, (anonymous namespace)::itanium_demangle::NodeArray>((anonymous namespace)::itanium_demangle::NodeArray&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::InitListExpr, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [6]>(char const (&) [6])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ThrowExpr, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseUnresolvedName(bool)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::BinaryExpr, (anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&>((anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&)
+(anonymous namespace)::itanium_demangle::BinaryExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::BinaryExpr::~BinaryExpr()
+(anonymous namespace)::itanium_demangle::Node::printAsOperand((anonymous namespace)::itanium_demangle::OutputBuffer&, (anonymous namespace)::itanium_demangle::Node::Prec, bool) const
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PrefixExpr, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&>(std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node::Prec&)
+(anonymous namespace)::itanium_demangle::PrefixExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PrefixExpr::~PrefixExpr()
+(anonymous namespace)::itanium_demangle::PostfixExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PostfixExpr::~PostfixExpr()
+(anonymous namespace)::itanium_demangle::ArraySubscriptExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ArraySubscriptExpr::~ArraySubscriptExpr()
+(anonymous namespace)::itanium_demangle::MemberExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::MemberExpr::~MemberExpr()
+(anonymous namespace)::itanium_demangle::NewExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NewExpr::~NewExpr()
+(anonymous namespace)::itanium_demangle::DeleteExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::DeleteExpr::~DeleteExpr()
+(anonymous namespace)::itanium_demangle::CallExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::CallExpr::~CallExpr()
+(anonymous namespace)::itanium_demangle::ConversionExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ConversionExpr::~ConversionExpr()
+(anonymous namespace)::itanium_demangle::ConditionalExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ConditionalExpr::~ConditionalExpr()
+(anonymous namespace)::itanium_demangle::CastExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::CastExpr::~CastExpr()
+(anonymous namespace)::itanium_demangle::EnclosingExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::EnclosingExpr::~EnclosingExpr()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseIntegerLiteral(std::__1::basic_string_view<char, std::__1::char_traits<char> >)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::BoolExpr, int>(int&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::StringLiteral, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [8]>(char const (&) [8])
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseUnnamedTypeName((anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::NameState*)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::LambdaExpr, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::EnumLiteral, (anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&>((anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&)
+(anonymous namespace)::itanium_demangle::IntegerLiteral::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::IntegerLiteral::~IntegerLiteral()
+(anonymous namespace)::itanium_demangle::BoolExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::BoolExpr::~BoolExpr()
+(anonymous namespace)::itanium_demangle::FloatLiteralImpl<float>::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FloatLiteralImpl<float>::~FloatLiteralImpl()
+(anonymous namespace)::itanium_demangle::FloatLiteralImpl<double>::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FloatLiteralImpl<double>::~FloatLiteralImpl()
+(anonymous namespace)::itanium_demangle::FloatLiteralImpl<long double>::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FloatLiteralImpl<long double>::~FloatLiteralImpl()
+(anonymous namespace)::itanium_demangle::StringLiteral::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::StringLiteral::~StringLiteral()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseTemplateParamDecl((anonymous namespace)::itanium_demangle::PODSmallVector<(anonymous namespace)::itanium_demangle::Node*, 8u>*)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ClosureTypeName, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&>((anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::NodeArray&, (anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::ScopedTemplateParamList::~ScopedTemplateParamList()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [16]>(char const (&) [16])
+(anonymous namespace)::itanium_demangle::UnnamedTypeName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::UnnamedTypeName::~UnnamedTypeName()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseTemplateParamDecl((anonymous namespace)::itanium_demangle::PODSmallVector<(anonymous namespace)::itanium_demangle::Node*, 8u>*)::{lambda((anonymous namespace)::itanium_demangle::TemplateParamKind)#1}::operator()((anonymous namespace)::itanium_demangle::TemplateParamKind) const
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::TemplateParamPackDecl, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::SyntheticTemplateParamName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::SyntheticTemplateParamName::~SyntheticTemplateParamName()
+(anonymous namespace)::itanium_demangle::TypeTemplateParamDecl::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TypeTemplateParamDecl::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TypeTemplateParamDecl::~TypeTemplateParamDecl()
+(anonymous namespace)::itanium_demangle::ConstrainedTypeTemplateParamDecl::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ConstrainedTypeTemplateParamDecl::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ConstrainedTypeTemplateParamDecl::~ConstrainedTypeTemplateParamDecl()
+(anonymous namespace)::itanium_demangle::NonTypeTemplateParamDecl::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NonTypeTemplateParamDecl::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NonTypeTemplateParamDecl::~NonTypeTemplateParamDecl()
+(anonymous namespace)::itanium_demangle::TemplateTemplateParamDecl::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TemplateTemplateParamDecl::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TemplateTemplateParamDecl::~TemplateTemplateParamDecl()
+(anonymous namespace)::itanium_demangle::TemplateParamPackDecl::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TemplateParamPackDecl::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TemplateParamPackDecl::~TemplateParamPackDecl()
+(anonymous namespace)::itanium_demangle::ClosureTypeName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ClosureTypeName::~ClosureTypeName()
+(anonymous namespace)::itanium_demangle::ClosureTypeName::printDeclarator((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::LambdaExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::LambdaExpr::~LambdaExpr()
+(anonymous namespace)::itanium_demangle::EnumLiteral::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::EnumLiteral::~EnumLiteral()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::FunctionParam, std::__1::basic_string_view<char, std::__1::char_traits<char> >&>(std::__1::basic_string_view<char, std::__1::char_traits<char> >&)
+(anonymous namespace)::itanium_demangle::FunctionParam::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionParam::~FunctionParam()
+(anonymous namespace)::itanium_demangle::FoldExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FoldExpr::~FoldExpr()
+(anonymous namespace)::itanium_demangle::FoldExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const::{lambda()#1}::operator()() const
+(anonymous namespace)::itanium_demangle::ParameterPackExpansion::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ParameterPackExpansion::~ParameterPackExpansion()
+(anonymous namespace)::itanium_demangle::BracedExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::BracedExpr::~BracedExpr()
+(anonymous namespace)::itanium_demangle::BracedRangeExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::BracedRangeExpr::~BracedRangeExpr()
+(anonymous namespace)::itanium_demangle::InitListExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::InitListExpr::~InitListExpr()
+(anonymous namespace)::itanium_demangle::PointerToMemberConversionExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PointerToMemberConversionExpr::~PointerToMemberConversionExpr()
+(anonymous namespace)::itanium_demangle::ExprRequirement::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ExprRequirement::~ExprRequirement()
+(anonymous namespace)::itanium_demangle::TypeRequirement::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TypeRequirement::~TypeRequirement()
+(anonymous namespace)::itanium_demangle::NestedRequirement::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NestedRequirement::~NestedRequirement()
+(anonymous namespace)::itanium_demangle::RequiresExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::RequiresExpr::~RequiresExpr()
+(anonymous namespace)::itanium_demangle::SubobjectExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::SubobjectExpr::~SubobjectExpr()
+(anonymous namespace)::itanium_demangle::SizeofParamPackExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::SizeofParamPackExpr::~SizeofParamPackExpr()
+(anonymous namespace)::itanium_demangle::NodeArrayNode::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NodeArrayNode::~NodeArrayNode()
+(anonymous namespace)::itanium_demangle::ThrowExpr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ThrowExpr::~ThrowExpr()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseUnresolvedType()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseSimpleId()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseBaseUnresolvedName()
+(anonymous namespace)::itanium_demangle::QualifiedName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::QualifiedName::getBaseName() const
+(anonymous namespace)::itanium_demangle::QualifiedName::~QualifiedName()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseOperatorName((anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::NameState*)
+(anonymous namespace)::itanium_demangle::DtorName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::DtorName::~DtorName()
+(anonymous namespace)::itanium_demangle::ConversionOperatorType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ConversionOperatorType::~ConversionOperatorType()
+(anonymous namespace)::itanium_demangle::LiteralOperator::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::LiteralOperator::~LiteralOperator()
+(anonymous namespace)::itanium_demangle::GlobalQualifiedName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::GlobalQualifiedName::getBaseName() const
+(anonymous namespace)::itanium_demangle::GlobalQualifiedName::~GlobalQualifiedName()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseAbiTags((anonymous namespace)::itanium_demangle::Node*)
+(anonymous namespace)::itanium_demangle::SpecialSubstitution::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::SpecialSubstitution::getBaseName() const
+(anonymous namespace)::itanium_demangle::SpecialSubstitution::~SpecialSubstitution()
+(anonymous namespace)::itanium_demangle::ExpandedSpecialSubstitution::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ExpandedSpecialSubstitution::getBaseName() const
+(anonymous namespace)::itanium_demangle::ExpandedSpecialSubstitution::~ExpandedSpecialSubstitution()
+(anonymous namespace)::itanium_demangle::AbiTagAttr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::AbiTagAttr::getBaseName() const
+(anonymous namespace)::itanium_demangle::AbiTagAttr::~AbiTagAttr()
+(anonymous namespace)::itanium_demangle::StructuredBindingName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::StructuredBindingName::~StructuredBindingName()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ExpandedSpecialSubstitution, (anonymous namespace)::itanium_demangle::SpecialSubstitution*>((anonymous namespace)::itanium_demangle::SpecialSubstitution*&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::CtorDtorName, (anonymous namespace)::itanium_demangle::Node*&, bool, int&>((anonymous namespace)::itanium_demangle::Node*&, bool&&, int&)
+(anonymous namespace)::itanium_demangle::CtorDtorName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::CtorDtorName::~CtorDtorName()
+(anonymous namespace)::itanium_demangle::ModuleEntity::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ModuleEntity::getBaseName() const
+(anonymous namespace)::itanium_demangle::ModuleEntity::~ModuleEntity()
+(anonymous namespace)::itanium_demangle::MemberLikeFriendName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::MemberLikeFriendName::getBaseName() const
+(anonymous namespace)::itanium_demangle::MemberLikeFriendName::~MemberLikeFriendName()
+(anonymous namespace)::itanium_demangle::NestedName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NestedName::getBaseName() const
+(anonymous namespace)::itanium_demangle::NestedName::~NestedName()
+(anonymous namespace)::itanium_demangle::parse_discriminator(char const*, char const*)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [15]>(char const (&) [15])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::LocalName, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::LocalName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::LocalName::~LocalName()
+(anonymous namespace)::itanium_demangle::ParameterPack::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ParameterPack::hasArraySlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ParameterPack::hasFunctionSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ParameterPack::getSyntaxNode((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ParameterPack::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ParameterPack::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ParameterPack::~ParameterPack()
+(anonymous namespace)::itanium_demangle::TemplateArgs::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TemplateArgs::~TemplateArgs()
+(anonymous namespace)::itanium_demangle::NameWithTemplateArgs::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NameWithTemplateArgs::getBaseName() const
+(anonymous namespace)::itanium_demangle::NameWithTemplateArgs::~NameWithTemplateArgs()
+(anonymous namespace)::itanium_demangle::TemplateArgumentPack::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TemplateArgumentPack::~TemplateArgumentPack()
+(anonymous namespace)::itanium_demangle::TemplateParamQualifiedArg::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TemplateParamQualifiedArg::~TemplateParamQualifiedArg()
+(anonymous namespace)::itanium_demangle::EnableIfAttr::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::EnableIfAttr::~EnableIfAttr()
+(anonymous namespace)::itanium_demangle::ExplicitObjectParameter::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ExplicitObjectParameter::~ExplicitObjectParameter()
+(anonymous namespace)::itanium_demangle::FunctionEncoding::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionEncoding::hasFunctionSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionEncoding::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionEncoding::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionEncoding::~FunctionEncoding()
+(anonymous namespace)::itanium_demangle::DotSuffix::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::DotSuffix::~DotSuffix()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseFunctionType()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseQualifiedType()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [12]>(char const (&) [12])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [13]>(char const (&) [13])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [10]>(char const (&) [10])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [9]>(char const (&) [9])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [18]>(char const (&) [18])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [7]>(char const (&) [7])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [11]>(char const (&) [11])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::TransformedType, std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&>(std::__1::basic_string_view<char, std::__1::char_traits<char> >&, (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::BinaryFPType, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [21]>(char const (&) [21])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [27]>(char const (&) [27])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [17]>(char const (&) [17])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::NameType, char const (&) [26]>(char const (&) [26])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::BitIntType, (anonymous namespace)::itanium_demangle::Node*&, bool&>((anonymous namespace)::itanium_demangle::Node*&, bool&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PostfixQualifiedType, (anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&>((anonymous namespace)::itanium_demangle::Node*&, std::__1::basic_string_view<char, std::__1::char_traits<char> >&)
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseVectorType()
+(anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::parseClassEnumType()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PointerType, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ReferenceType, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::ReferenceKind>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::ReferenceKind&&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PostfixQualifiedType, (anonymous namespace)::itanium_demangle::Node*&, char const (&) [9]>((anonymous namespace)::itanium_demangle::Node*&, char const (&) [9])
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PostfixQualifiedType, (anonymous namespace)::itanium_demangle::Node*&, char const (&) [11]>((anonymous namespace)::itanium_demangle::Node*&, char const (&) [11])
+(anonymous namespace)::itanium_demangle::NoexceptSpec::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::NoexceptSpec::~NoexceptSpec()
+(anonymous namespace)::itanium_demangle::DynamicExceptionSpec::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::DynamicExceptionSpec::~DynamicExceptionSpec()
+(anonymous namespace)::itanium_demangle::FunctionType::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionType::hasFunctionSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionType::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::FunctionType::~FunctionType()
+(anonymous namespace)::itanium_demangle::ObjCProtoName::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ObjCProtoName::~ObjCProtoName()
+(anonymous namespace)::itanium_demangle::VendorExtQualType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::VendorExtQualType::~VendorExtQualType()
+(anonymous namespace)::itanium_demangle::QualType::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::QualType::hasArraySlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::QualType::hasFunctionSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::QualType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::QualType::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::QualType::~QualType()
+(anonymous namespace)::itanium_demangle::TransformedType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::TransformedType::~TransformedType()
+(anonymous namespace)::itanium_demangle::BinaryFPType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::BinaryFPType::~BinaryFPType()
+(anonymous namespace)::itanium_demangle::BitIntType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::BitIntType::~BitIntType()
+(anonymous namespace)::itanium_demangle::PostfixQualifiedType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PostfixQualifiedType::~PostfixQualifiedType()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PixelVectorType, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::VectorType, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::PixelVectorType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PixelVectorType::~PixelVectorType()
+(anonymous namespace)::itanium_demangle::VectorType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::VectorType::~VectorType()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::ArrayType, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::ArrayType::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ArrayType::hasArraySlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ArrayType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ArrayType::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ArrayType::printInitListAsType((anonymous namespace)::itanium_demangle::OutputBuffer&, (anonymous namespace)::itanium_demangle::NodeArray const&) const
+(anonymous namespace)::itanium_demangle::ArrayType::~ArrayType()
+(anonymous namespace)::itanium_demangle::Node* (anonymous namespace)::itanium_demangle::AbstractManglingParser<(anonymous namespace)::itanium_demangle::ManglingParser<(anonymous namespace)::DefaultAllocator>, (anonymous namespace)::DefaultAllocator>::make<(anonymous namespace)::itanium_demangle::PointerToMemberType, (anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&>((anonymous namespace)::itanium_demangle::Node*&, (anonymous namespace)::itanium_demangle::Node*&)
+(anonymous namespace)::itanium_demangle::PointerToMemberType::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PointerToMemberType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PointerToMemberType::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PointerToMemberType::~PointerToMemberType()
+(anonymous namespace)::itanium_demangle::ElaboratedTypeSpefType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ElaboratedTypeSpefType::~ElaboratedTypeSpefType()
+(anonymous namespace)::itanium_demangle::PointerType::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PointerType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PointerType::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::PointerType::~PointerType()
+(anonymous namespace)::itanium_demangle::ReferenceType::hasRHSComponentSlow((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ReferenceType::printLeft((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::ReferenceType::printRight((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+(anonymous namespace)::itanium_demangle::Node::~Node()
+(anonymous namespace)::itanium_demangle::ReferenceType::~ReferenceType()
+(anonymous namespace)::itanium_demangle::ReferenceType::collapse((anonymous namespace)::itanium_demangle::OutputBuffer&) const
+dtoa_lock
+dtoa_lock_cleanup
+atan
+atoi
+fclose
+fflush
+fgets
+floor
+fopen
+fputc
+fwrite
+memcmp
+memcpy
+memmove
+memset
+rand
+strchr
+strcmp
+strcspn
+strlen
+strncat
+strrchr
+strtok
+strtoul
+tan
+memchr
+wcslen
+strtol
+strtoll
+strtoull
+strtof
+strtod
+wcstol
+wcstoul
+wcstoll
+wcstoull
+wcstod
+abort
+malloc
+free
+AcquireSRWLockExclusive@4
+ReleaseSRWLockExclusive@4
+calloc
+strncmp
+getenv
+AcquireSRWLockShared@4
+ReleaseSRWLockShared@4
+K32EnumProcessModules@16
+localeconv
+GetSystemTimeAsFileTime@4
+realloc
+fputs
