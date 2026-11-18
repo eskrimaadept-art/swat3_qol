@@ -3,6 +3,17 @@
 typedef unsigned long long u64; typedef long long s64;
 static u64 udivmod(u64 n, u64 d, u64* rem) {
     if (d == 0) { if (rem) *rem = 0; return 0; }
+    if ((n >> 32) == 0 && (d >> 32) == 0) {          // the usual case: one hardware division
+        unsigned a = (unsigned)n, b = (unsigned)d;
+        if (rem) *rem = a % b;
+        return a / b;
+    }
+    if ((d >> 32) == 0 && (n >> 32) < d) {           // 64 / 32 with a 32-bit result: the CPU's divide
+        unsigned lo = (unsigned)n, hi = (unsigned)(n >> 32), q, r;
+        __asm__("divl %4" : "=a"(q), "=d"(r) : "a"(lo), "d"(hi), "rm"((unsigned)d));
+        if (rem) *rem = r;
+        return q;
+    }
     u64 q = 0, r = 0;
     for (int i = 63; i >= 0; i--) {
         r = (r << 1) | ((n >> i) & 1);

@@ -512,13 +512,29 @@ static void CpuBlit(Surface* dst, RECT d, Surface* src, RECT s, bool key) {
         }
         return;
     }
+    // source column for every destination column, worked out once (no division per pixel)
+    static Vec<int> xs;
+    xs.resize(dw);
+    for (int x = 0; x < dw; x++) xs[x] = s.left + (int)((unsigned)x * (unsigned)sw / (unsigned)dw);
+    bool to565 = dst->fmt == kFmt565 && src->fmt.bpp == 32 && src->fmt.r == 0xff0000 && src->fmt.g == 0xff00 && src->fmt.b == 0xff;
     for (int y = y0; y < y1; y++) {
-        int sy = s.top + (int)((int64_t)y * sh / dh);
+        int sy = s.top + (int)((unsigned)y * (unsigned)sh / (unsigned)dh);
         if (sy < 0 || sy >= src->h) continue;
         uint8_t* drow = dst->bits + (size_t)(d.top + y) * dst->pitch;
         const uint8_t* srow = src->bits + (size_t)sy * src->pitch;
+        if (to565 && !key) {                      // screen pictures into the game's 16-bit format
+            uint16_t* o = (uint16_t*)drow + d.left;
+            const uint32_t* q = (const uint32_t*)srow;
+            for (int x = x0; x < x1; x++) {
+                int sx = xs[x];
+                if (sx < 0 || sx >= src->w) continue;
+                uint32_t c = q[sx];
+                o[x] = (uint16_t)(((c >> 8) & 0xf800) | ((c >> 5) & 0x07e0) | ((c >> 3) & 0x001f));
+            }
+            continue;
+        }
         for (int x = x0; x < x1; x++) {
-            int sx = s.left + (int)((int64_t)x * sw / dw);
+            int sx = xs[x];
             if (sx < 0 || sx >= src->w) continue;
             uint32_t p = ReadPx(srow + (size_t)sx * sb, src->fmt.bpp);
             if (key && p >= src->keyLo && p <= src->keyHi) continue;
