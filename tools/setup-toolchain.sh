@@ -21,6 +21,10 @@ for n in kernel32 user32 gdi32 d3d11 dxgi d3dcompiler_47 comctl32 shell32 winmm 
   for src in $M/mingw-w64-crt/lib32/$n.def $M/mingw-w64-crt/lib-common/$n.def $M/mingw-w64-crt/lib32/$n.def.in $M/mingw-w64-crt/lib-common/$n.def.in; do
     [ -f $src ] || continue
     case $src in *.in) clang -E -P -x c -m32 -D__i386__ -DDEF_I386 -Wno-extra-tokens -I$M/mingw-w64-crt/def-include $src -o $n.def; src=$n.def;; esac
+    # mingw-w64 marks the math functions DATA (it ships its own); we link to msvcrt's, so they must be code
+    if [ $n = msvcrt ]; then
+      sed -i -E 's/^(atan2|ceil|cos|exp|fabs|floor|fmod|frexp|ldexp|log|modf|pow|sin|sqrt) DATA/\1/' $n.def; src=$n.def
+    fi
     llvm-dlltool -m i386 -k -d $src -l lib$n.a; break
   done
 done
