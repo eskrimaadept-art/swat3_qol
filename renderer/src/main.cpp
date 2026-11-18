@@ -26,6 +26,12 @@ static LONG WINAPI CrashFilter(EXCEPTION_POINTERS* e) {
     // only real faults (access violation, illegal instruction, divide by zero, stack overflow...);
     // the game may still handle some of them itself
     if (code < 0xC0000000 || code == 0xE06D7363 || count >= 3) return EXCEPTION_CONTINUE_SEARCH;
+    {   // faults inside Windows / sound / driver code are usually expected and handled there
+        uintptr_t o; const char* m = ModuleOf(r->ExceptionAddress, &o);
+        char exe[MAX_PATH]; GetModuleFileNameA(nullptr, exe, MAX_PATH);
+        const char* en = strrchr(exe, '\\'); en = en ? en + 1 : exe;
+        if (_stricmp(m, "ddraw.dll") && _stricmp(m, en)) { LogOnce(_strdup(m), "note: exception %08lx inside %s (normally handled there)", code, m); return EXCEPTION_CONTINUE_SEARCH; }
+    }
     count++;
     uintptr_t off; const char* mod = ModuleOf(r->ExceptionAddress, &off);
     Log("=== CRASH: exception %08lx at %p (%s+%lx)", r->ExceptionCode, r->ExceptionAddress, mod, (unsigned long)off);

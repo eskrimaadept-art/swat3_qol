@@ -40,7 +40,8 @@ void DrawIndexedPrimitiveTL(uint32_t prim, uint32_t fvf, const void* verts, uint
 // 2D (DirectDraw blits onto the game's back buffer)
 void Blit(Tex* t, int texW, int texH, const RECT& src, const RECT& dst, bool blend);   // blend: alpha from texture
 void Fill(const RECT* r, uint32_t argb);                        // nullptr = whole screen
-bool ReadBack(const RECT& r, uint32_t* out, int pitchPixels);   // game pixels, 0xAARRGGBB
+bool ReadBack(const RECT& r, uint32_t* out, int pitchPixels, bool recentOk = false);   // game pixels, 0xAARRGGBB;
+                                                                 // recentOk: last frame's picture is fine (no waiting)
 void Present();
 
 // overlay drawn over the finished picture at output resolution (QoL features)

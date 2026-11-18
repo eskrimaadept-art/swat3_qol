@@ -100,7 +100,8 @@ static const char* KindName(Kind k) { static const char* n[] = {"primary", "back
 
 static DDraw* g_dd;
 static struct { int frames, draws, uploads, getdc, locks, reads; } g_stats;
-static const uint32_t kDcBlank = 0x010203;    // "nothing drawn here" colour for GDI text on the screen
+static const uint32_t kDcBlank = 0x010203;
+static int g_lockLogged = 0;    // "nothing drawn here" colour for GDI text on the screen
 static Surface* g_back;        // the game's 3D render surface (the backend's render target)
 static Surface* g_primary;
 static Device* g_device;
@@ -622,16 +623,21 @@ HRESULT Surface::Lock(RECT* r, DDSURFACEDESC2* d, DWORD f, HANDLE) {
         LogOnce("screenlock", "note: screen surface locked - slow path");
         g_stats.locks++;
         pitch = ((w * 2) + 3) & ~3;
-        free(bits); bits = (uint8_t*)calloc((size_t)pitch * h, 1);
-        free(screenSnap); screenSnap = nullptr;
-        Vec<uint32_t> px; px.resize(w * h);
+        if (!bits) bits = (uint8_t*)calloc((size_t)pitch * h, 1);
+        static Vec<uint32_t> px; px.resize(w * h);
         RECT all = {0, 0, w, h};
-        if (be::ReadBack(all, px.p, w)) {
-            const Conv& c = ConvFor(kFmt565);
-            for (int y = 0; y < h; y++) for (int x = 0; x < w; x++) *(uint16_t*)(bits + (size_t)y * pitch + x * 2) = (uint16_t)c.FromARGB(px[y * w + x]);
+        if (g_lockLogged < 3) {
+            g_lockLogged++;
+            Log("screen lock %d: flags %08lx, rect %s, called from %p", g_lockLogged, f, r ? "part" : "whole", __builtin_return_address(0));
+        }
+        if (be::ReadBack(all, px.p, w, true)) {
+            for (int y = 0; y < h; y++) {
+                uint16_t* o = (uint16_t*)(bits + (size_t)y * pitch); const uint32_t* q = px.p + (size_t)y * w;
+                for (int x = 0; x < w; x++) { uint32_t c = q[x]; o[x] = (uint16_t)(((c >> 8) & 0xf800) | ((c >> 5) & 0x07e0) | ((c >> 3) & 0x001f)); }
+            }
         }
         lockReadOnly = (f & DDLOCK_READONLY) != 0;
-        if (!lockReadOnly) { screenSnap = (uint8_t*)malloc((size_t)pitch * h); memcpy(screenSnap, bits, (size_t)pitch * h); }
+        if (!lockReadOnly) { if (!screenSnap) screenSnap = (uint8_t*)malloc((size_t)pitch * h); memcpy(screenSnap, bits, (size_t)pitch * h); }
         lockRect = r ? *r : RECT{0, 0, w, h};
         PFFromFmt(kFmt565, d->ddpfPixelFormat);
     }
@@ -654,6 +660,7 @@ HRESULT Surface::Unlock(RECT*) {
             }
             if (x1 >= x0) {
                 int ww = x1 - x0 + 1, hh = y1 - y0 + 1;
+                if (g_lockLogged < 6) { g_lockLogged++; Log("screen lock: the game changed %dx%d pixels at %d,%d", ww, hh, x0, y0); }
                 Vec<uint32_t> px; px.resize(ww * hh);
                 for (int y = 0; y < hh; y++) {
                     const uint16_t* a = (const uint16_t*)(bits + (size_t)(y0 + y) * pitch) + x0; const uint16_t* b = (const uint16_t*)(screenSnap + (size_t)(y0 + y) * pitch) + x0;
@@ -663,8 +670,7 @@ HRESULT Surface::Unlock(RECT*) {
                 ScreenWrite(rr, px.p, ww);
             }
         }
-        free(screenSnap); screenSnap = nullptr;
-        free(bits); bits = nullptr;
+        // the buffers are kept for the next lock (the game locks every frame)
         if (kind == K_PRIMARY && !lockReadOnly) PresentFrame();
         return DD_OK;
     }

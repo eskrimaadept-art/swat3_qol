@@ -420,6 +420,7 @@ static void DrawQuad(float x0, float y0, float x1, float y1, float z, uint32_t c
 }
 
 // ---- render targets ----------------------------------------------------------------------------
+static void RingRelease();
 static void ReleaseTargets() {
     if (g_ctx) g_ctx->OMSetRenderTargets(0, nullptr, nullptr);
     if (g_rtSRV) { g_rtSRV->Release(); g_rtSRV = nullptr; }
@@ -430,6 +431,7 @@ static void ReleaseTargets() {
     if (g_dsv) { g_dsv->Release(); g_dsv = nullptr; }
     if (g_ds) { g_ds->Release(); g_ds = nullptr; }
     if (g_staging) { g_staging->Release(); g_staging = nullptr; }
+    RingRelease();
 }
 
 static void ComputeMapping() {
@@ -866,28 +868,64 @@ static void Resolve() {
     g_rtDirty = false;
 }
 
-bool ReadBack(const RECT& r, uint32_t* out, int pitch) {
-    LOCKED;
-    if (!g_ready) return false;
-    if (!g_staging) {
-        D3D11_TEXTURE2D_DESC d = {};
-        d.Width = g_rtW; d.Height = g_rtH; d.MipLevels = 1; d.ArraySize = 1; d.Format = DXGI_FORMAT_B8G8R8A8_UNORM;
-        d.SampleDesc.Count = 1; d.Usage = D3D11_USAGE_STAGING; d.CPUAccessFlags = D3D11_CPU_ACCESS_READ;
-        if (FAILED(g_dev->CreateTexture2D(&d, nullptr, &g_staging))) { g_staging = nullptr; return false; }
-    }
-    Resolve();
-    g_ctx->CopyResource(g_staging, g_rtResolve);
-    D3D11_MAPPED_SUBRESOURCE m;
-    if (FAILED(g_ctx->Map(g_staging, 0, D3D11_MAP_READ, 0, &m))) return false;
+// Copies game pixels out of a mapped picture at output scale
+static void CopyOut(const D3D11_MAPPED_SUBRESOURCE& m, const RECT& r, uint32_t* out, int pitch) {
+    static Vec<int> xs;
+    int w = r.right - r.left;
+    xs.resize(w);
+    for (int x = 0; x < w; x++) { int sx = (int)((r.left + x + 0.5) * g_scale); xs[x] = sx < 0 ? 0 : sx >= g_rtW ? g_rtW - 1 : sx; }
+    bool direct = g_scale == 1.0;
     for (int y = r.top; y < r.bottom; y++) {
-        int sy = (int)((y + 0.5) * g_scale); if (sy >= g_rtH) sy = g_rtH - 1; if (sy < 0) sy = 0;
+        int sy = direct ? y : (int)((y + 0.5) * g_scale); if (sy >= g_rtH) sy = g_rtH - 1; if (sy < 0) sy = 0;
         const uint32_t* row = (const uint32_t*)((const uint8_t*)m.pData + (size_t)sy * m.RowPitch);
         uint32_t* o = out + (size_t)(y - r.top) * pitch;
-        for (int x = r.left; x < r.right; x++) {
-            int sx = (int)((x + 0.5) * g_scale); if (sx >= g_rtW) sx = g_rtW - 1; if (sx < 0) sx = 0;
-            o[x - r.left] = row[sx] | 0xff000000;
-        }
+        if (direct) memcpy(o, row + r.left, (size_t)w * 4);
+        else for (int x = 0; x < w; x++) o[x] = row[xs[x]];
     }
+}
+
+// Read-back without waiting: while the game keeps reading the screen, every present also copies
+// the finished picture into one of two CPU-readable textures. A read then uses the newest copy
+// (one frame old) instead of stopping until the graphics card has finished the current frame.
+static ID3D11Texture2D* g_ring[2]; static bool g_ringValid[2]; static int g_ringNext = 0, g_ringNewest = -1;
+static DWORD g_lastRead = 0;
+static ID3D11Texture2D* MakeStaging() {
+    D3D11_TEXTURE2D_DESC d = {};
+    d.Width = g_rtW; d.Height = g_rtH; d.MipLevels = 1; d.ArraySize = 1; d.Format = DXGI_FORMAT_B8G8R8A8_UNORM;
+    d.SampleDesc.Count = 1; d.Usage = D3D11_USAGE_STAGING; d.CPUAccessFlags = D3D11_CPU_ACCESS_READ;
+    ID3D11Texture2D* t = nullptr;
+    if (FAILED(g_dev->CreateTexture2D(&d, nullptr, &t))) return nullptr;
+    return t;
+}
+static void RingRelease() {
+    for (int i = 0; i < 2; i++) { if (g_ring[i]) g_ring[i]->Release(); g_ring[i] = nullptr; g_ringValid[i] = false; }
+    g_ringNewest = -1;
+}
+static void RingCopy() {                    // called at present
+    if (!g_lastRead || GetTickCount() - g_lastRead > 3000) { if (g_ring[0]) RingRelease(); return; }
+    int i = g_ringNext;
+    if (!g_ring[i]) g_ring[i] = MakeStaging();
+    if (!g_ring[i]) return;
+    Resolve();
+    g_ctx->CopyResource(g_ring[i], g_rtResolve);
+    g_ringValid[i] = true; g_ringNewest = i; g_ringNext ^= 1;
+}
+
+bool ReadBack(const RECT& r, uint32_t* out, int pitch, bool recentOk) {
+    LOCKED;
+    if (!g_ready || r.right <= r.left || r.bottom <= r.top) return false;
+    g_lastRead = GetTickCount();
+    D3D11_MAPPED_SUBRESOURCE m;
+    if (recentOk && g_ringNewest >= 0 && g_ringValid[g_ringNewest]) {
+        ID3D11Texture2D* t = g_ring[g_ringNewest];
+        if (SUCCEEDED(g_ctx->Map(t, 0, D3D11_MAP_READ, 0, &m))) { CopyOut(m, r, out, pitch); g_ctx->Unmap(t, 0); return true; }
+    }
+    if (!g_staging) g_staging = MakeStaging();
+    if (!g_staging) return false;
+    Resolve();
+    g_ctx->CopyResource(g_staging, g_rtResolve);
+    if (FAILED(g_ctx->Map(g_staging, 0, D3D11_MAP_READ, 0, &m))) return false;
+    CopyOut(m, r, out, pitch);
     g_ctx->Unmap(g_staging, 0);
     return true;
 }
@@ -946,6 +984,7 @@ void Present() {
     }
     ID3D11ShaderResourceView* none[2] = {};
     g_ctx->PSSetShaderResources(0, 2, none);
+    RingCopy();
     HRESULT hr = g_swap->Present(g_cfg.vsync ? 1 : 0, 0);
     if (FAILED(hr)) LogOnce("presentfail", "Present failed %08lx (reason %08lx)", hr, g_dev->GetDeviceRemovedReason());
     ResizeIfNeeded();
