@@ -6,6 +6,7 @@ struct HookCallbacks {
     bool (*freezeCursor)() = nullptr;                                  // a popup menu owns the mouse
     bool (*fakeKeyDown)(int vk) = nullptr;                            // pretend a key is held
     bool (*onMessage)(HWND, UINT, WPARAM, LPARAM, LRESULT*) = nullptr; // true = handled
+    void (*mouseDelta)(int dx, int dy) = nullptr;                    // real mouse movement while frozen
 };
 
 void HooksInstall(HWND hwnd);              // when the game gives us its window

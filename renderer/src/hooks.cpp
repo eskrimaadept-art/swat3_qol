@@ -4,6 +4,7 @@
 // coordinates, and mouse messages are translated on the way in.
 #include "hooks.h"
 #include "backend.h"
+#include "qol.h"
 #include <math.h>
 
 static HWND g_hwnd;
@@ -51,6 +52,13 @@ static BOOL WINAPI h_GetCursorPos(LPPOINT p) {
     if (!r_GetCursorPos(&r)) return FALSE;
     r_ScreenToClient(g_hwnd, &r);
     if (g_cb.freezeCursor && g_cb.freezeCursor() && g_haveAnchor) {   // a popup menu owns the mouse
+        int dx = r.x - g_anchorReal.x, dy = r.y - g_anchorReal.y;
+        if (dx || dy) {                                // the movement scrolls the menu; the cursor goes back
+            if (g_cb.mouseDelta) g_cb.mouseDelta(dx, dy);
+            POINT s = g_anchorReal;
+            r_ClientToScreen(g_hwnd, &s);
+            r_SetCursorPos(s.x, s.y);
+        }
         p->x = (LONG)floor(g_anchorX); p->y = (LONG)floor(g_anchorY);
         g_fracX = g_fracY = 0;
         return TRUE;
@@ -197,6 +205,7 @@ void HooksInstall(HWND hwnd) {
     }
     g_oldProc = (WNDPROC)SetWindowLongA(hwnd, GWL_WNDPROC, (LONG)(uintptr_t)HookProc);
     Log("input translation installed on window %p", hwnd);
+    QolInstall();
     if (GetEnvironmentVariableA("SWAT3D9_TRACE_NOW", nullptr, 0)) TraceStart();
 }
 

@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define SWAT3D11_VERSION "0.14.9"
+#define SWAT3D11_VERSION "0.15.0"
 
 // ---- settings ---------------------------------------------------------------------------------
 struct Config {
@@ -66,6 +66,7 @@ template <class T> struct Vec {
     T& operator[](int i) { return p[i]; }
     const T& operator[](int i) const { return p[i]; }
     T* begin() { return p; } T* end() { return p + n; }
+    const T* begin() const { return p; } const T* end() const { return p + n; }
     int size() const { return n; }
     bool empty() const { return n == 0; }
     T& back() { return p[n - 1]; }
